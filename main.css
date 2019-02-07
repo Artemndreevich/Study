@@ -1,0 +1,207 @@
+/* line 5, main.scss */
+header {
+  border-radius: 2px;
+  height: 100px;
+  width: 98%;
+  position: absolute;
+  left: 1%;
+  top: 7%;
+  background-color: white;
+}
+
+/* line 15, main.scss */
+.menu {
+  border-radius: 2px;
+  z-index: 5;
+  width: 98%;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 1%;
+  -webkit-box-shadow: 5px -5px 30px white;
+          box-shadow: 5px -5px 30px white;
+  -webkit-transition: all;
+  transition: all;
+  max-height: 7%;
+}
+
+/* line 30, main.scss */
+.mark {
+  margin: 0;
+  padding: 0;
+}
+/* line 34, main.scss */
+.mark li {
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+/* line 39, main.scss */
+.mark li a {
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.5vw 1vw;
+  margin-right: auto;
+  font-weight: bold;
+  background-color: rgba(250, 100, 150, 0.5);
+  -webkit-transition: all 3s;
+  transition: all 3s;
+}
+/* line 49, main.scss */
+.mark li a:hover {
+  display: inline-block;
+  text-decoration: none;
+  padding: 1vw 2vw;
+  background-color: rgba(150, 100, 250, 0.5);
+  -webkit-transition: all 3s;
+  transition: all 3s;
+}
+
+/* line 60, main.scss */
+.main {
+  text-align: justify;
+  padding: 1%;
+  border-radius: 2px;
+  width: 73%;
+  background-color: white;
+  height: 500%;
+  margin: 0;
+  position: absolute;
+  top: 28.4%;
+  left: 1%;
+}
+
+/* line 73, main.scss */
+.side {
+  border-radius: 2px;
+  width: 22%;
+  background-color: white;
+  height: 110%;
+  margin: 0;
+  position: absolute;
+  top: 28.4%;
+  right: 1%;
+}
+
+/* line 84, main.scss */
+body {
+  background-color: white;
+  background-color: rgba(0, 255, 255, 0.7);
+}
+
+/* line 89, main.scss */
+.citata {
+  padding: 5px 10px 5px 30px;
+  margin: 10px 40% 10px 0;
+  border-radius: 5px;
+  position: relative;
+  background-color: rgba(255, 215, 0, 0.3);
+  border-left: 3px solid gold;
+}
+
+/* line 98, main.scss */
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+}
+
+/* line 105, main.scss */
+a#bud {
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  width: 140px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 45px;
+  margin: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: #524f4e;
+  background: white;
+  -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* line 126, main.scss */
+a:hover#bud {
+  background: #2EE59D;
+  -webkit-box-shadow: 0 15px 20px rgba(46, 229, 157, 0.4);
+          box-shadow: 0 15px 20px rgba(46, 229, 157, 0.4);
+  color: white;
+  -webkit-transform: translateY(-7px);
+          transform: translateY(-7px);
+}
+
+/*rita*s*/
+/* line 134, main.scss */
+.right {
+  color: green;
+  font-weight: bolder;
+  background: #cfc;
+}
+
+/* line 140, main.scss */
+.wrong {
+  background: #fcc;
+}
+
+/* line 144, main.scss */
+.green {
+  font-family: monospace;
+  font-weight: bold;
+  color: green;
+  font-size: 1.2em;
+}
+
+/* line 151, main.scss */
+.blue {
+  font-family: monospace;
+  font-weight: bold;
+  color: blue;
+  font-size: 1.2em;
+}
+
+/* line 158, main.scss */
+.red {
+  color: red;
+  font-weight: bold;
+}
+
+/* line 163, main.scss */
+.redp {
+  padding: 5px 10px 5px 30px;
+  margin: 5px 0 5px 34%;
+  border: 1px dotted rgba(255, 255, 200, 0.5);
+  border-radius: 5px;
+  position: relative;
+  background-color: #fab;
+  background-image: url("images/smal!.png");
+  background-repeat: no-repeat;
+}
+
+/* line 174, main.scss */
+.important {
+  font-weight: bolder;
+}
+
+/* line 178, main.scss */
+.doctype {
+  font-family: monospace;
+  font-weight: bold;
+  color: #00bbdd;
+  font-size: 1.2em;
+}
+
+/*# sourceMappingURL=main.css.map */
