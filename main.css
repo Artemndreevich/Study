@@ -46,18 +46,17 @@ header {
   padding: 0.5vw 1vw;
   margin-right: auto;
   font-weight: bold;
-  background-color: rgba(250, 100, 150, 0.5);
-  -webkit-transition: all 3s;
-  transition: all 3s;
+  background: linear-gradient(to bottom, rgba(250, 100, 150, 0.3) 5%,rgba(250, 100, 150, 0.5) 10%, rgba(250, 100, 150, 0.5) 90%, rgba(250, 100, 150, 0.7) 95%);
+  -webkit-transition: all .8s;
+  transition: all .8s;
 }
 /* line 49, main.scss */
 .mark li a:hover {
   display: inline-block;
   text-decoration: none;
-  padding: 1vw 2vw;
-  background-color: rgba(150, 100, 250, 0.5);
-  -webkit-transition: all .8s;
-  transition: all .8s;
+  padding: 0.5vw 2vw 1.5vw 2vw;
+  background: linear-gradient(to bottom, rgba(150, 100, 250, 0.3) 5%, rgba(150, 100, 250, 0.5) 10%, rgba(150, 100, 250, 0.5) 90%, rgba(150, 100, 250, 0.7) 95%);
+
 }
 
 /* line 60, main.scss */
@@ -70,7 +69,7 @@ header {
   height: 500%;
   margin: 0;
   position: absolute;
-  top: 28.4%;
+  top: 25.4%;
   left: 1%;
 }
 
@@ -82,7 +81,7 @@ header {
   height: 110%;
   margin: 0;
   position: absolute;
-  top: 28.4%;
+  top: 25.4%;
   right: 1%;
 }
 

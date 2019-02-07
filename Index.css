@@ -37,9 +37,9 @@ background-color:white;
     height: 500%;
   margin: 0;
   position: absolute;
-  top: 15.4%;
+  top: 12.4%;
   left:2%;
-    box-shadow: 0 0 20px rgba(0,0,0,.3);
+    box-shadow: 0 0 20px rgba(0,0,0,.2);
 }
 .side{
     border-radius: 5px;
@@ -48,9 +48,9 @@ background-color:white;
   height: 110%;
 margin: 0;
 position: absolute;
-top:15.4%;
+top:12.4%;
 right: 2%;
-box-shadow: 0 0 20px rgba(0,0,0,.3);
+box-shadow: 0 0 20px rgba(0,0,0,.2);
 }
 .citata{
     padding: 5px 10px 5px 30px;
