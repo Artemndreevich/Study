@@ -1,3 +1,7 @@
+body {
+    background-color:    rgba(231, 226, 176, .8);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 .menu{
 	
    z-index: 500;
@@ -32,8 +36,9 @@ background-color:white;
     height: 500%;
   margin: 0;
   position: absolute;
-  top: 28.4%;
+  top: 15.4%;
   left:2%;
+    box-shadow: 0 0 20px rgba(0,0,0,.3);
 }
 .side{
     border-radius: 5px;
@@ -42,11 +47,9 @@ background-color:white;
   height: 110%;
 margin: 0;
 position: absolute;
-top:28.4%;
+top:15.4%;
 right: 2%;
-}
-body{
- background-color:    rgba(0, 255, 255, 0.07);
+box-shadow: 0 0 20px rgba(0,0,0,.3);
 }
 .citata{
     padding: 5px 10px 5px 30px;
