@@ -28,6 +28,13 @@ display: inline;
 text-decoration: none;
 padding: 20px;
 }
+.selected, .mark li a:hover {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.5vw 2vw 1.5vw 2vw;
+    background: linear-gradient(to bottom, rgba(150, 100, 250, 0.3) 5%, rgba(150, 100, 250, 0.5) 10%, rgba(150, 100, 250, 0.5) 90%, rgba(150, 100, 250, 0.7) 95%);
+  
+  }
 .main{
     text-align: justify;
     padding: 1%;
@@ -139,3 +146,10 @@ a:hover#bud {
 	color: #00bbdd;
 	font-size: 1.2em;
 }
+
+
+#hello-div {
+    background: url(images/hello-img.png) no-repeat;
+    width: 100%;
+    height: 100%;
+  }
