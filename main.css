@@ -56,8 +56,8 @@ header {
   text-decoration: none;
   padding: 1vw 2vw;
   background-color: rgba(150, 100, 250, 0.5);
-  -webkit-transition: all 3s;
-  transition: all 3s;
+  -webkit-transition: all .8s;
+  transition: all .8s;
 }
 
 /* line 60, main.scss */
@@ -89,7 +89,7 @@ header {
 /* line 84, main.scss */
 body {
   background-color: white;
-  background-color: rgba(0, 255, 255, 0.7);
+  background-color: rgba(231, 226, 176, .8);
 }
 
 /* line 89, main.scss */
