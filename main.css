@@ -1,3 +1,9 @@
+/* line 84, main.scss */
+body {
+  background-color: white;
+  background-color: rgba(196, 184, 212, 0.8);
+}
+
 /* line 5, main.scss */
 header {
   border-radius: 2px;
@@ -85,11 +91,7 @@ header {
   right: 1%;
 }
 
-/* line 84, main.scss */
-body {
-  background-color: white;
-  background-color: rgba(231, 226, 176, .8);
-}
+
 
 /* line 89, main.scss */
 .citata {
