@@ -1,61 +1,98 @@
 /* line 5, main.scss */
+header {
+  border-radius: 2px;
+  height: 100px;
+  width: 98%;
+  position: absolute;
+  left: 1%;
+  top: 7%;
+  background-color: white;
+}
+
+/* line 15, main.scss */
 .menu {
   border-radius: 2px;
   z-index: 5;
-  width: 96%;
+  width: 98%;
   background-color: white;
   margin: 0;
+  padding: 0;
   position: fixed;
-  top: 1%;
-  left: 2%;
-  right: 4%;
+  top: 0;
+  left: 1%;
   -webkit-box-shadow: 5px -5px 30px white;
           box-shadow: 5px -5px 30px white;
+  -webkit-transition: all;
+  transition: all;
+  max-height: 7%;
 }
 
-/* line 18, main.scss */
+/* line 30, main.scss */
+.mark {
+  margin: 0;
+  padding: 0;
+}
+/* line 34, main.scss */
 .mark li {
+  margin: 0;
+  padding: 0;
   display: inline;
 }
-
-/* line 22, main.scss */
+/* line 39, main.scss */
 .mark li a {
+  font-weight: bold;
   text-decoration: none;
+  display: inline-block;
+  padding: 0.5vw 1vw;
+  margin-right: auto;
+  font-weight: bold;
+  background-color: rgba(250, 100, 150, 0.5);
+  -webkit-transition: all 3s;
+  transition: all 3s;
+}
+/* line 49, main.scss */
+.mark li a:hover {
+  display: inline-block;
+  text-decoration: none;
+  padding: 1vw 2vw;
+  background-color: rgba(150, 100, 250, 0.5);
+  -webkit-transition: all 3s;
+  transition: all 3s;
 }
 
-/* line 26, main.scss */
+/* line 60, main.scss */
 .main {
   text-align: justify;
   padding: 1%;
-  border-radius: 5px;
+  border-radius: 2px;
   width: 73%;
   background-color: white;
   height: 500%;
   margin: 0;
   position: absolute;
   top: 28.4%;
-  left: 2%;
+  left: 1%;
 }
 
-/* line 39, main.scss */
+/* line 73, main.scss */
 .side {
-  border-radius: 5px;
-  width: 20%;
+  border-radius: 2px;
+  width: 22%;
   background-color: white;
   height: 110%;
   margin: 0;
   position: absolute;
   top: 28.4%;
-  right: 2%;
+  right: 1%;
 }
 
-/* line 50, main.scss */
+/* line 84, main.scss */
 body {
   background-color: white;
   background-color: rgba(0, 255, 255, 0.7);
 }
 
-/* line 55, main.scss */
+/* line 89, main.scss */
 .citata {
   padding: 5px 10px 5px 30px;
   margin: 10px 40% 10px 0;
@@ -65,7 +102,7 @@ body {
   border-left: 3px solid gold;
 }
 
-/* line 64, main.scss */
+/* line 98, main.scss */
 h1,
 h2,
 h3,
@@ -73,7 +110,7 @@ h4 {
   text-align: center;
 }
 
-/* line 71, main.scss */
+/* line 105, main.scss */
 a#bud {
   text-decoration: none;
   outline: none;
@@ -97,7 +134,7 @@ a#bud {
   transition: 0.3s;
 }
 
-/* line 92, main.scss */
+/* line 126, main.scss */
 a:hover#bud {
   background: #2EE59D;
   -webkit-box-shadow: 0 15px 20px rgba(46, 229, 157, 0.4);
@@ -108,19 +145,19 @@ a:hover#bud {
 }
 
 /*rita*s*/
-/* line 100, main.scss */
+/* line 134, main.scss */
 .right {
   color: green;
   font-weight: bolder;
   background: #cfc;
 }
 
-/* line 106, main.scss */
+/* line 140, main.scss */
 .wrong {
   background: #fcc;
 }
 
-/* line 110, main.scss */
+/* line 144, main.scss */
 .green {
   font-family: monospace;
   font-weight: bold;
@@ -128,7 +165,7 @@ a:hover#bud {
   font-size: 1.2em;
 }
 
-/* line 117, main.scss */
+/* line 151, main.scss */
 .blue {
   font-family: monospace;
   font-weight: bold;
@@ -136,13 +173,13 @@ a:hover#bud {
   font-size: 1.2em;
 }
 
-/* line 124, main.scss */
+/* line 158, main.scss */
 .red {
   color: red;
   font-weight: bold;
 }
 
-/* line 129, main.scss */
+/* line 163, main.scss */
 .redp {
   padding: 5px 10px 5px 30px;
   margin: 5px 0 5px 34%;
@@ -154,12 +191,12 @@ a:hover#bud {
   background-repeat: no-repeat;
 }
 
-/* line 140, main.scss */
+/* line 174, main.scss */
 .important {
   font-weight: bolder;
 }
 
-/* line 144, main.scss */
+/* line 178, main.scss */
 .doctype {
   font-family: monospace;
   font-weight: bold;

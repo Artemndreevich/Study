@@ -2,49 +2,83 @@
   border-radius: 2px;
 }
 
+header {
+  @include for_main;
+  height: 100px;
+  width: 98%;
+  position: absolute;
+  left: 1%;
+  top: 7%;
+  background-color: white;
+}
+
 .menu {
-  @include  for_main;
+  @include for_main;
   z-index: 5;
-  width: 96%;
+  width: 98%;
   background-color: white;
   margin: 0;
+  padding: 0;
   position: fixed;
-  top: 1%;
-  left: 2%;
-  right: 4%;
+  top: 0;
+  left: 1%;
   box-shadow: 5px -5px 30px white;
+  transition: all;
+  max-height: 7%;
 }
 
-.mark li {
-  display: inline;
-}
+.mark {
+  margin: 0;
+  padding: 0;
 
-.mark li a {
-  text-decoration: none;
+  li {
+    margin: 0;
+    padding: 0;
+    display: inline;
+
+    a {
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+      padding: 0.5vw 1vw;
+      margin-right: auto;
+      font-weight: bold;
+      background-color: rgba(250,100,150,0.5);
+      transition: all 3s;
+
+      &:hover {
+        display: inline-block;
+        text-decoration: none;
+        padding: 1vw 2vw;
+        background-color: rgba(150,100,250,0.5);
+        transition: all 3s;
+      }
+    }
+  }
 }
 
 .main {
   text-align: justify;
   padding: 1%;
-  border-radius: 5px;
+  @include for_main;
   width: 73%;
   background-color: white;
   height: 500%;
   margin: 0;
   position: absolute;
   top: 28.4%;
-  left: 2%;
+  left: 1%;
 }
 
 .side {
-  border-radius: 5px;
-  width: 20%;
+  @include for_main;
+  width: 22%;
   background-color: white;
   height: 110%;
   margin: 0;
   position: absolute;
   top: 28.4%;
-  right: 2%;
+  right: 1%;
 }
 
 body {
