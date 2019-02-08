@@ -165,7 +165,7 @@ a:hover#bud {
     font-size: 1.3em;
     list-style-image: url(images/icon/tag-icon.png);
     list-style-position: inside;
-    line-height: 3em;
+    margin: 2% 0;
 }
 #helper-div{
     background: url(images/html5-logo.png) no-repeat;

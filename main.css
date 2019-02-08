@@ -54,7 +54,7 @@ header {
   padding: 0.5vw 1vw;
   margin-right: auto;
   font-weight: bold;
-  background: white linear-gradient(to bottom, rgba(0, 54, 201, 0.1) 5%,rgba(0, 54, 201, 0.3) 10%, rgba(0, 54, 201, 0.4) 90%, rgba(0, 54, 201, 0.6) 95%);
+  background: white ;
   -webkit-transition: all .8s;
   transition: all .8s;
   color: rgba(0, 14, 141, 0.8);
@@ -64,14 +64,15 @@ header {
   display: inline-block;
   text-decoration: none;
   padding: 0.5vw 2vw 1.5vw 2vw;
-  background: white linear-gradient(to bottom, rgba(0, 44, 126, 0.3) 5%, rgba(0, 44, 126, 0.5) 10%, rgba(0, 44, 126, 0.7) 90%, rgba(0, 44, 126, 0.9) 95%);
+  background: white linear-gradient(to bottom, rgba(0, 44, 126, 0.4) 5%, rgba(0, 44, 126, 0.5) 10%, rgba(0, 44, 126, 0.7) 90%, rgba(0, 44, 126, 0.8) 95%);
   color: rgba(255, 255, 255, 1)
 }
 .select {
   display: inline-block;
   text-decoration: none;
   padding: 0.5vw 2vw 1.5vw 2vw;
-  background: linear-gradient(to bottom, rgba(150, 100, 250, 0.3) 5%, rgba(150, 100, 250, 0.5) 10%, rgba(150, 100, 250, 0.5) 90%, rgba(150, 100, 250, 0.7) 95%);
+  padding-bottom: 1.5vw;
+  background: linear-gradient(to bottom,  rgba(0, 44, 126, 0.3) 5%, rgba(0, 44, 126, 0.5) 10%, rgba(0, 44, 126, 0.7) 90%, rgba(0, 44, 126, 0.9) 95%);
 
 }
 /* line 60, main.scss */
@@ -79,7 +80,7 @@ header {
   text-align: justify;
   padding: 1%;
   border-radius: 2px;
-  width: 73%;
+  width: 96%;
   background-color: white;
   height: 500%;
   margin: 0;
@@ -89,15 +90,15 @@ header {
 }
 
 /* line 73, main.scss */
-.side {
-  border-radius: 2px;
-  width: 22%;
-  background-color: white;
-  height: 110%;
-  margin: 0;
-  position: absolute;
-  top: 25.4%;
-  right: 1%;
+header {
+  background: linear-gradient(to bottom, rgba(0, 44, 126, 0.4), rgba(0, 18, 78, 0.2), rgba(0, 44, 126, 0.4)), url(images/header.png) no-repeat;
+  background-size: 100%;
+  background-position-y: 40%;
+  background-position-x: 50%;
+  line-height: 0.5em;
+  font-size: 2em;
+  color: white;
+
 }
 
 
