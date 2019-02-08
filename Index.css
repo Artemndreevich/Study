@@ -153,3 +153,28 @@ a:hover#bud {
     width: 100%;
     height: 100%;
   }
+#our-reason{
+    color: black;
+    padding: 2% 2%;
+}
+#our-reason h2{
+    color:white;
+}
+#our-reason ul li{
+    color: white;
+    font-size: 1.3em;
+    list-style-image: url(images/icon/tag-icon.png);
+    list-style-position: inside;
+    line-height: 3em;
+}
+#helper-div{
+    background: url(images/html5-logo.png) no-repeat;
+    background-size: 100% 100%;
+    z-index: -1;
+    width: 98%;
+    height: 700px;
+    position: fixed;
+    left: 1%;
+    top: 5%;
+
+}
