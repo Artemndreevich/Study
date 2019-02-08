@@ -353,7 +353,7 @@ animation: blick-white .4s 1 ease-out reverse;
 .title-li1, .title-li2 {
   font-size: 1.3em;
   line-height: 1.5em;
-  list-style-image: url(images/icon/Arrow-down.png);
+  list-style-type: none;
   color: rgba(0, 44, 126, 0.9);
   font-weight: bold;
   width: 5%;
