@@ -109,5 +109,44 @@ $('#li17').click(function(){
     $('#inf17').fadeIn(300);
     $('#inf2, #inf3, #inf4, #inf5, #inf6, #inf7, #inf8, #inf9, #inf10, #inf11, #inf12, #inf13, #inf14, #inf15, #inf16, #inf1').fadeOut(300);
 });
+/*
+var x=0;
+    $('.title-li1 img').css('transform' , 'rotateX('+ (x) +'deg)');
 
-})
+
+*/
+    var bool = true;
+
+    $('.title-li1').click(retransform);
+    function retransform() {
+
+        if(bool){
+            $('.title-li1 img').css('transform' , 'rotateX(180deg)');
+            bool=false;
+        }else {
+            $('.title-li1 img').css('transform' , 'rotateX(0deg)');
+            bool = true;
+        }
+
+
+
+    }
+
+    var bool2 = true;
+
+    $('.title-li2').click(retransform2);
+    function retransform2() {
+
+        if(bool2){
+            $('.title-li2 img').css('transform' , 'rotate(180deg)');
+            bool2=false;
+        }else {
+            $('.title-li2 img').css('transform' , 'rotate(0deg)');
+            bool2 = true;
+        }
+
+
+
+    }
+});
+
