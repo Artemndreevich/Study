@@ -359,6 +359,11 @@ animation: blick-white .4s 1 ease-out reverse;
   width: 15%;
   transition: all 1s;
 }
+
+.title-li1 img, .title-li2 img {
+
+  transition: all 1s;
+}
 #cours-list {
   width: 48%;
   padding-left: 2%;

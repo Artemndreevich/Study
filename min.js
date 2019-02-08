@@ -138,10 +138,10 @@ var x=0;
     function retransform2() {
 
         if(bool2){
-            $('.title-li2 img').css('transform' , 'rotateX(180deg)');
+            $('.title-li2 img').css('transform' , 'rotate(180deg)');
             bool2=false;
         }else {
-            $('.title-li2 img').css('transform' , 'rotateX(0deg)');
+            $('.title-li2 img').css('transform' , 'rotate(0deg)');
             bool2 = true;
         }
 
