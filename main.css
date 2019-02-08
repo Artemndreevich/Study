@@ -37,9 +37,8 @@ header {
 .mark {
   margin: 0;
   padding: 0;
-  position: absolute;
-  top: 0;
-  right: 0%;
+
+  float: right;
 }
 /* line 34, main.scss */
 .mark li {
