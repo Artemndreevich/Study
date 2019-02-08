@@ -350,8 +350,10 @@ animation: blick-white .4s 1 ease-out reverse;
   line-height: 2em;
   transition: color .3s ease;
   font-weight: normal;
+  cursor: help;
+
 }
-.simple-li:hover {
+.simple-li:active {
   color: rgba(0, 44, 126, 0.9);
   cursor: pointer;
 }
@@ -380,12 +382,15 @@ animation: blick-white .4s 1 ease-out reverse;
   margin: 1%;
   width: 48%;
   padding: 1% 2%;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  background: rgba(0, 127, 201, 0.1);
+  box-shadow: 0 0 60px rgba(0, 127, 201, 0.5);
+
   position: absolute;
   top: 25%;
   right: 2%;
-  border-radius: 2vw;
+  border-radius: 4px;
+
+
+
 }
 .cours-inf h3 {
   font-size: 1.4em;
