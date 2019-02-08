@@ -88,8 +88,12 @@ header {
   top: 25.4%;
   left: 1%;
 }
+.main h1, .main h2 {
+  color: rgba(0, 44, 126, 0.9);
+}
 
 /* line 73, main.scss */
+
 header {
   background: linear-gradient(to bottom, rgba(0, 44, 126, 0.4), rgba(0, 18, 78, 0.2), rgba(0, 44, 126, 0.4)), url(images/header.png) no-repeat;
   background-size: 100%;
@@ -413,6 +417,9 @@ animation: blick-blue .4s 1 ease-out reverse;
   color: rgba(255, 255, 255, 0.8);
   font-size: 0.9em;
   text-align: center;
+}
+header h1::selection, .menu span::selection, #reason img::selection, .title-li1 img::selection, .title-li2 img::selection {
+  background: none;
 }
 @keyframes blick-white {
   from {
