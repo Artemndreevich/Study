@@ -342,13 +342,13 @@ animation: blick-white .4s 1 ease-out reverse;
 }
 .simple-li {
   font-size: 1.3em;
-  line-height: 1.5em;
+  line-height: 2em;
   transition: color .3s ease;
   font-weight: normal;
 }
 .simple-li:hover {
-  font-weight: bold;
   color: rgba(0, 44, 126, 0.9);
+  cursor: pointer;
 }
 .title-li1, .title-li2 {
   font-size: 1.3em;
