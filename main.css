@@ -346,8 +346,10 @@ animation: blick-white .4s 1 ease-out reverse;
   line-height: 2em;
   transition: color .3s ease;
   font-weight: normal;
+  cursor: help;
+
 }
-.simple-li:hover {
+.simple-li:active {
   color: rgba(0, 44, 126, 0.9);
   cursor: pointer;
 }
