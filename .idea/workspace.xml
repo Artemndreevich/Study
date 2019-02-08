@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9019ccf-6b32-42a0-bc50-3f1cc22b715c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Index.css" beforeDir="false" afterPath="$PROJECT_DIR$/Index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/main.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,20 +19,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main-page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="78" column="21" lean-forward="true" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
+            <state relative-caret-position="816">
+              <caret line="208" lean-forward="true" selection-start-line="208" selection-end-line="208" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Index.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="151">
+              <caret line="135" column="40" selection-start-line="135" selection-start-column="40" selection-end-line="135" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1240">
-              <caret line="409" column="45" lean-forward="true" selection-start-line="409" selection-start-column="45" selection-end-line="409" selection-end-column="45" />
+            <state relative-caret-position="372">
+              <caret line="380" column="44" selection-start-line="380" selection-start-column="44" selection-end-line="380" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -47,10 +57,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/main.scss" />
-        <option value="$PROJECT_DIR$/Index.css" />
         <option value="$PROJECT_DIR$/min.js" />
-        <option value="$PROJECT_DIR$/main.css" />
         <option value="$PROJECT_DIR$/main-page.html" />
+        <option value="$PROJECT_DIR$/Index.css" />
+        <option value="$PROJECT_DIR$/main.css" />
       </list>
     </option>
   </component>
@@ -89,7 +99,7 @@
     <property name="last_opened_file_path" value="C:/Program Files/Git/cmd/git.exe" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -118,6 +128,7 @@
       <workItem from="1549648546075" duration="1095000" />
       <workItem from="1549649787510" duration="86000" />
       <workItem from="1549649978358" duration="1580000" />
+      <workItem from="1549651759620" duration="2114000" />
     </task>
     <task id="LOCAL-00001" summary="all">
       <created>1549641294883</created>
@@ -137,7 +148,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14856000" />
+    <option name="totallyTimeSpent" value="16970000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -200,11 +211,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="all" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2108" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-355">
@@ -217,13 +223,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/images/icon/tag-icon.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2769">
-          <caret line="180" lean-forward="true" selection-start-line="180" selection-end-line="180" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.js">
       <provider selected="true" editor-type-id="text-editor" />
@@ -240,17 +239,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.css">
+    <entry file="file://$PROJECT_DIR$/main-page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1240">
-          <caret line="409" column="45" lean-forward="true" selection-start-line="409" selection-start-column="45" selection-end-line="409" selection-end-column="45" />
+        <state relative-caret-position="816">
+          <caret line="208" lean-forward="true" selection-start-line="208" selection-end-line="208" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main-page.html">
+    <entry file="file://$PROJECT_DIR$/Index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="78" column="21" lean-forward="true" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
+        <state relative-caret-position="151">
+          <caret line="135" column="40" selection-start-line="135" selection-start-column="40" selection-end-line="135" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="380" column="44" selection-start-line="380" selection-start-column="44" selection-end-line="380" selection-end-column="44" />
         </state>
       </provider>
     </entry>

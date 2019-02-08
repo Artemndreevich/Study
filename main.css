@@ -378,12 +378,15 @@ animation: blick-white .4s 1 ease-out reverse;
   margin: 1%;
   width: 48%;
   padding: 1% 2%;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  background: rgba(0, 127, 201, 0.1);
+  box-shadow: 0 0 60px rgba(0, 127, 201, 0.5);
+
   position: absolute;
   top: 25%;
   right: 2%;
-  border-radius: 2vw;
+  border-radius: 4px;
+
+
+
 }
 .cours-inf h3 {
   font-size: 1.4em;
