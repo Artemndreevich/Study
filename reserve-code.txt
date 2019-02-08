@@ -1,0 +1,165 @@
+ <p>
+                    Html код складається з тегів, їх атрибутів з їх властивостям та тексту, який відображатимеся у браузері.
+                    <h4>Теги</h4>
+                    Теги візуалізують написаний текст, пояснючи браузеру якй
+                    саме елемент ми створюємо: чи то картинка, чи то абзац, чи то заголовок... Щоб
+                    браузер міг розрізнити теги від звичайного тексту, який відобразиться у браузері, його треба брати у трикутні дужки <em>(Наприклад &#8249 html &#8250) </em>. Більшість тегів потрібно закривати, щоб браузер розумів де
+                    закінчується
+                    данний елемент, для цього у цих же трикутних дужках треба вписати / <em>(Наприклад &#8249/html&#8250)</em>.
+                    <h4>Атрибути</h4>
+                    Атрибути задають властивості тега або їх особливі імена чи класси
+                    для зручнішого стилізування, але їх вказувати не обов'язково.
+                    Атрибути вказуються в одних дужках з його тегом, між тегом та
+                    атрибутом робиться відступ, між атрибутом і його властивістю без
+                    жодних відступів пишеться =, а сама властивість береться в лапки ""
+                    <em>(Наприклад </em><span class="green">&lt;a <span class="blue">href</span>=<span class="red">"cats.html"</span>&gt;</span> де <span class="green">a</span> - це тег, <span class="blue">href</span> - це атрибут, а <span class="green"><span
+                            class="red">"cats.html"</span></span> його властивість<em>)</em>.
+                    Один тег може мати декілька атрибутів одночасно, в такому випадку перед наступним атрибутом і пісдя закриття дужки попереднього має бути відступ <em>(Наприклад </em><span class="green">&lt;a <span class="blue">href</span>=<span
+                            class="red">"cats.html"</span> <span class="blue">title</span>=<span class="red">"Сторінка про котів"</span>&gt;</span><em>)</em>.
+                </p>
+                <h3>Рядкові та блокові елементи</h3>
+                <p>
+                    Теги бувають <span class="important">рядковими</span> або <span class="important">блоковими</span>:
+                    <br><br>
+                    <span class="important">Рядкові елементи</span> в основному виводяться в тексті
+                    абзацу, вонни можуть закриватись <em>(Як, наприклад <span class="green">&lt;em&gt;</span>)</em>
+                    , а можуть і не закриватись <em>(Як, наприклад <span class="green">&lt;img&gt;</span>)</em>.
+                    <br><br>
+                    Перед <span class="important">блоковими елементами</span> та після них завжди є
+                    розрив рядка, тобто блоковий елемент завжди
+                    починається з нового рядка і має відступ від
+                    попереднього елементу і перед наступним. Зазвичай
+                    в блокових елементах знаходиться текст і рякові
+                    елементи. Найпростіший приклад блокових елементів - це <span class="green">&lt;p&gt;</span>.
+                    <br><br>
+                    Також існують елементи які <span class="important">не відносяться ні до
+                        блокових ні до рядкових</span> <em>(наприклад
+                        <span class="green">&lt;br&gt;</span>,
+                        <span class="green">&lt;hr&gt;</span>)</em>,
+                    але їх дуже мало. Перед такими елементами як і
+                    перед блоковими є розрив рядка (розрив рядка є і
+                    після них), але вони не закриваються і не
+                    відображають ніякого тексту.
+                </p>
+                <p>
+                    <table id="tag-types">
+                        <caption>
+                            Для більшої зрозумілості ми підготували вам порівняльну таблицю:
+                        </caption>
+
+                        <tr>
+                            <th></th>
+                            <th>Рядкові елементи</th>
+                            <th>Блокові елементи</th>
+                            <th>&lt;br&gt;, &lt;hr&gt;</th>
+                        </tr>
+
+                        <tr>
+                            <th>Розрив рядка (наступний почнеться з нового рядка)</th>
+                            <td class="wrong">&#10060;</td>
+                            <td class="right">&#10003;</td>
+                            <td class="right">&#10003;</td>
+                        </tr>
+
+                        <tr>
+                            <th>Вiдступи після елементу</th>
+                            <td class="wrong">&#10060;</td>
+                            <td class="right">&#10003;</td>
+                            <td class="right">&#10003;</td>
+                        </tr>
+
+                        <tr>
+                            <th>Може не закрватись</th>
+                            <td class="right">&#10003;</td>
+                            <td class="wrong">&#10060;</td>
+                            <td class="right">&#10003;</td>
+                        </tr>
+
+                        <tr>
+                            <th>Може закрватись</th>
+                            <td class="right">&#10003;</td>
+                            <td class="right">&#10003;</td>
+                            <td class="wrong">&#10060;</td>
+                        </tr>
+
+                        <tr>
+                            <th>Може писатись у блоковому</th>
+                            <td class="right">&#10003;</td>
+                            <td class="right">&#10003;</td>
+                            <td class="right">&#10003;</td>
+                        </tr>
+
+                        <tr>
+                            <th>Може писатись у рядковому</th>
+                            <td class="right">&#10003;</td>
+                            <td class="wrong">&#10060;</td>
+                            <td class="right">&#10003;</td>
+                        </tr>
+
+                    </table>
+                    <div id="code">
+                        <pre class="html4strict" style="font-family:monospace;"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #00bbdd;">&lt;!DOCTYPE html&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">html</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">head</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">title</span>&gt;</span>Заголовок вікна веб-сторінки<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">title</span>&gt;</span></div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">head</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">body</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">h1</span>&gt;</span>Заголовок сторінки<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">h1</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">h2</span>&gt;</span>Підзаголовок сторінки<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">h2</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">p</span>&gt;</span>Тут відображатиметься
+текст сторінки, який
+ви сюди напишите. А поки
+що ми вітаємо тебе з початком
+твого html курсу і бажаємо успіхів!<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">p</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">p</span>&gt;</span>Для написання
+сторінок можеш використовувати
+звичайний блокнот (той що у комп'ютері),
+але не забудь при цьому змінити
+формат з .txt на .html і змінити
+тип файлу з &quot;Текстові документи
+(*.txt)&quot; на &quot;Усі файли&quot;
+<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">p</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">body</span>&gt;</span></div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">html</span>&gt;</span></div></li></ol></pre>
+                        <p class="lable">Вигляд коду сторінки</p>
+                    </div>
+
+                </p>
+            </p>
+
+            <ol>
+                <h3>&lt;!DOCTYPE html&gt; та &lt;html&gt;</h3>
+                <li>Будь яка html сторінка починається з тегу <span class="doctype">&lt;!DOCTYPE html&gt;</span> та <span class="green">&lt;html&gt;</span>
+                    , які дають браузеру зрозуміти, що
+                    це не просто текстовий файл, а саме файл html, а <span class="doctype">&lt;!DOCTYPE html&gt;</span> що це саме HTML5 (Остання версія HTML на данний момент).
+                    <br>
+                    <div class="citata">
+                        <span class="red">Зверніть увагу!</span> <span class="green">&lt;html&gt;</span> є блоковим елементом, тому його
+                        обов'язково треба закрити укінці сторінки, щоб браузер зрозумів що сторінка закінчилась!
+                    </div>
+                </li>
+                <h3>&lt;head&gt;</h3>
+                <li>Тег <span class="green">&lt;head&gt;</span> вміщує у собі елементи які не відображаються на сторінці (за виключенням <span class="green">&lt;title&gt;</span>), але
+                    допомагають браузеру опрацьовувати дані. Він є блоковим тегом, а отже закривається після написання останнього елементу контейнеру <span class="green">&lt;head&gt;</span>
+                    і перед тим як відкрити <span class="green">&lt;body&gt;</span>
+                    <h4>&lt;title&gt;</h4>
+                    На цьому уроці ми знайомимось поки що лише з одним тегом, який пишеться в <span class="green">&lt;head&gt;</span>, це - <span class="green">&lt;title&gt;</span>.
+                    Він є блоковим едементом, а отже вкінці тексту він закривається. Текст, розміщенний у <span class="green">&lt;title&gt;</span> відображається вгорі браузера, як назва
+                    вкладки (назва сторінки).
+                </li>
+                <h3>&lt;body&gt;</h3>
+                <li>У тезі <span class="green">&lt;body&gt;</span> пишуться всі елементи, які відображаються на сторінці. <span class="green">&lt;body&gt;</span> блоковий елемент, він закривається укінці сторінки перед тим як закрити <span class="green">&lt;html&gt;</span>
+                    <br>
+                    Зараз ми розглянемо 2 <span class="important">блокові</span> теги, що пишуться у <span class="green">&lt;body&gt;</span>, а саме <span class="green">&lt;h1&gt;</span> та <span class="green">&lt;p&gt;</span>.
+                    <h4>&lt;h1&gt;</h4>
+                    <span class="green">&lt;h1&gt;</span> -
+                    заголовок першого рівня. Всього існує 6 рівнів
+                    заголовків, кожен з яких нумерується цифрою
+                    від 1 до 6. Відповідно найбільший за розміром
+                    - <span class="green">&lt;h1&gt;</span>, а
+                    найменший - <span class="green">&lt;h6&gt;</span>. Але найчастіше використовуються заголовки першого-третього рівнів.
+                    <em>(Можете поексперементувати з заголовками різних рівнів)</em>
+                    <h4>&lt;p&gt;</h4>
+                    <span class="green">&lt;p&gt;</span> - абзац.
+                    У цьому тезі пишуть текст, який
+                    відображатимется в абзаці. Щоб зробити новий
+                    абзац, треба закрити попередній та відкрити
+                    новий. У <span class="green">&lt;p&gt;</span>
+                    часто вставляють рядкові блоки, такі як
+                    <span class="green">&lt;img&gt;</span>,
+                    <span class="green">&lt;em&gt;</span>,
+                    <span class="green">&lt;a&gt;</span> про які ви
+                    докладніше дізнаєтесь у наступних уроках.
+                </li>
+            </ol>
+
+            <br><br>
