@@ -5,12 +5,12 @@ body {
 }
 .menu{
 	
-   z-index: 500;
+   z-index: 10;
   height: 10%;
   width: 96%;
 background-color: white;
 border-radius: 5px;
-margin:0px;
+margin:0;
 position: fixed;
 top: 1%;
 left: 2%;
@@ -40,7 +40,7 @@ padding: 20px;
     padding: 1%;
     border-radius: 5px;
   width: 73%;
-background-color:white;
+    background-color:white;
     height: 500%;
   margin: 0;
   position: absolute;
