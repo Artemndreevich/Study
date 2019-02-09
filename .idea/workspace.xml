@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9019ccf-6b32-42a0-bc50-3f1cc22b715c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/animated.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/for_all.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/second_lesson.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Index.css" beforeDir="false" afterPath="$PROJECT_DIR$/Index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/main-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/main.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -92,7 +86,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="705" />
     <option name="width" value="666" />
     <option name="height" value="745" />
@@ -154,7 +148,7 @@
       <workItem from="1549649787510" duration="86000" />
       <workItem from="1549649978358" duration="1580000" />
       <workItem from="1549651759620" duration="3581000" />
-      <workItem from="1549696115302" duration="5245000" />
+      <workItem from="1549696115302" duration="5841000" />
     </task>
     <task id="LOCAL-00001" summary="all">
       <created>1549641294883</created>
@@ -174,7 +168,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23682000" />
+    <option name="totallyTimeSpent" value="24278000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -186,7 +180,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.59098226" visible="true" weight="0.18377976" />
