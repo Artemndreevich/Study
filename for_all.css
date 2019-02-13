@@ -80,10 +80,16 @@ header:not(#head) {
     background-color: rgb(225, 252, 255);
     position: relative;
     left: 0;
-    top: 50px;
+    top: 34px;
 }
 .main p, header p{
     padding: 10px;
+
+}
+.main p::selection, header p::selection{
+    padding: 10px;
+    color: #ff0005;
+    background-color: transparent;
 }
 
 .citata{
@@ -198,6 +204,15 @@ a:hover#bud {
     margin: 0 0 0 30%;
 }
 .img_lesson{
-    width: 20%;
-    padding:0 10px 10px 0;
+     width: 8%;
+     padding:0 10px 10px 0;
+ }
+.img_lesson:active{
+    width: 25%;
+    position: fixed;
+    top: 15%;
+    left: 40%;
+    z-index: 2;
+    transition: 1s;
+
 }
