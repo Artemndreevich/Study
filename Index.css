@@ -10,6 +10,8 @@
 }
 #our-reason h2{
     color:white;
+    position: relative;
+    left:15%;
 }
 #our-reason ul li{
     color: white;
@@ -23,7 +25,7 @@
     background-size: 100% 100%;
     z-index: -1;
     width: 100%;
-    height: 700px;
+    height:95%;
     position: fixed;
     left: 0;
     top: 5%;
@@ -62,7 +64,7 @@
 #hello-div h1 {
     font-size: 4em;
     text-align: center;
-    padding-top: 15%;
+    padding-top: calc(30% - 48px);
     z-index: 4;
     line-height: 0.1em;
 }
@@ -72,7 +74,7 @@
 }
 #lesson-button {
     padding: 1vw;
-    background: transparent;
+    background: ;
     border: 5px solid white;
     color: white;
     font-size: 1.1em;
@@ -103,13 +105,14 @@
 }
 #why-html h1 {
     margin-bottom: 6%;
+        text-align: center;
 }
 #reason {
     width: 27%;
     margin: 0 3%;
     display: inline-block;
 }
-#reason img {
+#reason img.icons {
     width: 50px;
     height: 50px;
 }
@@ -125,6 +128,7 @@
 }
 
 #offer h1 {
+    text-align: center;
     font-size: 2.7em;
     margin-top: 0;
 
@@ -202,13 +206,13 @@
 }
 #lesson-button-blue {
     padding: 1vw;
-    background: transparent;
-    border: 3px solid rgba(0, 44, 126, 0.8);
-    color: rgba(0, 44, 126, 0.9);
+    background: rgba(0, 44, 126, 0.8);
+    border: none;
+    color: white;
     font-size: 1.1em;
     margin-left: 1%;
     margin-bottom: 2%;
-    border-radius: 2vw;
+    border-radius: 1.5vw;
     transition: .3s ease-out;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -217,8 +221,16 @@
 
 }
 #lesson-button-blue:hover {
+    padding: 1vw;
     background: rgba(0, 44, 126, 0.9);
+    border: none;
     color: white;
+    font-size: 1.1em;
+    margin-left: 1%;
+    margin-bottom: 2%;
+    border-radius: 1.5vw;
+    transition: .3s ease-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     animation: blick-blue .4s 1 ease-out reverse;
 }
 #foother {
@@ -231,12 +243,21 @@
 
 header#head{
     width: 100%;
-    background-color: rgba(134, 223, 255, 0.33);
+    background: linear-gradient(to bottom, rgba(0, 44, 126, 0.3) 80%, transparent);
     position: relative;
     top: 50px;
     left: 0;
-    padding: 0 0 20px 0;
-    box-shadow: 0 20px 50px rgba(134, 223, 255, 0.33) ;
+    padding: 0 0 60px 0;
+
 
     z-index: 2;
 }
+.new_file {
+margin-bottom: 20%;
+}
+.new_file img {
+     width: 100%;
+     height: auto;
+     padding: 5% 0;
+     margin-bottom: 10%;
+ }
