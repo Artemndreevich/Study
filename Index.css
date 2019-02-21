@@ -253,11 +253,27 @@ header#head{
     z-index: 2;
 }
 .new_file {
-margin-bottom: 20%;
+margin: 10% 0;
+
 }
 .new_file img {
      width: 100%;
      height: auto;
-     padding: 5% 0;
-     margin-bottom: 10%;
+     padding: 8% 0;
+     margin: 5% 0 10% 0;
+     transition: all .3s ease-out;
  }
+
+#reason2 {
+    width: 45%;
+    margin: 0 5%;
+    display: inline-block;
+}
+#reason2 img {
+    width: 105%;
+}
+
+.way-to-save img:active {
+transform: scale3d(1.6, 1.6, 5);
+
+}
