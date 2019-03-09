@@ -4,7 +4,6 @@ $(document).ready(function() {
     $('.hidden-list2').hide();
     $('#inf1').hide();
     $('#inf2').hide();
-    $('#inf2.2').hide();
     $('#inf3').hide();
     $('#inf4').hide();
     $('#inf5').hide();
@@ -20,7 +19,14 @@ $(document).ready(function() {
     $('#inf15').hide();
     $('#inf16').hide();
     $('#inf17').hide();
-
+    $('#block1_2').hide();
+    $('#repeat_plz').hide();
+    $('#block1_3').hide();
+    $('#confused1').hide();
+    $('#block1_3_2').hide();
+    $('#good').hide();
+    $('#block1_3_3').hide();
+    $('.homework').hide();  
 
 $('#li1').click(function(){
     $('#inf1').show(400);
@@ -31,10 +37,7 @@ $('#li2').click(function(){
     $('#inf2').show(300);
     $('#inf1, #inf2.2, #inf3, #inf4, #inf5, #inf6, #inf7, #inf8, #inf9, #inf10, #inf11, #inf12, #inf13, #inf14, #inf15, #inf16, #inf17').fadeOut(300);
 });
-$('#li2.2').click(function(){
-    $('#inf2.2').show(300);
-    $('#inf1, #inf2, #inf3, #inf4, #inf5, #inf6, #inf7, #inf8, #inf9, #inf10, #inf11, #inf12, #inf13, #inf14, #inf15, #inf16, #inf17').fadeOut(300);
-});
+
 $('#li3').click(function(){
     $('#inf3').show(300);
     $('#inf1, #inf2, #inf2.2, #inf4, #inf5, #inf6, #inf7, #inf8, #inf9, #inf10, #inf11, #inf12, #inf13, #inf14, #inf15, #inf16, #inf17').fadeOut(300);
@@ -98,6 +101,28 @@ $('#li17').click(function(){
     $('#inf17').show(300);
     $('#inf2, #inf2.2, #inf3, #inf4, #inf5, #inf6, #inf7, #inf8, #inf9, #inf10, #inf11, #inf12, #inf13, #inf14, #inf15, #inf16, #inf1').fadeOut(300);
 });
+$('#next1').click(function(){
+    $('#block1_2').show(300);
+    $('#confused').delay(1000);   
+    $('#confused').fadeOut(300);
+    $('#repeat_plz').delay(4000);
+    $('#repeat_plz').fadeIn(300);
+});
+$('#yes').click(function(){
+    $('#block1_3').show(300);
+    $('#repeat_plz').delay(500);
+    $('#repeat_plz').fadeOut(300);
+    $('#confused1').delay(3000);
+    $('#confused1').fadeIn(300);
+    $('#block1_3_2').delay(6000);
+    $('#block1_3_3').delay(6000);
+    $('#block1_3_2').show(300);
+    $('#block1_3_3').show(300);
+    $('#good').delay(14000);
+    $('#hw1').delay(17000);
+    $('#good').show(300);
+    $('#hw1').show(300);
+})
 /*
 var x=0;
     $('.title-li1 img').css('transform' , 'rotateX('+ (x) +'deg)');
