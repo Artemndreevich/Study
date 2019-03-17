@@ -156,7 +156,7 @@ a:hover#bud {
 }
 .light-blue {
     color: rgb(0, 131, 131);
-    font-weight: bold;
+
 }
 .redp {
     padding: 5px 10px 5px 30px;
@@ -175,7 +175,7 @@ a:hover#bud {
 }
 .doctype {
     font-family: monospace;
-    font-weight: bold;
+
     color: #00bbdd;
     font-size: 1.2em;
 }
