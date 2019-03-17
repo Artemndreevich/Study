@@ -86,7 +86,7 @@ header:not(#head) {
     padding: 10px;
 
 }
-.main p::selection, header p::selection{
+.main p::selection, header p::selection,.main p pre::selection{
     padding: 10px;
     color: #ff0005;
     background-color: transparent;
