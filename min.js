@@ -1,5 +1,84 @@
+var lern_mode = false;
 $(document).ready(function() {
 
+    $('#mode1').click(function(){
+        lern_mode = false;
+        $('#mode1').css('background', '#00bbdd');
+        $('#mode1').css('color', 'white');
+        $('#mode1').css('box-shadow', '10px 10px 30px #000000b2');
+
+        $('#mode2').css('background', 'none');
+        $('#mode2').css('color', '#ffffff20');
+        $('#mode2').css('box-shadow', 'none');
+
+        if (lern_mode === false) {
+        
+            $('#block1_2').fadeIn(10);
+            
+            $('#block1_3').fadeIn(10);
+            $('#block1_3_2').fadeIn(10);
+            $('#block1_3_3').fadeIn(10);
+            }
+            $('.mode-window').delay(200);
+        $('.mode-window').fadeOut(100);
+        $('#all').css('filter', 'blur(0)');
+    });
+    $('#mode2').click(function(){
+        lern_mode = true;
+        $('#mode2').css('background', '#00bbdd');
+        $('#mode2').css('color', 'white');
+        $('#mode2').css('box-shadow', '10px 10px 30px #000000b2');
+
+        $('#mode1').css('background', 'none');
+        $('#mode1').css('color', '#ffffff20');
+        $('#mode1').css('box-shadow', 'none');
+
+        if (lern_mode === true) {
+            $('#confused').show();
+            $('#block1_2').hide();
+            $('#repeat_plz').hide();
+            $('#block1_3').hide();
+            $('#confused1').hide();
+            $('#block1_3_2').hide();
+            $('#good').hide();
+            $('#block1_3_3').hide();
+            $('.homework').hide();
+            $('#next1').click(function(){
+                $('#block1_2').show(300);
+                $('#confused').delay(1000);   
+                $('#confused').fadeOut(300);
+                $('#repeat_plz').delay(4000);
+                $('#repeat_plz').fadeIn(300);
+            });
+            $('#yes').click(function(){
+                $('#block1_3').show(300);
+                $('#repeat_plz').delay(500);
+                $('#repeat_plz').fadeOut(300);
+                $('#confused1').delay(3000);
+                $('#confused1').fadeIn(300);
+                $('#block1_3_2').delay(6000);
+                $('#block1_3_3').delay(6000);
+                $('#block1_3_2').show(300);
+                $('#block1_3_3').show(300);
+                $('#good').delay(14000);
+                $('#hw1').delay(17000);
+                $('#good').show(300);
+                $('#hw1').show(300);
+            }) 
+            $('.lesson-block p').css('width', '78%');
+            $('.lesson-block h3').css('width', '78%');
+            }
+            $('.mode-window').delay(300);
+            $('.mode-window').fadeOut(100);
+        $('#all').css('filter', 'blur(0)');
+    });
+
+    $('#start-less').click(function(){
+        
+    })
+
+
+    $('.htmlboy').hide();
     $('.hidden-list1').hide();
     $('.hidden-list2').hide();
     $('#inf1').hide();
@@ -20,14 +99,7 @@ $(document).ready(function() {
     $('#inf15').hide();
     $('#inf16').hide();
     $('#inf17').hide();
-    $('#block1_2').hide();
-    $('#repeat_plz').hide();
-    $('#block1_3').hide();
-    $('#confused1').hide();
-    $('#block1_3_2').hide();
-    $('#good').hide();
-    $('#block1_3_3').hide();
-    $('.homework').hide();  
+      
 
 $('#li1').click(function(){
     $('#inf1').show(400);
@@ -205,5 +277,7 @@ var x=0;
 
 
     }
+
+    
 });
 

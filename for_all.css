@@ -256,7 +256,7 @@ div::selection ,p::selection,h1::selection,h2::selection,li::selection, span::se
     color: rgb(58, 42, 9);
 }
 .lesson-block p, .lesson-block h3 {
-    width: 78%;
+    width: 100%;
 }
 .blue-button {
     padding: 1vw;
@@ -299,4 +299,83 @@ div::selection ,p::selection,h1::selection,h2::selection,li::selection, span::se
 .ilustration_left {
     float: left;
     margin-right: 1%;
+}
+.mode-window {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000000b2;
+    display: block;
+    z-index: 1000;
+    
+}
+#all {
+    filter: blur(10px);
+    margin: 0;
+    padding: 0;
+}
+.mode-box {
+    color: white;
+    text-transform: uppercase;
+    font-size: 2em;
+    text-align: center;
+    z-index: 1002;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.slider-box {
+    z-index: 1004;
+    width: 20vw;
+    height: 10vw;
+    transform: translateX(50%);
+    background: #000000b2;
+    border-radius: 5vw;
+    box-shadow: 0px 0px 30px #000000ce;
+    font-size: 0.5em;
+    display: block;
+    position: relative;
+}
+.slider {
+    z-index: 1004;
+    width: 8vw;
+    height: 8vw;
+    border-radius: 4vw;
+    text-align: center;
+    transition: all .15s ease-out;
+    cursor: pointer;
+}
+#mode1:hover, #mode2:hover {
+    opacity: 1;   
+}
+#mode1 {
+    position: absolute;
+    top: 1vw;
+    left: 1vw;
+    background: #00bbdd;
+    color: white;
+    opacity: 0.5;
+    display: block;
+    box-shadow: 10px 10px 30px #000000b2;
+}
+#mode2 {
+    position: absolute;
+    top: 1vw;
+    left: 11vw;
+    background: #00000000;
+    color: #ffffffa0;
+    display: block;
+    opacity: 0.5;
+}
+.slider p {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -25%);
 }
