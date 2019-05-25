@@ -71,7 +71,7 @@
 
         <div class="lesson-block" id="block1_2">
 
-            <img src="images/pizza.jpeg" width="20%" class="ilustration_left">
+            <img src="images/pizza.jpeg" class="ilustration_left">
             <p>
             Представимо що ми робимо сайт піцерії і на головній у нас є текст: 
             <span class="border-exmpl"> На цьому сайті ви можете ознайомитись з нашим меню</span>
@@ -135,7 +135,62 @@
 
 <div class="lesson-block" id="block2_1">
     <h1>Додаткові атрибути</h1>
-    
+    <h2>title</h2>
+    <div  class="htmlboy" id="lets">
+            <img src="images/htmlboy/lets.png" title="Натисніть щоб продовжити">
+    </div>
+<p>Отже, ми навчилися створювати гіперпосилання на інші сторінки за допомогою тега <span class="tag">&lt;a&gt;</span> та атрибуту <span class="blue">href</span>. Але це далеко не все що можна робити з гіперпосиланнями. Як щодо створення спливаючої підказки при наведенні на гіперпосилання?</p>   
+
+<div id="block2_1_1">
+<h3>Для створення спливаючої підказки використовують атрибут <span class="blue">title</span>. Повний вигляд: <span class="blue">title=</span><span class="light-blue">"Текст вспливаючої підказки"</span></h3>
+<p><span class="border-exmpl"> На цьому сайті ви можете ознайомитись з нашим <span class="tag">&lt;a </span><span class="blue">href=</span><span class="light-blue">"menu.html"</span> <span class="blue">title=</span><span class="light-blue">"Детальше про меню"</span><span class="tag">&gt;</span>меню<span class="tag">&lt;/a&gt;</span></span></p>
+<p class="coment">Ось як це має виглядати (наведіть вказівник миші на гіперпосилання щоб побачити вспливаючу підказку):</p>
+<p><span class="border-exmpl">На цьому сайті ви можете ознайомитись з нашим <a href="menu.html" title="Детальше про меню">меню</a></span></p>
+<div class="redp"><span class="red">Зверніть увагу!</span> атрибути можна писати В ДОВІЛЬНОМУ ПОРЯДКУ. Ставити коми між ними НЕ ТРЕБА!
+    <br><span class="border-exmpl"><span class="tag">&lt;a </span><span class="blue">href=</span><span class="light-blue">"menu.html"</span> <span class="blue">title=</span><span class="light-blue">"Детальше про меню"</span><span class="tag">&gt;</span>меню<span class="tag">&lt;/a&gt;</span></span> - <span class="right">правильно</span>
+    <br><span class="border-exmpl"><span class="tag">&lt;a </span><span class="blue">title=</span><span class="light-blue">"Детальше про меню"</span> <span class="blue">href=</span><span class="light-blue">"menu.html"</span><span class="tag">&gt;</span>меню<span class="tag">&lt;/a&gt;</span></span> - <span class="right">правильно</span>
+    <br><span class="border-exmpl"><span class="tag">&lt;a </span><span class="blue">href=</span><span class="light-blue">"menu.html"</span><span class="mistake">,</span> <span class="blue">title=</span><span class="light-blue">"Детальше про меню"</span><span class="tag">&gt;</span>меню<span class="tag">&lt;/a&gt;</span></span> - <span class="red">неправильно</span>
+</div>
+</div><!--закрывает <div id="block2_1_1">--> 
+</div><!--закрывает <div class="lesson-block" id="block2_1">--> 
+
+<div class="lesson-block" id="block2_2">
+        <h2>target</h2>
+        <img class="ilustration_left" src="images/tab-gif.gif">
+<p>Перейдіть за посиланням яке ви створювали на початку уроку. Зверніть увагу, чи з'являється нова вкладка, і ви помітите що сторінка відкривається у тій же вкладці де була минула. 
+    <br>Але це не завжди зручно. Наприклад, коли ми купуємо щось в інтернеті треба заповнити форму, але буває що нам треба повернутися на сторінку з товарами. Якщо форма для оформлення покупки відкривається у тій же вкладці що й товари, то при поверненні на минулу сторінку прийдеться заповнювати форму спочатку. Тож краще було б якщо сторінка з формою відкривалася у новому вікні. 
+    <br>Як це зробити ми зараз розповімо.
+</p>
+<div id="block2_2_1">
+<h3>Атрибут <span class="blue">target</span> відповідає за вкладку в якії має відкритись сторінка (у тій же або новій).</h3>
+<p>Є 3 значення <span class="blue">target</span>: <span class="light-blue">"_blank"</span>, <span class="light-blue">"_self"</span> і <span class="light-blue">"довільне ім'я"</span>
+</p>
+
+<p><span class="blue">target=</span><span class="light-blue">"_self"</span> стоїть по замовчуванню. Він відкриває сторінку у тому ж вікні де було гіперпосилання на неї.</p>
+
+<p>Якщо ви хочете, щоб сторінка відкривалась у новому вікні, викорсистовуйте <span class="blue">target=</span><span class="light-blue">"_blank"</span>. Він створює нове вікно при кожному натисканні на гіперпосилання.</p>
+
+<p><span class="blue">target=</span><span class="light-blue">"ім'я сторінки"</span> також відкриває сторінку у новому вікні, але при наступному натисканні на гіперпосилання ви не створює ще одне вікно як <span class="light-blue">"_blank"</span>, а переносить нас на вже створене.</p>
+<p>Давайте подивимось на прикладі (Щоб подивитись принцип роботи <span class="blue">target</span>, пропоную робити гыперпосилання на пусту сторінку about:blank, але ви можете використовувати будь яку іншу існуючу сторінку):</p>
+
+<table class="compare-table">
+    <tr>
+        <th><span class="light-blue">"_self"</span></th> 
+        <td><span class="border-exmpl"><span class="tag">&lt;a </span><span class="blue">href=</span><span class="light-blue">"about:blank"</span> <span class="blue">target=</span><span class="light-blue">"_self"</span><span class="tag">&gt;</span>гіперпосилання<span class="tag">&lt;/a&gt;</span></span></td> 
+        <td><a href="about:blank" target="_self">гіперпосилання</a></td>
+    </tr>
+    <tr> 
+        <th><span class="light-blue">"_blank"</span></th> 
+        <td><span class="border-exmpl"><span class="tag">&lt;a </span><span class="blue">href=</span><span class="light-blue">"about:blank"</span> <span class="blue">target=</span><span class="light-blue">"_blank"</span><span class="tag">&gt;</span>гіперпосилання<span class="tag">&lt;/a&gt;</span></span></td> 
+        <td><a href="about:blank" target="_blank">гіперпосилання</a></td>
+    </tr>
+    <tr>
+        <th><span class="light-blue">"довільне ім'я"</span></th>
+        <td><span class="border-exmpl"><span class="tag">&lt;a </span><span class="blue">href=</span><span class="light-blue">"about:blank"</span> <span class="blue">target=</span><span class="light-blue">"сторінка"</span><span class="tag">&gt;</span>гіперпосилання<span class="tag">&lt;/a&gt;</span></span></td> 
+        <td><a href="about:blank" target="сторінка">гіперпосилання</a></td>
+    </tr>
+</table>
+</div>
 </div>
 
 </div>

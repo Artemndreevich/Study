@@ -56,14 +56,14 @@
 
                         <tr>
                             <th>Розрив рядка (наступний почнеться з нового рядка)</th>
-                            <td class="wrong">&#10060;</td>
+                            <td class="red">&#10060;</td>
                             <td class="right">&#10003;</td>
                             <td class="right">&#10003;</td>
                         </tr>
 
                         <tr>
                             <th>Вiдступи після елементу</th>
-                            <td class="wrong">&#10060;</td>
+                            <td class="red">&#10060;</td>
                             <td class="right">&#10003;</td>
                             <td class="right">&#10003;</td>
                         </tr>
@@ -71,7 +71,7 @@
                         <tr>
                             <th>Може не закрватись</th>
                             <td class="right">&#10003;</td>
-                            <td class="wrong">&#10060;</td>
+                            <td class="red">&#10060;</td>
                             <td class="right">&#10003;</td>
                         </tr>
 
@@ -79,7 +79,7 @@
                             <th>Може закрватись</th>
                             <td class="right">&#10003;</td>
                             <td class="right">&#10003;</td>
-                            <td class="wrong">&#10060;</td>
+                            <td class="red">&#10060;</td>
                         </tr>
 
                         <tr>
@@ -92,7 +92,7 @@
                         <tr>
                             <th>Може писатись у рядковому</th>
                             <td class="right">&#10003;</td>
-                            <td class="wrong">&#10060;</td>
+                            <td class="red">&#10060;</td>
                             <td class="right">&#10003;</td>
                         </tr>
 
