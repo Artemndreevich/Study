@@ -187,6 +187,7 @@ h1:not(.main h1),h2:not(.main h2),h3,h4{
     list-style-image: url(images/icon/sm_5afb099bcc4fd.jpg);
     margin: 0 0 0 30%;
 }
+
 .new_file img {
      width: 100%;
      height: auto;
@@ -200,6 +201,7 @@ div::selection ,p::selection,h1::selection,h2::selection,li::selection, span::se
     float: right;
     width: 20%;
     margin-left: 1%;
+    cursor: pointer;
 }
 .htmlboy p {
     width: 90%;
@@ -210,6 +212,11 @@ div::selection ,p::selection,h1::selection,h2::selection,li::selection, span::se
     height: 220px;
     width: auto;
 
+}
+#confused {
+position: absolute;
+top: 80px;
+right: 20px;
 }
 .lesson-block {
     margin: 2%;
@@ -362,16 +369,49 @@ div::selection ,p::selection,h1::selection,h2::selection,li::selection, span::se
     left: 50%;
     transform: translate(-50%, -25%);
 }
-#lets {
-    cursor: pointer;
+table {
+    border-collapse: collapse;
+}
+th, td {
+    align: center;
+    padding: 10px;
+    border: 1px solid white;
 }
 .compare-table {
     border: solid 2px rgba(0, 44, 126, 0.7);
-    border-collapse: collapse;
     background: linear-gradient(to bottom right,#00bbdd20, rgba(19, 0, 126, 0.1));
 }
 .compare-table td, .compare-table th {
     border: solid 1px rgba(0, 44, 126, 0.7);
-    align: center;
+}
+#chat {
+    float: right;
+    width: calc(22% - 20px);
+    background: rgb(165, 173, 236);
     padding: 10px;
+    position: sticky;
+    right: 0;
+    top: 0;
+    z-index: 10;
+}
+#bad-good-table {
+    color: white;
+    text-align: center;
+    border: 1px black solid;
+}
+.right-table {
+    background: rgba(0, 165, 22, 0.8);
+    color: rgb(0, 63, 16);
+}
+th.right-table {
+    background: rgb(0, 63, 16);  
+    color: white;
+}
+.wrong-table {
+    background: rgba(165, 0, 0, 0.8);
+    color: rgb(63, 0, 0);
+}
+th.wrong-table {
+    background: rgb(63, 0, 0);
+    color: white;
 }
