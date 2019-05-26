@@ -415,3 +415,9 @@ th.wrong-table {
     background: rgb(63, 0, 0);
     color: white;
 }
+.htmlboy input {
+    cursor: pointer;
+}
+#confused img, #confused p, #repeat_plz img, #repeat_plz p {
+    cursor: auto;
+}

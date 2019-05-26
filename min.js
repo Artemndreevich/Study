@@ -37,10 +37,7 @@ $(document).ready(function() {
 
         if (lern_mode === true) {
             $('#confused').fadeIn();
-            $('#lets').hide();
             $('#ne_tomi').hide();
-            $('#hard').hide();
-            $('#understood').hide();
             $('#block1_2').hide();
             $('#repeat_plz').hide();
             $('#block1_3').hide();
@@ -91,14 +88,17 @@ $(document).ready(function() {
                 $('#block2_1_1').fadeIn(300);
                 $('#understood').delay(8000);
                 $('#understood').fadeIn(300);
+                
                 $('#lets').delay(400);
-                $('#lets').fadeOut(200);   
+                $('#lets').fadeOut(200); 
+                  
             });
             $('#understood').click(function(){
                 $('#block2_2').fadeIn(300);
                 $('#ne_tomi').delay(5000);
                 $('#ne_tomi').fadeIn(300); 
-            })
+            });
+            
             $('#good').click(function(){
                 $('#good').delay(400);
                 $('#good').fadeOut(200);
@@ -107,18 +107,17 @@ $(document).ready(function() {
                 $('#confused1').delay(400);
                 $('#confused1').fadeOut(200);
             });
-            $('#repeat_plz').click(function(){
-                $('#repeat_plz').delay(400);
-                $('#repeat_plz').fadeOut(200);
-            });
             $('#understood').click(function(){
                 $('#understood').delay(400);
                 $('#understood').fadeOut(200);
             });
+            
             $('#ne_tomi').click(function(){
                 $('#block2_2_1').fadeIn(300);
+                
                 $('#ne_tomi').delay(500);
                 $('#ne_tomi').fadeOut(200);
+                
                 $('#hard').delay(7000);
                 $('#hard').fadeIn(300);
                 $('#block2_2_2').delay(14000);
@@ -132,6 +131,7 @@ $(document).ready(function() {
                 $('#getit').delay(29000);
                 $('#getit').fadeIn(300);
             });
+            
             $('#hard').click(function(){
                 $('#hard').delay(500);
                 $('#hard').fadeOut(200);  
@@ -140,10 +140,13 @@ $(document).ready(function() {
                 $('#bl3_mem').delay(400);
                 $('#bl3_mem').fadeOut(200);
             });
+            
             $('#getit').click(function(){
                 $('#block3_3').fadeIn(300);
+                
                 $('#getit').delay(400);
                 $('#getit').fadeOut(200); 
+                
             });
             $('.lesson-block p').css('width', '78%');
             $('.lesson-block h3').css('width', '78%');
