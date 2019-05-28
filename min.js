@@ -295,6 +295,7 @@ var x=0;
     $('#opener_li2').click(function(){
         if (bool_op2===true) {
             $('.hidden-list2').fadeIn(400);
+            $('#inf').hide();
             bool_op2 = false;
         }
         else {
