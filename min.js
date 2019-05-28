@@ -182,7 +182,10 @@ $(document).ready(function() {
     $('#inf15').hide();
     $('#inf16').hide();
     $('#inf17').hide();
-      
+    var bool=true;
+    var bool2=true;
+    var bool_op=true;
+    var bool_op2=true;
 
 $('#li1').click(function(){
     $('#inf1').show(400);
@@ -274,65 +277,57 @@ var x=0;
 
 
 
-    $('.title-li1').click(function(){
-        $('.hidden-list1').fadeIn(400);
+    $('#opener_li1').click(function(){
+        if (bool_op===true) {
+            $('.hidden-list1').fadeIn(400);
         $('#inf').hide();
-    });
-    $('.title-li1').mouseover(function(){
-        $('.hidden-list1').fadeOut(400);
+        bool_op = false;
+        }
+        else {
+            $('.hidden-list1').fadeOut(400);
         $('#inf1, #inf2, #inf3, #inf4, #inf5, #inf6, #inf7, #inf8, #inf9').fadeOut(300);
         $('.title-li1 img').css('transform' , 'rotate(0deg)');
-        bool = true;
+        bool_op = true;
+        }
+        
+    });
 
-    });
-    $('.title-li2').click(function(){
-        $('.hidden-list2').fadeIn(400);
-    });
-    $('.title-li2').mouseover(function(){
-        $('.hidden-list2').fadeOut(400);
+    $('#opener_li2').click(function(){
+        if (bool_op2===true) {
+            $('.hidden-list2').fadeIn(400);
+            bool_op2 = false;
+        }
+        else {
+            $('.hidden-list2').fadeOut(400);
         $('#inf10, #inf11, #inf12, #inf13, #inf14, #inf15, #inf16, #inf17').fadeOut(300);
         $('.title-li2 img').css('transform' , 'rotate(0deg)');
-        bool2 = true;
-    })
+        bool_op2 = true;
+        }
+    });
 
-
-
-
-
-
-
-
-
-
-
-    var bool = true;
-
-    $('.title-li1').click(retransform);
+    $('#opener_li1').click(retransform);
     function retransform() {
 
         if(bool){
-            $('.title-li1 img').css('transform' , 'rotateX(180deg)');
+            $('#opener_li1').css('transform' , 'rotate(180deg)');
             bool=false;
         }else {
-            $('.title-li1 img').css('transform' , 'rotateX(0deg)');
+            $('#opener_li1').css('transform' , 'rotate(0deg)');
             bool = true;
         }
 
 
 
     }
-
-    var bool2 = true;
-
-    $('.title-li2').click(retransform2);
+    $('#opener_li2').click(retransform2);
 
     function retransform2() {
 
         if(bool2){
-            $('.title-li2 img').css('transform' , 'rotate(180deg)');
+            $('#opener_li2').css('transform' , 'rotate(180deg)');
             bool2=false;
         }else {
-            $('.title-li2 img').css('transform' , 'rotate(0deg)');
+            $('#opener_li2').css('transform' , 'rotate(0deg)');
             bool2 = true;
         }
 

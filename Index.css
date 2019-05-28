@@ -174,11 +174,12 @@
     font-weight: bold;
     width: 15%;
     transition: all 1s;
+
 }
 
 .title-li1 img, .title-li2 img {
-
-    transition: all 1s;
+    cursor: pointer;
+    transition: all .7s;
 }
 #cours-list {
     width: 48%;
@@ -193,8 +194,8 @@
     padding: 1% 2%;
     box-shadow: 0 0 60px rgba(0, 127, 201, 0.5);
 
-    position: absolute;
-    top: 25%;
+    position: sticky;
+    top: 10%;
     right: 2%;
     border-radius: 4px;
 
