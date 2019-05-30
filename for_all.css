@@ -373,7 +373,7 @@ table {
     border-collapse: collapse;
 }
 th, td {
-    align: center;
+
     padding: 10px;
     border: 1px solid white;
 }
