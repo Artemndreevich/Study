@@ -278,3 +278,76 @@ margin: 10% 0;
 transform: scale3d(1.6, 1.6, 5);
 
 }
+#how{
+    position: fixed;
+    bottom:0;
+
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+animation: howani 1s 1 linear ;
+}
+    @keyframes howani {
+        from{
+            bottom:100vh;
+        }
+        25%{
+            bottom:75vh;
+        }
+        50%{
+            bottom:50vh;
+        }
+    to{
+        bottom:0;
+    }
+}
+
+#how h2{
+    padding:0;
+    margin:0;
+    margin-left: 0.5vw;
+}
+#how p{
+    float:left;
+    margin-left: 0.5vw;
+
+}
+#dityi{
+    height:50px;
+    margin-left:30px;
+
+}
+#prof{
+    height:50px;
+    margin-left:30px;
+    position: relative;
+}
+@keyframes dit {
+    from{
+        transform:rotate(0deg);
+    }
+    25%{
+        transform:rotate(25deg);
+
+    }
+    50%{
+        transform:rotate(-25deg);
+
+    }
+    75%{
+        transform:rotate(25deg);
+
+    }
+    to{
+        transform:rotate(0deg);
+
+    }
+}
+@keyframes pro {
+    from,to{
+        top:0;
+    }
+
+    75%{
+        top:-30vh;
+    }
+}

@@ -336,6 +336,25 @@ var x=0;
 
     }
 
-    
+    $("#dityi").mouseover(function () {
+        $("#dityi").css('animation','dit  3s')
+    });
+    //  $("#prof").mouseover().css('animation','pro  3s');
+    $("#prof").mouseover(function () {
+        $("#prof").css('animation','pro  3s')
+    });
+
+                                    
+    $('#dityi').click(function () {
+
+        $("#how").hide(200);
+        $("body").text('вы ne профи');
+    });
+    $("#prof").click(function () {
+
+        $("#how").hide(200);
+        $("body").text('вы профи');
+    });
+
 });
 
