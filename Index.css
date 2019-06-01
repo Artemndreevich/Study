@@ -351,3 +351,43 @@ animation: howani 1s 1 linear ;
         top:-30vh;
     }
 }
+.menu-artem{
+  position: absolute;
+  top:0;
+  left: 0;
+  width:100%;
+  border: 1px solid black;
+}
+.menu-artem ul {
+  margin:0;
+  padding:0;
+  float:right;
+}
+.menu-artem ul li {
+  margin-left: 1vw;
+  padding:0;
+  display: inline-block;
+
+}
+
+.menu-artem ul li a{
+display: block;
+padding:1vw;
+text-decoration: none;
+color:black;
+font-family: 'Comfortaa', cursive;
+transition: 0.6s;
+
+}
+.menu-artem ul li a:hover{
+display: block;
+padding:1vw;
+text-decoration: none;
+color:blue;
+font-family: 'Comfortaa', cursive;
+transition: 0.6s;
+}
+
+.menu-artem span {
+
+}
