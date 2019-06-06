@@ -283,7 +283,7 @@ transform: scale3d(1.6, 1.6, 5);
     bottom:0;
 
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.8);
 animation: howani 1s 1 linear ;
 }
     @keyframes howani {
@@ -356,7 +356,6 @@ animation: howani 1s 1 linear ;
   top:0;
   left: 0;
   width:100%;
-  border: 1px solid black;
 }
 .menu-artem ul {
   margin:0;
