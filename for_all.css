@@ -228,11 +228,10 @@ right: 20px;
     background: url(images/icon/laptop.png) rgba(175, 114, 2, 0.6) no-repeat;
     background-position: 1% 1%;
     background-size: 8%;
-    border: 2px dashed white;   
-    outline: 2px dashed rgba(175, 114, 2, 0.6); 
+ border-radius: 20px;
     padding: 1%;
     padding-left: 8%;
-    width: 68%;
+    width: 68%;   
 
 }
 .homework h3 {
@@ -420,4 +419,19 @@ th.wrong-table {
 }
 #confused img, #confused p, #repeat_plz img, #repeat_plz p {
     cursor: auto;
+}
+.summary {
+    margin: 1%;
+    font-size: 1em;
+ border-radius: 20px;
+    padding: 1%;
+
+    display: inline-block;
+    box-shadow: 0 0 30px rgba(0, 14, 141, 0.8);  
+
+}
+.summary h3 {
+    color: rgb(0, 29, 82);
+    text-align: center;
+    font-size: 1.5em;
 }
