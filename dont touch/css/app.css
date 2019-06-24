@@ -19,7 +19,9 @@
     font-size: 30px
 }
 .img-to-header{
-
+}
+.img-to-header img{
+    width: 100%;
 }
 .header-div div {
    padding:1vw;
