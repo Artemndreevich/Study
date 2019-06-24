@@ -169,13 +169,13 @@ h1:not(.main h1),h2:not(.main h2),h3,h4{
     width: 30%;
     padding:0 10px 10px 0;
 }
-.main h1 {
+.main h3 {
     margin: 0 0 10px 0;
     padding:0;
     text-align: center;
     color:rgba(0, 44, 126, 0.9);
 }
-.main h2{
+.main h4{
     margin: 0 0 10px 0;
     padding:0;
         text-align: center;
