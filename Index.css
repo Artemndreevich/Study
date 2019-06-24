@@ -404,7 +404,7 @@ transition: 0.6s;
 #img_lesson{
     margin-right: 30px;
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 720px) {
    .menu-artem{
        display: none;
    }
@@ -453,8 +453,24 @@ margin:0;
 
 
     }
+    #reason, #reason2 {
+        width: 90%;
+        margin: 5%;
+        font-size: 1.2em;
+
+    }
+    .way-to-save img:active {
+        transform: scale3d(1, 1, 1);
+        
+        }
+    .homework {
+        width: 100%;
+    }
+    .slider-box {
+        width: 40vw;
+    }
   }
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 720px) {
 .tlf-menu,.helpToTlf{
     display: none;
 }
