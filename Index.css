@@ -254,7 +254,6 @@ header#head{
     z-index: 2;
 }
 .new_file {
-margin: 10% 0;
 
 }
 .new_file img {
@@ -432,7 +431,6 @@ transition: 0.6s;
        margin: 0;
        top:-0.5vh;
        left:calc(3vw + 35px);
-       background-color: white;
 
    }
    .helpToTlf{
@@ -492,4 +490,7 @@ text-decoration: none;
 @import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
 .man:hover{
     color: #586391;
+}
+.artemsreason{
+    height: 60vh;
 }
