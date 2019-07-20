@@ -1,7 +1,37 @@
 var lern_mode = false;
+var boll_menu = true;
 $(document).ready(function() {
     $('#chat').hide();
+    //Сори Артем что трогала твоё моб меню, но так будет лучше
+    $('.helpToTlf').hide();
+        
+        $('.tlf-img').click(function(){
+            if (boll_menu === true) {
+        $('.helpToTlf').show(200);
+        boll_menu = false;
+        } else {
+            $('.helpToTlf').hide(200);
+            boll_menu = true;
+        }
+        })
+     //  
 
+
+     $('.dop-inf').hide();   
+     
+   
+     
+        $('#css').mouseover(function(){
+       $('#css-inf').fadeIn(300);
+
+        });
+    
+        $('#css').click(function(){
+            $('#css-inf').fadeOut(300);
+
+        })
+            
+  
     $('#mode1').click(function(){
         lern_mode = false;
         $('#mode1').css('background', '#00bbdd');

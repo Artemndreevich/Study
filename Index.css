@@ -403,8 +403,8 @@ transition: 0.6s;
 #img_lesson{
     margin-right: 30px;
 }
-@media screen and (max-width: 640px) {
-   .menu-artem{
+@media screen and (max-width: 720px) {
+   .menu-artem, .menu{
        display: none;
    }
    .tlf-menu{
@@ -457,16 +457,36 @@ transition: 0.6s;
         font-size: 1.2rem;
 
     }
+    #reason, #reason2 {
+        width: 90%;
+        margin: 5%;
+        font-size: 1.2em;
+
+    }
+    .way-to-save img:active {
+        transform: scale3d(1, 1, 1);
+        
+        }
+    .homework {
+        width: 100%;
+    }
+    .slider-box {
+        width: 40vw;
+    }
   }
-.tlfMenuContainer{
+
+@media screen and (min-width: 720px) {
+.tlf-menu,.helpToTlf{
+
     z-index: 5;
     position: fixed;
     width:50%;
     background-color: white;
     padding-right: 1%;
 }
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 720px) {
 .tlf-menu,.helpToTlf,.tlfMenuContainer{
+
     display: none;
 
 }
