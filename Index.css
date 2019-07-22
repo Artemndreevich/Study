@@ -525,6 +525,6 @@ text-decoration: none;
 .man:hover{
     color: #586391;
 }
-.artemsreason{
-    height: 60vh;
+.artemsreason p{
+    height: 20vh;
 }
