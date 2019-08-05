@@ -4,7 +4,15 @@ body {
     margin: 0;
     padding: 0;
     font-size: 1em;
-    overflow-x: hidden    ;
+    overflow-x: hidden ;
+}
+
+
+body
+{
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 header:not(#head) {
@@ -201,19 +209,21 @@ div::selection ,p::selection,h1::selection,h2::selection,li::selection, span::se
     background :rgba(0, 44, 126, 0.3) ;
 }
 .htmlboy {
-    float: right;
-    width: 20%;
-    margin-left: 1%;
-    cursor: pointer;
+position: fixed;
+bottom:0%;
+right:2%;
+z-index: 100;
+max-height: 98%;
+background-color: rgba(255, 255, 255, 0.4);
+
 }
 .htmlboy p {
     width: 90%;
     font-size: 0.85em;
-}
+ }
 .htmlboy img {
-    float: right;
-    height: 220px;
-    width: auto;
+ width: 60%;
+float: right;
 
 }
 #confused {
@@ -246,25 +256,24 @@ right: 20px;
 }
 .blue-button {
     padding: 1vw;
-    background: rgba(0, 44, 126, 0.8);
-    border: none;
-    color: white;
+    background: none;
+    border: 2px solid rgba(0, 44, 126, 1);
+    color: rgba(0, 44, 126, 1);
     font-size: 1em;
     margin-left: 1%;
     margin-bottom: 2%;
-    border-radius: 1vw;
+    border-radius: 1.5vw;
     transition: .3s ease-out;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 1vw 2vw;
 }
 .blue-button:hover {
 
-    background: rgba(0, 44, 126, 0.9);
-    border: none;
+    background: rgba(0, 44, 126, 1);
+    border: 2px solid rgba(0, 44, 126, 1);
     color: white;
-    margin-left: 1%;
-    margin-bottom: 2%;
-    border-radius: 1.5vw;
+    
+    
     transition: .3s ease-out;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
@@ -304,7 +313,7 @@ right: 20px;
     
 }
 #all {
-    filter: blur(10px);
+ /*   filter: blur(10px);*/
     margin: 0;
     padding: 0;
 }
@@ -319,6 +328,14 @@ right: 20px;
     left: 50%;
     transform: translate(-50%, -50%);
 
+}
+@media screen and (max-width: 720px) {
+  html{
+
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
 }
 .slider-box {
     z-index: 1004;
@@ -432,6 +449,7 @@ th.wrong-table {
     display: block;
     background: rgba(0, 14, 141, 0.4);
     color: rgb(0, 29, 82);
+    overflow-x: scroll;
 }
 .summary h2 {
     color: rgb(0, 29, 82);
@@ -492,4 +510,7 @@ right: 3%;
     position: absolute;
     left: -43px;
     
+}
+.compare-div{
+    overflow-x: scroll;
 }

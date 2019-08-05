@@ -407,7 +407,9 @@ transition: 0.6s;
     margin-right: 30px;
 }
 @media screen and (max-width: 720px) {
-   .menu-artem, .menu{
+
+    
+    .menu-artem, .menu{
        display: none;
    }
    .tlf-menu{
