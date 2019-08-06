@@ -103,7 +103,7 @@
              <div class="row">
 
                  <div class="img-to-header col-12 col-sm-12 col-md-4 col-lg-3  ">
-                     <img src="images/header.jpg" >
+                     <img src="images/id_vs_class.png" >
                  </div>
                  <div class="header-div col-12 col-sm-12 col-md-8 col-lg-9">
                      <div>
@@ -111,7 +111,7 @@
                          <h3> У цьому уроці ви дiзнаєтеся :</h3>
                          <ul id="main-ul">
                              <li> Що таке айді та класи і для чого вони потрібні</li>
-                             <li> Як задати елементу айді та класс</li>
+                             <li> Як задати елементу айді та клас</li>
                              <li> В чому різниця між ними</li>
                              
 
@@ -126,12 +126,80 @@
 
 
     <div class="main">
-
-        <div  class="htmlboy col-6 col-md-4 col-lg-3" >
-           
+<div id="block1" class="lesson-block">
         
-    </div>
     
+<h1>Що таке клас та айді елементу?</h1>
+
+<p>Як ви вже знаєте, в HTML існує безліч різних тегів, кожен з яких виконує свою функцію та створює певний елемент сторінки. Хоч видів тегів існує багато, але деякі ми використовуємо у своїй веб-сторінці декілька, або навіть багато разів. 
+    <br>
+    Візьмемо, наприклад, тег <span class="tag">&lt;p&gt;</span> (з минулих уроків ви знаєте, що він відповідає за створення абзаців). Уявимо що в нас на сторінці є декілька абзаців, але нам треба виділити один з них за допомогою CSS. Якщо ми задамо властивості для <span class="tag">&lt;p&gt;</span>, то зміняться усі абзаци на сторінці, тож було б чудово дати потрібному абзацу або кільком абзацам з якими ми будемо працювати власне ім'я. Саме для цього існують атрибути class та id.</p>
+    <h1>Як присвоїти елементу клас чи айді?</h1>
+    <p>
+            <span class="border-exmpl"><span class="tag">&lt;p <span class="blue">class=</span><span class="light-blue">"name"</span></span><span class="tag">&gt;</span></span>
+            <br>
+            <span class="border-exmpl"><span class="tag">&lt;p <span class="blue">id=</span><span class="light-blue">"name"</span></span><span class="tag">&gt;</span></span>
+    <br>
+        У атрибутів class та id нема якихось конкретних значеннь, ви можете присвоїти їм будь-яке ім'я. Хоча почекайте, не будь-яке. В HTML існує кілька правил за якими треба давати назву класу чи айді (правила однакові для обох). Ми вже розглядали ці правила в уроці 4, але ми вам їх нагадаємо:
+        <br><br>
+            <table id="bad-good-table">
+                    <tr>
+                        <th class="wrong-table">Не можна</th>
+                        <th class="right-table">Можна</th>
+                    </tr>
+                    <tr>
+                        <td class="wrong-table">Кирилицею<br> "основний"</td>
+                        <td class="right-table">Латиницею <br> "main", "osnovniy" </td>
+                    </tr>
+                    <tr>
+                        <td class="wrong-table">Починатись цифрою(ми), або складатись лише з неї(них)<br> "1picture", "25"</td>
+                        <td class="right-table">Містити цифри всередині або вкінці назви<br> "article14", "from1to3"</td>
+                    </tr>
+                    <tr>
+                        <td class="wrong-table">Містити пробіли, коми та крапки<br> "first img", "main.block", "bad,good"</td>
+                        <td class="right-table">Містити знаки "-", "_"<br> "first_img", "main-block"</td>
+                    </tr>
+                </table>
+    </p>
+
+</div>
+
+<div id="block2" class="lesson-block">
+<h1>В чому різниця між класом та айді?</h1>
+<p>Призначення обох атрибутів однакове - задавати елементам додаткове ім'я. Але є невелика різниця. 
+    <table class="invisible-table">
+    <tr>
+        <th class="left-half"><span class="uppercase" id="logo">Class</span></th>
+        <th class="right-half"><span class="uppercase" id="logo">Id</span></th>
+    </tr>
+    <tr>
+        <td class="left-half">
+            <span class="uppercase">Class</span> краще використовувати коли потрібно класифікувати певну <span class="red uppercase">группу елементів</span>, тобто коли на сторінці є <span class="red uppercase">декілька елементів з однаковим ім'ям (класом)</span>. Class використовують, коли однакові CSS властивості треба присвоїти декільком різним елементам (Наприклад, зробити відступи у 20 пікселів зображенням, абзацам, заголовкам), або ж певним однаковим елементам (Наприклад, зробити текст перших трьох абзаців синім, при цьому не змінюючи колір тих, що нижче).        
+        </td>
+        <td class="right-half">
+            <span class="uppercase">Id</span> ж варто використовувати, коли ви задаєте елементу <span class="red uppercase">унікальне ім'я</span>, яке <span class="red uppercase">більше не буде повторюватись на цій сторінці</span>. Це не означає, що задати айді можна лише одиному елементу на сторінці, ні. Айді можна задати і декільком елементам, але в такому випадку їм варто присвоїти різні ім'я
+        </td>
+    </tr>
+  
+</table>
+</p>
+</div>
+<div class="summary" id="">
+        <h2>Підсумуємо:</h2>
+        <p><ul>
+            <li><span class="blue">Class</span> і <span class="blue">id</span> - атрибути які задають елементу додаткове ім'я, для подальших маніпуляцій у CSS. Приклади с уроку:
+                <span class="border-exmpl"><span class="tag">&lt;p <span class="blue">class=</span><span class="light-blue">"name"</span></span><span class="tag">&gt;</span></span>,
+                <span class="border-exmpl"><span class="tag">&lt;p <span class="blue">id=</span><span class="light-blue">"name"</span></span><span class="tag">&gt;</span></span>
+            </li>
+            <li>Будь-якому елементу можна присвоїти класс або айді</li>
+            <li>Атрибутам <span class="blue">сlass</span> і <span class="blue">id</span> можна просвоїти будь-яке значення, яке відповідає правилам синтаксису HTML.</li>
+            
+            <li><span class="blue">Class</span> використовують для присвоєння спільного ім'я кільком елементам на сторінці.
+            </li>
+
+            <li><span class="blue">Id</span> використовують для присвоєння елементу унікального ім'я, яке більше не буде повторюватись.</li>
+        </ul></p>
+        </div>
 
     </div>
     </div>

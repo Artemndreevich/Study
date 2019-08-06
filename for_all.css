@@ -136,10 +136,14 @@ td .tag {
 }
 .blue {
     font-family: monospace;
-
-    color: blue;
     font-size: 1.2em;
+    color: blue;
+
 }
+span.border-exmpl span.blue {
+    font-size: 1em;
+}
+
 .light-blue {
     color: rgb(0, 131, 131);
 
@@ -404,16 +408,7 @@ th, td {
 .compare-table td, .compare-table th {
     border: solid 1px rgba(0, 44, 126, 0.7);
 }
-#chat {
-    float: right;
-    width: calc(22% - 20px);
-    background: rgb(165, 173, 236);
-    padding: 10px;
-    position: sticky;
-    right: 0;
-    top: 0;
-    z-index: 10;
-}
+
 #bad-good-table {
     color: white;
     text-align: center;
@@ -513,4 +508,39 @@ right: 3%;
 }
 .compare-div{
     overflow-x: scroll;
+}
+.uppercase {
+    text-transform: uppercase;
+
+    font-weight: bold;
+}
+table.invisible-table {
+    border-collapse: collapse;
+
+margin-left: auto;
+margin-right: auto;
+    text-align: justify;
+    border: none;
+    background: url(images/vs2.png) no-repeat;
+    background-position: center;
+    background-size: 15%;
+    
+
+}
+table.invisible-table th {
+    font-size: 1.5em;
+
+}
+table.invisible-table th, table.invisible-table td {
+
+
+    vertical-align: middle;
+    border: none;
+
+}
+table.invisible-table .left-half {
+    padding: 2% 25% 0 4%;
+}
+table.invisible-table .right-half {
+    padding: 0% 4% 0 4%;
 }
