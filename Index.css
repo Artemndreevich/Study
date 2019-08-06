@@ -163,11 +163,16 @@ body{
     transition: color .3s ease;
     font-weight: normal;
     cursor: help;
+transition: all .3s ease;
 
 }
 .simple-li:active {
     color: rgba(0, 44, 126, 0.9);
     cursor: pointer;
+}
+.simple-li:hover {
+    text-shadow: 2px 2px 4px rgba(0, 44, 126, 0.5);
+    color: rgba(0, 44, 126, 0.9);
 }
 .title-li1, .title-li2 {
     font-size: 1.3em;
