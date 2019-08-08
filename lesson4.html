@@ -20,6 +20,8 @@
     <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
     <script src="jquery-3.3.1.js"></script>
     <script src="min.js"></script>
+    <link rel="stylesheet" href="input.css">
+
 </head>
 <body>
 
@@ -322,33 +324,84 @@
     </p>
 </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="summary" id="sum_les4">
 <h2>Підсумуємо:</h2>
-<p><ul>
-    <li>Для створення гіперпосилання використовується тег <span class="tag">&lt;a&gt;</span> з атрибутом <span class="blue">href</span>
-    <br>
-    <span class="border-exmpl"> На цьому сайті ви можете ознайомитись з нашим <span class="tag">&lt;a </span><span class="blue">href=</span><span class="light-blue">"menu.html"</span><span class="tag">&gt;</span>меню<span class="tag">&lt;/a&gt;</span></span>
-</li>
-    <li>У тега <span class="tag">&lt;a&gt;</span> є додаткові атрибути, такі як <span class="blue">title</span> i <span class="blue">target</span></li>
-    <li><span class="blue">title</span> створює вспливаючу підказку<br>
-        <span class="border-exmpl"> На цьому сайті ви можете ознайомитись з нашим <span class="tag">&lt;a </span><span class="blue">href=</span><span class="light-blue">"menu.html"</span> <span class="blue">title=</span><span class="light-blue">"Детальше про меню"</span><span class="tag">&gt;</span>меню<span class="tag">&lt;/a&gt;</span></span>
-    </li>
-    <li><span class="blue">target</span> відкриває сторінку у тому ж або новому вікні<br>
-        <span class="border-exmpl"><span class="tag">&lt;a </span><span class="blue">href=</span><span class="light-blue">"about:blank"</span> <span class="blue">target=</span><span class="light-blue">"_self"</span><span class="tag">&gt;</span>гіперпосилання<span class="tag">&lt;/a&gt;</span></span>
-        <br>
-        <span class="border-exmpl"><span class="tag">&lt;a </span><span class="blue">href=</span><span class="light-blue">"about:blank"</span> <span class="blue">target=</span><span class="light-blue">"_blank"</span><span class="tag">&gt;</span>гіперпосилання<span class="tag">&lt;/a&gt;</span></span>
-        <br>
-        <span class="border-exmpl"><span class="tag">&lt;a </span><span class="blue">href=</span><span class="light-blue">"about:blank"</span> <span class="blue">target=</span><span class="light-blue">"сторінка"</span><span class="tag">&gt;</span>гіперпосилання<span class="tag">&lt;/a&gt;</span></span>
-    </li>
-    <li>Можна створювати гіперпосилання не тільки на інші сторінки, але й на елементи тієї ж сторінки. <br>
-                <br>Для цього треба задати елементу айді і вказати його у адресі гіперпосилання
-    <br><span class="border-exmpl"><span class="tag">&lt;h1 </span><span class="blue">id=</span><span class="light-blue">"end-title"</span><span class="tag">&gt;</span>Кінець сторінки<span class="tag">&lt;/h1&gt;</span><br><span class="tag">&lt;a </span><span class="blue">href=</span><span class="light-blue">"index.html#end-title"</span><span class="tag">&gt;</span>На кінець сторінки<span class="tag">&lt;/a&gt;</span></span></li>
-</ul></p>
+<div class="row">
+    <div class="col-sm-12">
+<table>
+    <tr>
+        <td>   Для створення гіперпосилання використовується тег <span class="tag">&lt;a&gt;</span> з атрибутом <span class="blue">href</span> </td>
+        <td>   <span class="border-exmpl"> На цьому сайті ви можете ознайомитись з нашим <span class="tag">&lt;a </span><span class="blue">href=</span><span class="light-blue">"menu.html"</span><span class="tag">&gt;</span>меню<span class="tag">&lt;/a&gt;</span></span>
+        </td>
+    </tr>
+    <tr>
+            <td>  У тега <span class="tag">&lt;a&gt;</span> є додаткові атрибути, такі як  </td>
+            <td>  <span class="blue">title</span> i <span class="blue">target</span>  </td>
+    </tr>
+    <tr>
+            <td>  <span class="blue">title</span> створює вспливаючу підказку  </td>
+            <td>          <span class="border-exmpl"> На цьому сайті ви можете ознайомитись з нашим <span class="tag">&lt;a </span><span class="blue">href=</span><span class="light-blue">"menu.html"</span> <span class="blue">title=</span><span class="light-blue">"Детальше про меню"</span><span class="tag">&gt;</span>меню<span class="tag">&lt;/a&gt;</span></span>
+            </td>
+    </tr>
+    <tr>
+            <td>  span class="blue">target</span> відкриває сторінку у тому ж або новому вікні  </td>
+            <td>   <span class="border-exmpl"><span class="tag">&lt;a </span><span class="blue">href=</span><span class="light-blue">"about:blank"</span> <span class="blue">target=</span><span class="light-blue">"_self"</span><span class="tag">&gt;</span>гіперпосилання<span class="tag">&lt;/a&gt;</span></span>
+                <br>
+                <span class="border-exmpl"><span class="tag">&lt;a </span><span class="blue">href=</span><span class="light-blue">"about:blank"</span> <span class="blue">target=</span><span class="light-blue">"_blank"</span><span class="tag">&gt;</span>гіперпосилання<span class="tag">&lt;/a&gt;</span></span>
+                <br>
+                <span class="border-exmpl"><span class="tag">&lt;a </span><span class="blue">href=</span><span class="light-blue">"about:blank"</span> <span class="blue">target=</span><span class="light-blue">"сторінка"</span><span class="tag">&gt;</span>гіперпосилання<span class="tag">&lt;/a&gt;</span></span>
+             </td>
+    </tr>
+    <tr>
+            <td>  Можна створювати гіперпосилання не тільки на інші сторінки, але й на елементи тієї ж сторінки.  </td>
+            <td>  Для цього треба задати елементу айді і вказати його у адресі гіперпосилання
+                    <br><span class="border-exmpl"><span class="tag">&lt;h1 </span><span class="blue">id=</span><span class="light-blue">"end-title"</span><span class="tag">&gt;</span>Кінець сторінки<span class="tag">&lt;/h1&gt;</span><br><span class="tag">&lt;a </span><span class="blue">href=</span><span class="light-blue">"index.html#end-title"</span><span class="tag">&gt;</span>На кінець сторінки<span class="tag">&lt;/a&gt;</span></span>  </td>
+    </tr>
+</table>
 </div>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </div>
 </div>
-    <script src=dont%20touch/js/popper.min.js" ></script>
+    <script src="dont%20touch/js/popper.min.js" ></script>
     <script src="dont%20touch/js/bootstrap.min.js" ></script>
     <script>
     $(document).ready(function(){
