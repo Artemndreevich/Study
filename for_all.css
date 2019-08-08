@@ -265,20 +265,23 @@ div::selection, p::selection, h1::selection, h2::selection, li::selection, span:
 }
 
 .homework {
-    margin: 1%;
-    font-size: 1em;
+
     background: url(images/icon/laptop.png) rgba(175, 114, 2, 0.6) no-repeat;
-    background-position: 1% 1%;
-    background-size: 8%;
-    border-radius: 20px;
-    padding: 1%;
-    padding-left: 8%;
-    width: 68%;
+    background-position: 8px;
+    background-size: 130px;
+    padding: 10px 10px 5px 150px;
+    margin: 5px 0px;
+    border-radius: 5px;
+    position: relative;
+    background-repeat: no-repeat;
+    display: inline-block;
 
 }
 
 .homework h3 {
     color: rgb(58, 42, 9);
+    text-align: left;
+    margin-left: 10px;
 }
 
 .lesson-block p, .lesson-block h3 {
