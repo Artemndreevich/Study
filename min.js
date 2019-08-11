@@ -1,6 +1,21 @@
-var lern_mode = false;
+﻿var lern_mode = false;
 $(document).ready(function() {
     $('#chat').hide();
+
+    //Сори Артем что трогала твоё моб меню, но так будет лучше
+    //ПРОСТО НАПИШИ,ТАК БУДЕТ ЛЕГЧЕ
+    /*
+    $('.helpToTlf').hide();
+        
+        $('#all').click(function(){
+            
+        $('.helpToTlf').toggle(200);
+       
+        });
+     //  
+     //
+*/
+
 
     $('#mode1').click(function(){
         lern_mode = false;
@@ -161,7 +176,6 @@ $(document).ready(function() {
 
 
 
-    $('.htmlboy').hide();
     $('.hidden-list1').hide();
     $('.hidden-list2').hide();
     $('#inf1').hide();
@@ -345,154 +359,7 @@ var x=0;
     });
 
                                     
-    $('#dityi').click(function () {
-
-        $("#how").hide(200);
-       $('html').html(`<head>
-    <title>Створення HTML документу, базові теги | Урок 2</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="Index.css">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="for_all.css">
-    <link rel="stylesheet" href="animated.css">
-    <link rel="shortcut icon" href="images/icon/favicon.png" type="image/png">
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
-
-    <script src="jquery-3.3.1.js"></script>
-    <script src="min.js"></script>
-</head>
-<body>
-<div class="menu-artem">
-  <span id="logo">LEARN&CODE</span>
-      <ul >
-          <li> <a href="main-page.html" >Головна</a></li>
-          <li> <a href="#" > aaaaa</a></li>
-          <li> <a href="#" > aaaaa</a></li>
-          <li> <a href="#"> aaaaa</a></li>
-      </ul>
-
-
-</div>
-
-<!--
-<div class="menu"> <span id="logo">LEARN&CODE</span>
-    <ul class="mark">
-        <li> <a href="main-page.html" class="select">Головна</a></li>
-        <li> <a href="#" class="unselect"> aaaaa</a></li>
-        <li> <a href="#" class="unselect"> aaaaa</a></li>
-        <li> <a href="#" class="unselect"> aaaaa</a></li>
-    </ul>
-</div>-->
-<header id="head">
-    <p>
-        <img src="images/header.jpg" id="img_lesson">
-    <h1> Як створити новый файл</h1>
-    <h3> У цьому уроці ви дiзнаєтеся :</h3>
-    <ul id="main-ul">
-        <li> Як створювати новий файл</li>
-        <li> Як редагувати розширення файлу</li>
-        <li> Як завантажувати программи</li>
-        <li> Як відкривати файл за допомогою різних програм</li>
-
-    </ul>
-    </p>
-
-</header>
-<div class="main">
-<p>
-<h1>Створюємо файл у Блокноті</h1>
-    <div class="way-to-save">
-        <h2>Спосіб №1</h2>
-
-        <div id='reason' class="new_file">
-                1. Відкрийте программу "Блокнот" (Її ви можете знайти у розділі "Стандартні программи"). Тут ви будете писати ваш код.
-
-            <img src="images/save1-exmpl6.png" title="Натисніть і затримуйте зображення, щоб збільшити">
-
-         </div>
-
-            <div id='reason' class="new_file">
-                    2. Коли роботу закінчено, натисніть на "Файл" у лівому верхньому кутку і виберить "Зберегти як".
-
-                    <img src="images/save1-exmpl5.png" class="new_file2" title="Натисніть і затримуйте зображення, щоб збільшити">
-           </div>
-
-
-        <div id='reason' class="new_file">
-                3. У вас має з'явитись вікно збереження. <span class="red">Зверніть увагу!</span> По замовчуванню розширення файлу .txt, а нам потрібно .html, тому перейменуймо, наприклад, на index.html
-            <img src="images/save1-exmpl4.png" title="Натисніть і затримуйте зображення, щоб збільшити">
-
-
-         </div>
-        <div id='reason'  class="new_file">
-                4. Щоб файл зберігся у під назвою index з розширенням .html, а не index.html з розширенням .txt, у "Тип файлу" виберіть "Усі файли".
-            <img src="images/save1-exmpl3.png" title="Натисніть і затримуйте зображення, щоб збільшити">
-
-
-         </div>
-        <div id='reason' class="new_file">
-                5. Тепер зберігаємо. Кодування можете поки що не чіпати.
-            <img src="images/save1-exmpl2.png" title="Натисніть і затримуйте зображення, щоб збільшити">
-        </div>
-            <div id='reason' class="new_file">
-                6. Тепер у вас з'явиться файл index у розширенні .html
-            <img src="images/save1-exmpl1.png" title="Натисніть і затримуйте зображення, щоб збільшити">
-
-        </div>
-        </div>
-
-
-<div class="way-to-save">
-<h2>Спосіб №2</h2>
-<div id='reason' class="new_file">
-        1. Правою кнопкою миші клацнути на порожній простір, і у провіднику з'явиться меню.
-    <img src="images/first.png" title="Натисніть і затримуйте зображення, щоб збільшити">
-
- </div>
- <div id="reason2" class="new_file">
-         2.Далі ми маємо навести вказівник миші на пункт меню під назвою "Створити". З'явиться меню . у ньому треба вибрати текствоий документ.
-    <img src="images/save-exmpl2.png"  title="Натисніть і затримуйте зображення, щоб збільшити">
-
-</div>
-
-<div id='reason' class="new_file">
-        4. Далі треба змінити розширення файлу з .txt на .html . На фото воно не виділено.
-    <img src="images/first4.png" title="Натисніть і затримуйте зображення, щоб збільшити">
-
-
- </div>
-<div id='reason'  class="new_file">
-        5. Змінивши його натискаємо Ентер та погоджуємося із усім.
-    <img src="images/first5.png" title="Натисніть і затримуйте зображення, щоб збільшити">
-
-
- </div>
-<div id='reason' class="new_file">
-        6. Після зміни іконка файлу виглядатиме по-іншому.
-    <img src="images/first6.png" title="Натисніть і затримуйте зображення, щоб збільшити">
-
-
-    </p>
-</div>
-    <h2> Найпростіші теги</h2>
-    <p>
-        <span class="red">  < html> </span> - головний тег ,у ньому розміщуються теги, такі як :
-        <pre>
-        <span class="red">< head ></span> - важливий тег, у ньому мета інформація.
-                   <span class="red"> < meta charset="UTF-8" ></span>- кодування файлу.
-
-        <span class="red">< body ></span> - тыло сторінки.
-        </pre>
-    </p>
-</div>
-
- </div>
-
-
-</body>
-`);
-
-    });
+   
     setTimeout(function () {
         $('#how').fadeOut(1000);
     },5000);
