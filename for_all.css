@@ -105,6 +105,8 @@ header:not(#head) {
     padding: 5px 10px 5px 30px;
     margin: 10px 0px 10px 0px;
     margin-right: 40%;
+
+
     border-radius: 5px;
     position: relative;
     background-color: rgba(255, 215, 0, 0.3);
@@ -139,11 +141,9 @@ h1:not(.main h1), h2:not(.main h2), h3, h4 {
     font-size: 1.2em;
 }
 
-
 td .tag {
     color: white;
 }
-
 
 .blue {
     font-family: monospace;
@@ -218,8 +218,6 @@ span.border-exmpl span.blue {
     font-weight: bold;
     font-style: italic;
     font-size: 1.05em;
-    list-style-image: url(images/icon/sm_5afb099bcc4fd.jpg);
-    margin: 0 0 0 30%;
     list-style-image: url(images/icon/sm_5afb099bcc4fd.png);
 }
 
@@ -263,18 +261,12 @@ div::selection, p::selection, h1::selection, h2::selection, li::selection, span:
 .lesson-block {
     margin: 2%;
     font-size: 1em;
+    position: relative;
 }
 
 .homework {
 
     background: url(images/icon/laptop.png) rgba(175, 114, 2, 0.6) no-repeat;
-    background-position: 1% 1%;
-    background-size: 8%;
-    border: 2px dashed white;   
-    outline: 2px dashed rgba(175, 114, 2, 0.6); 
-    padding: 1%;
-    padding-left: 8%;
-    width: 68%;
     background-position: 8px;
     background-size: 130px;
     padding: 10px 10px 5px 150px;
@@ -311,9 +303,12 @@ div::selection, p::selection, h1::selection, h2::selection, li::selection, span:
 }
 
 .blue-button:hover {
+
     background: rgba(0, 44, 126, 1);
     border: 2px solid rgba(0, 44, 126, 1);
     color: white;
+
+
     transition: .3s ease-out;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
@@ -495,8 +490,6 @@ th.wrong-table {
 
 #confused img, #confused p, #repeat_plz img, #repeat_plz p {
     cursor: auto;
-}
-
 }
 
 .summary {

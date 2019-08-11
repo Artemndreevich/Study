@@ -1,10 +1,3 @@
-﻿
-﻿<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Гіперпосилання | Урок 4 </title>
-    <meta charset="UTF-8">
-
 <html>
     <head>
 <meta charset="UTF-8">
@@ -24,52 +17,13 @@
     <link rel="stylesheet" href="for_all.css">
     <link rel="stylesheet" href="animated.css">
     <link rel="shortcut icon" href="images/icon/favicon.png" type="image/png">
-
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
     <script src="jquery-3.3.1.js"></script>
     <script src="min.js"></script>
     <link rel="stylesheet" href="input.css">
 
 </head>
 <body>
-
-        <div class="mode-window">
-                <div class="mode-box">
-                    <h1>Оберіть режим уроку:</h1>
-                <div class="slider-box">
-                    <div class="slider" id="mode1">
-                        <p class="slider-text">Довідковий</p>
-                    </div>
-                    <div class="slider" id="mode2">
-                            <p class="slider-text">Навчальний</p>
-                        </div>
-                </div> 
-                
-            </div>
-            </div>   
-<div id="all">
-        <div class="menu"> <span id="logo">LEARN&CODE</span>
-            <ul class="mark">
-                <li> <a href="main-page.html" class="select">Головна</a></li>
-                <li> <a href="#" class="unselect"> aaaaa</a></li>
-                <li> <a href="#" class="unselect"> aaaaa</a></li>
-                <li> <a href="#" class="unselect"> aaaaa</a></li>
-            </ul>
-        </div>
-    <header id="head">
-        <p>
-            <img src="images/hypersilka.jpg" id="img_lesson">
-        <h1>Робота з гіперпосиланнями</h1>
-        <h3> У цьому уроці ви дiзнаєтеся :</h3>
-        <ul id="main-ul">
-            <li> Як створювати гіперпосилання</li>
-            <li> Як створити вспливаючу підказку для гіперпосилання</li>
-            <li> Як зробити так, щоб сторінка відкривалась у новій вкладці</li>
-            <li> Як зробити гіперпосилання в межах однієї сторінки</li>
-            <li> Абсолютна та відносна адреса та яку краще використовувати</li>  
-        </ul>
-        </p>
-    </header>
-
 
 
    
@@ -182,7 +136,6 @@
     </header>
 
 
-
     <div class="main">
 
         <div  class="htmlboy col-6 col-md-4 col-lg-3" >
@@ -203,11 +156,7 @@
 
             <img src="images/pizza.jpeg" class="ilustration_left">
             <p>
-
-            Уявімо, що ми робимо сайт піцерії і на головній сторінці у нас є текст: 
-
             Представимо що ми робимо сайт піцерії і на головній у нас є текст:
-
             <span class="border-exmpl"> На цьому сайті ви можете ознайомитись з нашим меню</span>
             <br>
             Чому б не зробити тут гіперпосилання на сторінку з меню? Давайте зробимо гіперпосиланням
@@ -215,14 +164,8 @@
             </p>
         
             <p>
-
-            Для цього давайте створимо сторінку index.html в блокноті. Пишемо там це речення, та беремо <strong>меню</strong>
-             у тег  <span class="tag">&lt;a&gt;</span>. Тепер ваше речення має виглядати так: 
-            
-
             Для цього давайте створемо сторінку index.html в блокноті. Пишемо там це речення, та беремо <strong>меню</strong>
              у тег  <span class="tag">&lt;a&gt;</span>. Тепер ваше речення має виглядати так:
-
 
              <span class="border-exmpl"> На цьому сайті ви можете ознайомитись з нашим <span class="tag">&lt;a&gt;</span>меню<span class="tag">&lt;/a&gt;</span></span>
             </p>
@@ -237,19 +180,11 @@
              <span class="border-exmpl"> На цьому сайті ви можете ознайомитись з нашим <a>меню</a></span>
                 </p>
                 <p id="block1_3_2">
-
-             А й справді, це ще не гіперпосилання, адже ми забули дуже важливий атрибут, 
-             який вказує куди по цьому посилання ми перейдемо. Цей атрибут називається 
-             <span class="blue">href</span>, а адреcа, на яку ми перейдемо вказується так: 
-             <span class="blue">href=</span><span class="light-blue">"<i>адреса</i>"</span>. 
-             Тож відкриваємо блокнот і 
-
              А й справді, це ще не гіперпосилання, адже ми забули дуже важливий атрибут,
              який вказує куди по цьому посилання ми перейдемо. Цей атрибут називається
              <span class="blue">href</span>, а адреcа на яку ми перейдемо вказується так:
              <span class="blue">href=</span><span class="light-blue">"<i>адреса</i>"</span>.
              Тож відкриваємо блокнот і
-
              дописуємо у <span class="tag">&lt;a&gt;</span> атрибут <span class="blue">href</span> з адресою на сторінку <i>menu.html</i>, наприклад.
              <br>
              Тепер код має виглядати ось так: <span class="border-exmpl"> На цьому сайті ви можете ознайомитись з нашим <span class="tag">&lt;a </span><span class="blue">href=</span><span class="light-blue">"menu.html"</span><span class="tag">&gt;</span>меню<span class="tag">&lt;/a&gt;</span></span>
@@ -257,15 +192,9 @@
       
             <p id="block1_3_3">
             Перезавантажуємо сторінку у браузері і маємо <span class="border-exmpl"> На цьому сайті ви можете ознайомитись з нашим <a href="menu.html">меню</a></span>
-
-          <br><br> 
-          Це гіперпосилання вас, звичайно, нікуди не приведе (Точніше приведе на сторінку "Файл не знайдено"), але не хвилюйтесь, це лише тому, що в нас нема сторінки під назвою <q>menu.html</q>. 
-        </p> 
-
           <br><br>
           Це гіперпосилання вас, звичайно, нікуди не приведе (Точніше приведе на сторінку "Файл не знайдено"), але не хвилюйтесь, це лише тому що в нас нема сторінки під назвою <q>menu.html</q>.
         </p>
-
         <div class="homework" id="hw1">
                 <h3>Тож  перше завдання:</h3>
                 <p>Створіть HTML сторінку під назвою menu.html (обов'язково в одній папці з index.html, з яким ми щойно працювали) та створіть на ній гіперпосилання на index.html</p>
@@ -276,19 +205,12 @@
     <h1>Додаткові атрибути</h1>
     <h2>title</h2>
 
-    <div  class="htmlboy" id="lets">
-            <img src="images/htmlboy/lets.png" title="Натисніть щоб продовжити">
-    </div>
-<p>Отже, ми навчилися створювати гіперпосилання на інші сторінки за допомогою тега <span class="tag">&lt;a&gt;</span> та атрибуту <span class="blue">href</span>. Але це далеко не все, що можна робити з гіперпосиланнями. Як щодо створення спливаючої підказки при наведенні на гіперпосилання?</p>   
-
-
 <p>Отже, ми навчилися створювати гіперпосилання на інші сторінки за допомогою тега <span class="tag">&lt;a&gt;</span> та атрибуту <span class="blue">href</span>. Але це далеко не все що можна робити з гіперпосиланнями. Як щодо створення спливаючої підказки при наведенні на гіперпосилання?</p>
-
 
 <div id="block2_1_1">
 <h3>Для створення спливаючої підказки використовують атрибут <span class="blue">title</span>. Повний вигляд: <span class="blue">title=</span><span class="light-blue">"Текст вспливаючої підказки"</span></h3>
 <p><span class="border-exmpl"> На цьому сайті ви можете ознайомитись з нашим <span class="tag">&lt;a </span><span class="blue">href=</span><span class="light-blue">"menu.html"</span> <span class="blue">title=</span><span class="light-blue">"Детальше про меню"</span><span class="tag">&gt;</span>меню<span class="tag">&lt;/a&gt;</span></span></p>
-<p class="coment">Ось як це має виглядати (наведіть вказівник миші на гіперпосилання, щоб побачити вспливаючу підказку):</p>
+<p class="coment">Ось як це має виглядати (наведіть вказівник миші на гіперпосилання щоб побачити вспливаючу підказку):</p>
 <p><span class="border-exmpl">На цьому сайті ви можете ознайомитись з нашим <a href="menu.html" title="Детальше про меню">меню</a></span></p>
 
 
@@ -307,24 +229,19 @@
 <div class="lesson-block" id="block2_2">
         <h2>target</h2>
         <img class="ilustration_left" src="images/tab-gif.gif">
-
-<p>Перейдіть за посиланням, яке ви створювали на початку уроку. Зверніть увагу, чи з'являється нова вкладка, і ви помітите, що сторінка відкривається у тій же вкладці, що і минула. 
-    <br>Але це не завжди зручно. Наприклад, коли ми купуємо щось в інтернеті треба заповнити форму, але буває, що нам треба повернутися на сторінку з товарами. Якщо форма для оформлення покупки відкривається у тій же вкладці, що й товари, то при поверненні на минулу сторінку доведеться заповнювати форму спочатку. Тож краще було б, якщо сторінка з формою відкривалася б у новому вікні. 
-
 <p>Перейдіть за посиланням яке ви створювали на початку уроку. Зверніть увагу, чи з'являється нова вкладка, і ви помітите що сторінка відкривається у тій же вкладці де була минула.
     <br>Але це не завжди зручно. Наприклад, коли ми купуємо щось в інтернеті треба заповнити форму, але буває що нам треба повернутися на сторінку з товарами. Якщо форма для оформлення покупки відкривається у тій же вкладці що й товари, то при поверненні на минулу сторінку прийдеться заповнювати форму спочатку. Тож краще було б якщо сторінка з формою відкривалася у новому вікні.
-
     <br>Як це зробити ми зараз розповімо.
 </p>
 
 <div id="block2_2_1">
-<h3>Атрибут <span class="blue">target</span> відповідає за відкриття сторінки у певній вкладці (у тій же або новій).</h3>
-<p>Є три значення <span class="blue">target</span>: <span class="light-blue">"_blank"</span>, <span class="light-blue">"_self"</span> і <span class="light-blue">"довільне ім'я"</span>
+<h3>Атрибут <span class="blue">target</span> відповідає за відкривання сторінки у певній вкладці (у тій же або новій).</h3>
+<p>Є 3 значення <span class="blue">target</span>: <span class="light-blue">"_blank"</span>, <span class="light-blue">"_self"</span> і <span class="light-blue">"довільне ім'я"</span>
 </p>
 
-<p><span class="blue">target=</span><span class="light-blue">"_self"</span> стоїть по замовчуванню. Він відкриває сторінку у тому ж вікні, де було гіперпосилання на неї.</p>
+<p><span class="blue">target=</span><span class="light-blue">"_self"</span> стоїть по замовчуванню. Він відкриває сторінку у тому ж вікні де було гіперпосилання на неї.</p>
 
-<p>Якщо ви хочете, щоб сторінка відкривалась у новому вікні, використовуйте <span class="blue">target=</span><span class="light-blue">"_blank"</span>. Він створює нове вікно при кожному натисканні на гіперпосилання.</p>
+<p>Якщо ви хочете, щоб сторінка відкривалась у новому вікні, викорсистовуйте <span class="blue">target=</span><span class="light-blue">"_blank"</span>. Він створює нове вікно при кожному натисканні на гіперпосилання.</p>
 
 <p><span class="blue">target=</span><span class="light-blue">"ім'я сторінки"</span> також відкриває сторінку у новому вікні, але при наступному натисканні на гіперпосилання він не створює ще одне вікно як <span class="light-blue">"_blank"</span>, а переносить нас на вже створене.</p>
 </div>
@@ -352,7 +269,7 @@
 
 <div class="homework" id="hw1">
         <h3>Наступне завдання:</h3>
-        <p>На сторінці index.html змініть гіперпосилання на сторінку menu.html так, щоб вона відкривалась у новій вкладці, але не створювала нову вкладку при кожному натисканні на гіперпосилання. Зробіть вспливаючі підказки для гіперпосиланнь з коротким змістом сторінки, на яку веде посилання.</p>
+        <p>На сторінці index.html змініть гіперпосилання на сторінку menu.html так, щоб вона відкривалось у новій вкладці, але не створювала нову вкладку при кожному натисканні на гіперпосилання. Зробіть вспливаючі підказки для гіперпосиланнь з коротким змістом сторінки на яку веде посилання.</p>
 </div>
 </div>
 
@@ -360,7 +277,7 @@
 <h1>Гіперпосилання в межах сторінки</h1>
 
 <p>Ви вже навчилися створювати гіперпосилання на зовнішні сторінки. Але можна робити гіперпосилання і на певний елемент тієї ж сторінки
-    <br>Для цього потрібно надати елементу, на який веде гіперпосилання, id. Потім приписати його до назви сторінки у адресі гіперпосилання.
+    <br>Для цього потрібно надати елементу на який веде гіперпосилання id, і приписати його до назви сторінки у адресі гіперпосилання.
 <br> А тепер детальніше:</p>
 </div>
 <div class="lesson-block" id="block3_2">
@@ -388,7 +305,7 @@
             <td class="right-table">Містити знаки "-", "_"<br> "first_img", "main-block"</td>
         </tr>
     </table>
-    <p>На index.html зробимо заголовок "Кінець сторінки" і надамо йому айді "end-title": <span class="border-exmpl"><span class="tag">&lt;h1 </span><span class="blue">id=</span><span class="light-blue">"end-title"</span><span class="tag">&gt;</span>Кінець сторінки<span class="tag">&lt;/h1&gt;</span></span></p>
+    <p>На index.html зробимо заголовок "Кінець сторінки" і дамо йому айді "end-title": <span class="border-exmpl"><span class="tag">&lt;h1 </span><span class="blue">id=</span><span class="light-blue">"end-title"</span><span class="tag">&gt;</span>Кінець сторінки<span class="tag">&lt;/h1&gt;</span></span></p>
     </div>
 
     <div class="lesson-block" id="block3_3">
@@ -399,21 +316,12 @@
         <span class="red">Адресу писати треба без пробілів!</span>
     <br>
 
-    
-        Якщо ви все зробили правильно, у вас має вийти 
-
-
         Якщо ви все зробили правильно, в вас має вийти
-
         <span class="border-exmpl"><span class="tag">&lt;a </span><span class="blue">href=</span><span class="light-blue">"index.html#end-title"</span><span class="tag">&gt;</span>На кінець сторінки<span class="tag">&lt;/a&gt;</span></span>
     </p>
     <p>
-        Тепер натисніть на гіперпосилання і, якщо ви все правильно зробили, побачите, що ви з'явились укінці сторінки.
+        Тепер натисніть на гіперпосилання і, якщо ви все правильно зробили, побачите що ви з'явились укінці сторінки.
     </p>
-</div>
-
-
-</div>
 </div>
 
 
@@ -573,7 +481,6 @@ $('.htmlboy').html(` <img src="images/htmlboy/confused.png">
 
     </script>
         <script src="dont%20touch/js/app.js"></script>
-
 
 </body>
 </html>
