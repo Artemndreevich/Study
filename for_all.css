@@ -202,14 +202,14 @@ span.border-exmpl span.blue {
 .main h3 {
     margin: 0 0 10px 0;
     padding: 0;
-    text-align: center;
+    text-align: left;
     color: rgba(0, 44, 126, 0.9);
 }
 
 .main h4 {
     margin: 0 0 10px 0;
     padding: 0;
-    text-align: center;
+    text-align: left;
     color: rgba(0, 44, 126, 0.9);
 }
 
@@ -613,4 +613,10 @@ table.invisible-table .left-half {
 
 table.invisible-table .right-half {
     padding: 0% 4% 0 4%;
+}
+#code {
+    width: 50%;
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
 }
