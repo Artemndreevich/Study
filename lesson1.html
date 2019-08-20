@@ -217,7 +217,52 @@
     <h2>Підсумуємо:</h2>
 <h3>Отож,  якщо підсумувати все вищесказане, то тепер ти знаєш основи кодування штмл, а також знаєте що таке тег, атрибут, мова штмл та елемент. Якщо урок був вам цікавий, і ви його засвоїли, постав оцінку та продовжуй своє навчання з нами, пізнаючи мову кодування штмл та занурюючись у світ веб-дизайну, стаючи справжнім професіоналом. </h3>
 </div>
+<div class="lesson-block">
+<a href="second_lesson.html" class="next-lesson"><h3>На наступний урок <img src="images/icon/arrow-right.png" width="35px"></h3></a>
+</div>
 </div>
   
+
+<script src="dont%20touch/js/popper.min.js" ></script>
+    <script src="dont%20touch/js/bootstrap.min.js" ></script>
+    <script>
+    $(document).ready(function(){
+        var arr = ['Маша', 'Петя', 'Марина', 'Василий'];
+        var counter=1;
+
+$('.htmlboy').html(` <img src="images/htmlboy/confused.png">
+<p>
+    `+arr[0]+`
+</p>
+    <button id="nextA" class="blue-button" >Давай</button> `);
+
+
+    $('#nextA').on('click',function(){
+    $('.htmlboy').hide();
+    arr.shift();
+   });
+
+
+   $(document).on('keypress',function(e) {
+    if(e.which == 13 && arr[0] !=undefined ) {
+            $('.htmlboy').html(` <img src="images/htmlboy/confused.png">
+<p>
+ `+arr[0]+`   
+</p>
+    <button id="nextA" class="blue-button" >Давай</button> `).fadeIn(200);
+
+    $('#nextA').on('click',function(){
+    $('.htmlboy').hide();
+    arr.shift();
+  
+   });
+        }  
+});
+
+});
+    </script>
+        <script src="dont%20touch/js/app.js"></script>
+
+        
 </body>
 </html>

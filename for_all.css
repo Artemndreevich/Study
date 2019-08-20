@@ -632,3 +632,17 @@ table.invisible-table .right-half {
     margin-right: 20px;
     margin-top: 20px;
 }
+.next-lesson {
+    text-decoration: none;
+    display: inline-block;
+    float: right;
+}
+
+.next-lesson:hover, .poperedniy-lesson:hover {
+    text-shadow: 2px 2px 4px rgba(0, 44, 127, 0.502);
+    text-decoration: none;
+}
+.poperedniy-lesson {
+    text-decoration: none;
+    display: inline-block;
+}

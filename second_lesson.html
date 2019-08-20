@@ -302,6 +302,13 @@
         <h2>Підсумуємо:</h2>
     <h3>У цьому уроці ви навчилися створювати HTML-документ у блокноті двома способами, відкривати його, та зберігати у потрібному форматі. Також ви вивчили базові теги, які складають основу будь якої веб-сторінки</h3>
 </div>
+
+<div class="lesson-block">
+        <a href="lesson1.html" class="poperedniy-lesson"><h3><img src="images/icon/arrow-left.png" width="35px"> На попередній урок</h3></a>
+        <a href="lesson3.html" class="next-lesson"><h3>На наступний урок <img src="images/icon/arrow-right.png" width="35px"></h3></a>
+        
+    </div>
+
  </div>
 <div id="how">
     <h2> Лише навчаєтеся?</h2>
@@ -313,5 +320,42 @@
 <script src="dont%20touch/js/popper.min.js" ></script>
 <script src="dont%20touch/js/bootstrap.min.js" ></script>
 
+    <script>
+    $(document).ready(function(){
+        var arr = ['Маша', 'Петя', 'Марина', 'Василий'];
+        var counter=1;
+
+$('.htmlboy').html(` <img src="images/htmlboy/confused.png">
+<p>
+    `+arr[0]+`
+</p>
+    <button id="nextA" class="blue-button" >Давай</button> `);
+
+
+    $('#nextA').on('click',function(){
+    $('.htmlboy').hide();
+    arr.shift();
+   });
+
+
+   $(document).on('keypress',function(e) {
+    if(e.which == 13 && arr[0] !=undefined ) {
+            $('.htmlboy').html(` <img src="images/htmlboy/confused.png">
+<p>
+ `+arr[0]+`   
+</p>
+    <button id="nextA" class="blue-button" >Давай</button> `).fadeIn(200);
+
+    $('#nextA').on('click',function(){
+    $('.htmlboy').hide();
+    arr.shift();
+  
+   });
+        }  
+});
+
+});
+    </script>
+        <script src="dont%20touch/js/app.js"></script>
 </body>
 </html>
