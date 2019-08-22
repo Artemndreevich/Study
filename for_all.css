@@ -5,7 +5,6 @@ body {
     padding: 0;
     font-size: 1em;
     overflow-x: hidden;
-
 }
 
 body {
@@ -201,6 +200,18 @@ span.border-exmpl span.blue {
 }
 
 .main h3 {
+    margin: 0 0 10px 0;
+    padding: 0;
+    text-align: left;
+    color: rgba(0, 44, 126, 0.9);
+}
+.main h1 {
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-size: 3em;
+
+}
+.main h2 {
     margin: 0 0 10px 0;
     padding: 0;
     text-align: center;
@@ -614,4 +625,24 @@ table.invisible-table .left-half {
 
 table.invisible-table .right-half {
     padding: 0% 4% 0 4%;
+}
+#code {
+    width: 50%;
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.next-lesson {
+    text-decoration: none;
+    display: inline-block;
+    float: right;
+}
+
+.next-lesson:hover, .poperedniy-lesson:hover {
+    text-shadow: 2px 2px 4px rgba(0, 44, 127, 0.502);
+    text-decoration: none;
+}
+.poperedniy-lesson {
+    text-decoration: none;
+    display: inline-block;
 }

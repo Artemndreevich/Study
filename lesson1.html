@@ -3,19 +3,25 @@
 <head>
     <title>Вступ до  HTML | Урок 1</title>
     <meta charset="UTF-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!-- РУКИ ПРОЧЬ-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="dont%20touch/css/bootstrap.min.css">
     <link rel="stylesheet" href="dont%20touch/css/app.css">
-    <script src="dont%20touch/js/vendor/jquery.js"></script>
+    <!-- РУКИ ПРОЧЬ-->
     <link rel="stylesheet" href="Index.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="for_all.css">
     <link rel="stylesheet" href="animated.css">
     <link rel="shortcut icon" href="images/icon/favicon.png" type="image/png">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+
+
+
+
     <script src="jquery-3.3.1.js"></script>
     <script src="min.js"></script>
+    <script src="dont%20touch/js/app.js"></script>
+
 </head>
 <body>
         <div class="mode-window">
@@ -75,8 +81,62 @@
                     </div>
                     </div>
 
+            <a href="">sdlkmloejvogevl</a>
+        </li>
+        <li>
+            <a href="">sdlkmloejvogevl</a>
+        </li>
+        <li>
+            <a href="">sdlkmloejvogevl</a>
+        </li>
+        <li>
+            <a href="">sdlkmloejvogevl</a>
+        </li>
+        <li>
+            <a href="">sdlkmloejvogevl</a>
+        </li>
+        <li>
+            <a href="">sdlkmloejvogevl</a>
+        </li>
+    </ul>
+</div>
+</div>
 
-    
+
+
+
+
+<!-- menu na cellphone -->
+
+
+<!-- menu na pk i planshet -->
+<div class="menu-artem">
+    <div class="row mx-1 align-items-center ">
+<div class="man2 col-3 col-sm-3 col-md-6 align-zero ">
+    <span class="log cell small-3 medium-6 "><span>   LEARN&CODE </span></span>
+</div>
+
+<div class=" man  col-3 col-sm-3 col-md-2 menu-div">
+    <a href="main-page.html" class="col-3 col-sm-3 col-md-2  " >Головна</a>
+</div>
+
+<div class="man col-3 col-sm-3 col-md-2 menu-div">
+    <a href="#" class="col-3 col-sm-3 col-md-2 "   >Словник</a>
+</div>
+
+<div class=" man col-3 col-sm-3 col-md-2 menu-div">
+    <a href="#" class="col-3 col-sm-3 col-md-2"   > aaaaa</a>
+</div>
+
+
+
+
+    </div>
+
+</div>
+
+<!-- menu na pk i planshet -->
+   
          <header id="head">
         <p>
             <img src="images/html_css.svg" id="img_lesson">
@@ -101,7 +161,7 @@
             
         <div class="lesson-block" id="l1b1">
                 <h1>Вступ</h1>
-                <h3>Привіт, майбутній програмісте! На цьому веб-сайті ми зібрали найкращі та найзмістовніші уроки по мові кодування HTML, що допоможуть тобі освоїти світ веб-дизайну. Сподіваємось, тобі сподобається навчатися за нашими уроками, і ти підтримаєш нашу молоду команду.</h3>
+                <h4>Привіт, майбутній програмісте! На цьому веб-сайті ми зібрали найкращі та найзмістовніші уроки по мові кодування HTML, що допоможуть тобі освоїти світ веб-дизайну. Сподіваємось, тобі сподобається навчатися за нашими уроками, і ти підтримаєш нашу молоду команду.</h4>
             <h2>Що таке HTML?</h2>
             <p> <strong>Hyper Text Markup Language</strong> – (дослівно «Мова гіпертекстової розмітки») - це мова кодування, формат веб-сторінок,  в основі якої лежать елементи HTML, їх синтаксис між собою та змінні елементи, що додаються автором коду, тобто контент (наповнення сторінки).  
                 <br><span class="right">Простіше кажучи, це мова, на якій створюється скелет (каркас) сторінки – додається та структурується текст та зображення.</span>
@@ -202,7 +262,52 @@
     <h2>Підсумуємо:</h2>
 <h3>Отож,  якщо підсумувати все вищесказане, то тепер ти знаєш основи кодування штмл, а також знаєте що таке тег, атрибут, мова штмл та елемент. Якщо урок був вам цікавий, і ви його засвоїли, постав оцінку та продовжуй своє навчання з нами, пізнаючи мову кодування штмл та занурюючись у світ веб-дизайну, стаючи справжнім професіоналом. </h3>
 </div>
+<div class="lesson-block">
+<a href="second_lesson.html" class="next-lesson"><h3>На наступний урок <img src="images/icon/arrow-right.png" width="35px"></h3></a>
+</div>
 </div>
   
+
+<script src="dont%20touch/js/popper.min.js" ></script>
+    <script src="dont%20touch/js/bootstrap.min.js" ></script>
+    <script>
+    $(document).ready(function(){
+        var arr = ['Маша', 'Петя', 'Марина', 'Василий'];
+        var counter=1;
+
+$('.htmlboy').html(` <img src="images/htmlboy/confused.png">
+<p>
+    `+arr[0]+`
+</p>
+    <button id="nextA" class="blue-button" >Давай</button> `);
+
+
+    $('#nextA').on('click',function(){
+    $('.htmlboy').hide();
+    arr.shift();
+   });
+
+
+   $(document).on('keypress',function(e) {
+    if(e.which == 13 && arr[0] !=undefined ) {
+            $('.htmlboy').html(` <img src="images/htmlboy/confused.png">
+<p>
+ `+arr[0]+`   
+</p>
+    <button id="nextA" class="blue-button" >Давай</button> `).fadeIn(200);
+
+    $('#nextA').on('click',function(){
+    $('.htmlboy').hide();
+    arr.shift();
+  
+   });
+        }  
+});
+
+});
+    </script>
+        <script src="dont%20touch/js/app.js"></script>
+
+        
 </body>
 </html>
