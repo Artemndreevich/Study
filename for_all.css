@@ -221,7 +221,7 @@ span.border-exmpl span.blue {
 .main h4 {
     margin: 0 0 10px 0;
     padding: 0;
-    text-align: center;
+    text-align: left;
     color: rgba(0, 44, 126, 0.9);
 }
 
