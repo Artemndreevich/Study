@@ -146,7 +146,7 @@
 
             <div class="lesson-block" id="block1_2">
 
-                <img src="images/images.png" class="ilustration_left">
+                <img src="images/195a25ed-8156-4b27-bda6-ca7a367c5c28.png" class="ilustration_left">
                 <p>
                     Перший й найголовніщий  тег <span class="tag">&lt;table&gt;</span> але одного його 
                     замало, хоча цей тег ми будемо використовувати завжди.
@@ -220,7 +220,8 @@
                             <tr>
                                 <td> Головні табличні теги <span class="tag">&lt;table&gt;</span> , <span class="tag">&lt;tr&gt;</span> та<span class="tag">&lt;td&gt;</span>. Разом вони формують таблицю. Тег <span class="tag">&lt;table&gt;</span>  є головним й обов'язковим. Рядки формує тег <span class="tag">&lt;tr&gt;</span> ,а у рядках  виділяють колонки (стовпці) за допомогою тега<span class="tag">&lt;td&gt;</span>.
                                     <span class="tag">&lt;ol&gt;</span> </td>
-                                <td>
+                                <td><div>
+                                
                                    <table>
 
 
@@ -229,23 +230,36 @@
     <td>2 колонки</td>
   </tr>
 </table>
-                                </td>
+        </div>                        </td>
                             </tr>
                             <tr>
-                                <td> У тега <span class="tag">&lt;ol&gt;</span> є додатковий атрибут </td>
-                                <td><span class="blue">start</span> </td>
+                                <td> Для формування першого рядка таблиці використовують тег <span class="tag">&lt;th&gt;</span> </td>
+                                <td> 
+                                    <div><table>
+                                    <tr>
+    <th>НЕ Звичайний</th>
+    <th>2 колонки</th>
+  </tr>  </table>
+                                    </div> </td>
                             </tr>
                             <tr>
-                                <td><span class="tag">
-                                        <li>
-                                    </span>зберігає текст списку</td>
+                                <td>Для об'єднання стовпців або колонк таблиці використовують атрибути  <span class="blue">colspan</span> та  <span class="blue">rowspan</span> </td>
                                 <td>
-                                    <ul>
-                                        <li>a</li>
-                                        <li>b</li>
-                                        <li>c</li>
-                                        <li>d</li>
-                                    </ul>
+                                   
+<!-- 
+Ми додали кордони комірок таблиці 
+-->
+<table>
+<tr>
+    <td rowspan="4">2 колонки у висоту </td>
+    <td colspan='4'> 2 колонки у довжину</td>
+  </tr>
+
+  <tr>
+    <td >Звичайний</td>
+    <td > Звичайний</td>
+  </tr>
+</table>
                                 </td>
                             </tr>
 
