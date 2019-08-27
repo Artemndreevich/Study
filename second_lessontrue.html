@@ -139,9 +139,9 @@
     <div class="container-fluid ">
 
     <p>
-<h3>Створюємо файл у Блокноті</h3>
+<h1>Створюємо файл у Блокноті</h1>
     <div class="way-to-save">
-        <h4>Спосіб №1</h4>
+        <h2>Спосіб №1</h2>
         <div class="row">
         <div class="col-12 col-md-6 new_file artemsreason">
                <p>  1. Відкрийте программу "Блокнот" (Її ви можете знайти у розділі "Стандартні программи"). Тут ви будете писати ваш код.</p>
@@ -184,7 +184,7 @@
     </div>
 
 <div class="way-to-save">
-<h4>Спосіб №2</h4>
+<h2>Спосіб №2</h2>
 <div class="row">
 
 <div class="col-12 col-md-3 new_file artemsreason">
@@ -218,6 +218,7 @@
     </p>
 </div>
 </div>
+<!--
     <h2> Найпростіші теги</h2>
     <p>
         <span class="red">  < html> </span> - головний тег ,у ньому розміщуються теги, такі як :
@@ -228,7 +229,87 @@
         <span class="red">< body ></span> - тыло сторінки.
         </pre>
     </p>
+-->
 </div>
+<div class="lesson-block">
+    
+        <h1>Основні теги</h1>
+        <h4>Тепер ми пропонуємо вам ознайомитись з базовими тегами, які складають основу будь-якої веб-сторінки</h4>
+        
+                    
+        <h2>&lt;!DOCTYPE html&gt; та &lt;html&gt;</h2>
+        
+                    Будь яка html сторінка починається з тегу <span class="doctype">&lt;!DOCTYPE html&gt;</span> та <span class="tag">&lt;html&gt;</span>
+                        , які дають браузеру зрозуміти, що
+                        це не просто текстовий файл, а саме файл html, а <span class="doctype">&lt;!DOCTYPE html&gt;</span> що це саме HTML5 (Остання версія HTML на данний момент).
+                        <br>
+                        <div class="redp">
+                            <span class="red">Зверніть увагу!</span> <span class="tag">&lt;html&gt;</span> є блоковим елементом, тому його
+                            обов'язково треба закрити укінці сторінки, щоб браузер зрозумів що сторінка закінчилась!
+                        </div>
+                    
+                <div id="code">
+                    <div class="codepen-pattern">
+                                <p class="codepen" data-height="385" data-theme-id="light" data-default-tab="html"
+                                        data-user="ritakr" data-slug-hash="dybMjwV"
+                                        style="height: 385px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+                                        data-pen-title="dybMjwV">
+                            <span>See the Pen <a href="https://https://codepen.io/ritakr/pen/dybMjwV/">
+                            dybMjwV</a> by rita (<a href="https://codepen.io/ritakr">@ritakr</a>)
+                            on <a href="https://codepen.io">CodePen</a>.</span>
+                                </p>
+                                    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                                </div>
+                            </div>
+                    
+                            <h2>&lt;head&gt;</h2>
+    
+                    Тег <span class="tag">&lt;head&gt;</span> вміщує у собі елементи які не відображаються на сторінці (за виключенням <span class="tag">&lt;title&gt;</span>), але
+                        допомагають браузеру опрацьовувати дані. Він є блоковим тегом, а отже закривається після написання останнього елементу контейнеру <span class="tag">&lt;head&gt;</span>
+                        і перед тим як відкрити <span class="tag">&lt;body&gt;</span>
+                        <h2>&lt;title&gt;</h2>
+                        На цьому уроці ми знайомимось поки що лише з одним тегом, який пишеться в <span class="tag">&lt;head&gt;</span>, це - <span class="tag">&lt;title&gt;</span>.
+                        Він є блоковим едементом, а отже вкінці тексту він закривається. Текст, розміщенний у <span class="tag">&lt;title&gt;</span> відображається вгорі браузера, як назва
+                        вкладки (назва сторінки).
+                        <h2>&lt;meta&gt;</h2>
+                        Ми не будемо детально вивчати тег <span class="tag">&lt;meta&gt;</span>, адже він майже непотрібний для початківця і більше використовується досвідченими сайт-мейкерами. Все що вам зараз необхідно знати - це тег <span class="tag">&lt;meta&gt;</span> з атрибутом <span class="blue">charset</span>, який вказує браузеру кодування сторінки. (<span class="tag">&lt;meta&gt;</span> як і <span class="tag">&lt;title&gt;</span> пишеться у <span class="tag">&lt;head&gt;</span>). Якщо ви створюєте HTML-файл у Блокноті, то кодування файлу по-замовчуванню буде ANSI (якщо, звісно, ви його не змінете). В цьому випадку треба писати <span class="tag">&lt;meta</span> <span class="blue">charset="windows-1251"</span><span class="tag">&gt;</span>. Якщо ж ви створюєте сторінку у Sublime Text, то файл автоматично матиме кодувааня Utf-8. У цьому випадку в <span class="blue">charset</span> треба вказати "utf-8".
+                    <h2>&lt;body&gt;</h2>
+                    У тезі <span class="tag">&lt;body&gt;</span> пишуться всі елементи, які відображаються на сторінці. <span class="tag">&lt;body&gt;</span> блоковий елемент, він закривається укінці сторінки перед тим як закрити <span class="tag">&lt;html&gt;</span>
+                        <br>
+                        Зараз ми розглянемо 2 <span class="important">блокові</span> теги, що пишуться у <span class="tag">&lt;body&gt;</span>, а саме <span class="tag">&lt;h1&gt;</span> та <span class="tag">&lt;p&gt;</span>.
+                        <h2>&lt;h1&gt;</h2>
+                        <span class="tag">&lt;h1&gt;</span> -
+                        заголовок першого рівня. Всього існує 6 рівнів
+                        заголовків, кожен з яких нумерується цифрою
+                        від 1 до 6. Відповідно найбільший за розміром
+                        - <span class="tag">&lt;h1&gt;</span>, а
+                        найменший - <span class="tag">&lt;h6&gt;</span>. Але найчастіше використовуються заголовки першого-третього рівнів.
+                        <em>(Можете поексперементувати з заголовками різних рівнів)</em>
+                        <h2>&lt;p&gt;</h2>
+                        <span class="tag">&lt;p&gt;</span> - абзац.
+                        У цьому тезі пишуть текст, який
+                        відображатимется в абзаці. Щоб зробити новий
+                        абзац, треба закрити попередній та відкрити
+                        новий. У <span class="tag">&lt;p&gt;</span>
+                        часто вставляють рядкові блоки, такі як
+                        <span class="tag">&lt;img&gt;</span>,
+                        <span class="tag">&lt;em&gt;</span>,
+                        <span class="tag">&lt;a&gt;</span> про які ви
+                        докладніше дізнаєтесь у наступних уроках.
+                    
+                        
+    </div>
+    <div class="summary">
+            <h2>Підсумуємо:</h2>
+        <h3>У цьому уроці ви навчилися створювати HTML-документ у блокноті двома способами, відкривати його, та зберігати у потрібному форматі. Також ви вивчили базові теги, які складають основу будь якої веб-сторінки</h3>
+    </div>
+    
+    <div class="lesson-block">
+            <a href="lesson1.html" class="poperedniy-lesson"><h3><img src="images/icon/arrow-left.png" width="35px"> На попередній урок</h3></a>
+            <a href="lesson3.html" class="next-lesson"><h3>На наступний урок <img src="images/icon/arrow-right.png" width="35px"></h3></a>
+            
+        </div>
+    
 
  </div>
 <div id="how">
@@ -240,7 +321,7 @@
 </div>
 </div>
 
-<script src=dont%20touch/js/popper.min.js" ></script>
+<script src="dont%20touch/js/popper.min.js" ></script>
 <script src="dont%20touch/js/bootstrap.min.js" ></script>
 
 </body>
