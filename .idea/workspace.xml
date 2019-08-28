@@ -27,17 +27,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/12lesson.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="161" column="16" selection-end-line="260" />
+            <state relative-caret-position="505">
+              <caret line="255" column="9" lean-forward="true" selection-start-line="215" selection-end-line="255" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/14lesson.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1661">
+              <caret line="247" column="13" selection-start-line="247" selection-start-column="13" selection-end-line="247" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/14lesson.html">
+        <entry file="file://$PROJECT_DIR$/10lesson.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-90">
-              <caret line="112" column="66" selection-start-line="112" selection-start-column="66" selection-end-line="112" selection-end-column="66" />
+            <state relative-caret-position="136">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/second_lessontrue.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="607">
+              <caret line="316" column="2" selection-start-line="316" selection-start-column="2" selection-end-line="316" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -72,7 +90,6 @@
         <option value="$PROJECT_DIR$/second_lesson.html" />
         <option value="$PROJECT_DIR$/dont touch/js/app.js" />
         <option value="$PROJECT_DIR$/second_lesson — копия.html" />
-        <option value="$PROJECT_DIR$/second_lessontrue.html" />
         <option value="$PROJECT_DIR$/lesson4.html" />
         <option value="$PROJECT_DIR$/artemcss" />
         <option value="$PROJECT_DIR$/mycss" />
@@ -87,11 +104,13 @@
         <option value="$PROJECT_DIR$/for_all.css" />
         <option value="$PROJECT_DIR$/nine-lesson.html" />
         <option value="$PROJECT_DIR$/12lesson.html" />
+        <option value="$PROJECT_DIR$/second_lessontrue.html" />
         <option value="$PROJECT_DIR$/14lesson.html" />
+        <option value="$PROJECT_DIR$/10lesson.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="666" />
@@ -190,6 +209,7 @@
       <workItem from="1566564582169" duration="4749000" />
       <workItem from="1566636853101" duration="1822000" />
       <workItem from="1566838468290" duration="1803000" />
+      <workItem from="1566996500545" duration="2751000" />
     </task>
     <task id="LOCAL-00001" summary="all">
       <created>1549641294883</created>
@@ -209,7 +229,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127688000" />
+    <option name="totallyTimeSpent" value="130439000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -221,7 +241,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.59098226" visible="true" weight="0.22023809" />
@@ -274,7 +294,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="all" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/main.css" />
     <entry file="file://$PROJECT_DIR$/images/hello-img.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -392,13 +411,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lesson4.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="101" column="5" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/input.css" />
     <entry file="file://$PROJECT_DIR$/images/html-css.png">
       <provider selected="true" editor-type-id="images" />
@@ -429,13 +441,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/second_lessontrue.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-374">
-          <caret line="98" column="14" selection-start-line="98" selection-end-line="99" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nine-lesson.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -457,17 +462,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lesson4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5275">
+          <caret line="101" selection-start-line="101" selection-end-line="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/second_lessontrue.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="607">
+          <caret line="316" column="2" selection-start-line="316" selection-start-column="2" selection-end-line="316" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/12lesson.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="161" column="16" selection-end-line="260" />
+        <state relative-caret-position="505">
+          <caret line="255" column="9" lean-forward="true" selection-start-line="215" selection-end-line="255" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/14lesson.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-90">
-          <caret line="112" column="66" selection-start-line="112" selection-start-column="66" selection-end-line="112" selection-end-column="66" />
+        <state relative-caret-position="1661">
+          <caret line="247" column="13" selection-start-line="247" selection-start-column="13" selection-end-line="247" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10lesson.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+    $(document).ready(function () {
+        var arr = ['Маша', 'Петя', 'Марина', 'Василий'];
+        var counter = 1;
+
+        $('.htmlboy').html(` <img src="images/htmlboy/confused.png">
+<p>
+    ` + arr[0] + `
+</p>
+    <button id="nextA" class="blue-button" >Давай</button> `);
+
+
+        $('#nextA').on('click', function () {
+            $('.htmlboy').hide();
+            arr.shift();
+        });
+
+
+        $(document).on('keypress', function (e) {
+            if (e.which == 13 && arr[0] != undefined) {
+                $('.htmlboy').html(` <img src="images/htmlboy/confused.png">
+<p>
+ ` + arr[0] + `
+</p>
+    <button id="nextA" class="blue-button" >Давай</button> `).fadeIn(200);
+
+                $('#nextA').on('click', function () {
+                    $('.htmlboy').hide();
+                    arr.shift();
+
+
+                });
+            }
+
+        });
+
+
+    });
+
+
+</script>
+</body>
+</html>
