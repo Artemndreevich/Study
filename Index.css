@@ -527,3 +527,53 @@ text-decoration: none;
 .artemsreason p{
     height: 20vh;
 }
+.vopros{
+    font-size:1.5em;
+
+}
+.falseasnwer{
+    display:inline-block;
+    color: #343434;
+    background-color: #0ac8ff;
+    border:2px  solid #0ac8ff;
+    border-radius:10px;
+    padding: 0.3%;
+    transition:1s;
+    margin: 1%;
+}
+.falseasnwer:hover{
+    display:inline-block;
+    color: #343434;
+    background-color: #0ac8ff;
+    border:2px  solid #0ac8ff;
+    border-radius:10px;
+    padding: 0.3%;
+    transition:1s;
+    margin: 1%;
+    transform: scale(1.1);
+
+}
+
+.trueanswer{
+    display:inline-block;
+    color: #343434;
+    background-color: #0ac8ff;
+    border:2px  solid #0ac8ff;
+    border-radius:10px;
+    padding: 0.3%;
+    transition:1s;
+    margin: 1%;
+}
+.trueanswer:hover{
+    display:inline-block;
+    color: #343434;
+    background-color: #0ac8ff;
+    border:2px  solid #0ac8ff;
+    border-radius:10px;
+    padding: 0.3%;
+    transition:1s;
+    margin: 1%;
+    transform: scale(1.1);
+
+    transition:1s;
+}
