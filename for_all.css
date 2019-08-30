@@ -669,11 +669,17 @@ line-height:200%;font-size:1.55rem;
 
 }
 .textdecor{
-text-decoration:overline, underline;font-size:1.55rem;
+text-decoration:overline;
+
+    font-size:1.55rem;
 
 
 }
 .textalign{
 text-align:right;font-size:1.55rem;
 
+}
+.fontweight{
+    font-size:1.55rem;
+    font-weight: bolder;
 }
