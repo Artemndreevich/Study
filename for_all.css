@@ -140,7 +140,7 @@ h1:not(.main h1), h2:not(.main h2), h3, h4 {
     font-size: 1.2em;
 }
 
-td .tag {
+td .tag, .falseasnwer .tag, .trueanswer .tag {
     color: white;
 }
 
@@ -248,17 +248,17 @@ div::selection, p::selection, h1::selection, h2::selection, li::selection, span:
     right: 2%;
     z-index: 100;
     max-height: 98%;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.8);
 
 }
 
 .htmlboy p {
     width: 90%;
-    font-size: 0.85em;
+    font-size: 0.9em;
 }
 
 .htmlboy img {
-    width: 60%;
+    width: 50%;
     float: right;
 
 }
