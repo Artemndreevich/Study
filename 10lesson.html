@@ -149,7 +149,7 @@
 
         <div class="lesson-block" id="block1_2">
             <h2>Рівень 1</h2>
-            <h4>У цьому рівні вам необхідно вибрати одну правильну відповідь. Після натискання на варіант відповіді, кнопка з правильною відповіддю стане зеленою, а кнопка з хибною відповіддю - червоною. Варіант який ви обрали стає бліднішим. Коли відповісте на всі запитання, натисніть кнопку "Закінчити тест та дізнатись результат" та побачите кількість набраних балів (максимумальна оцінка - 12).
+            <h4>У цьому рівні вам необхідно вибрати одну правильну відповідь. Після натискання на варіант відповіді, він зафарбується у світліший колір. Коли відповісте на всі запитання, натисніть кнопку "Закінчити тест та дізнатись результат" та побачите кількість набраних балів (максимумальна оцінка - 12).
                 <br><br>
                 <span class="red">Будьте уважні!</span> На кожне питання ви можете відповісти лише один раз! Повторні відповіді не зараховуватимуться!
                 <br><br> Також не забувай дивитися у правий нижній куток! ТЕГ допомагатиме тобі з тестом.
@@ -422,14 +422,206 @@
       var a=0;
             
       $('#end-test').click(function(){
-    $('#result-space').html(`
-                <span class="vopros">Правильних відповідей: `+a+`</span>`);
+    $('#block1_2').html(`
+            <h2>Рівень 1</h2>
+            <h4>У цьому рівні вам необхідно вибрати одну правильну відповідь. Після натискання на варіант відповіді, він зафарбується у світліший колір. Коли відповісте на всі запитання, натисніть кнопку "Закінчити тест та дізнатись результат" та побачите кількість набраних балів (максимумальна оцінка - 12).
+                <br><br>
+                <span class="red">Будьте уважні!</span> На кожне питання ви можете відповісти лише один раз! Повторні відповіді не зараховуватимуться!
+                <br><br> Також не забувай дивитися у правий нижній куток! ТЕГ допомагатиме тобі з тестом.
+            </h4>
+
+            <p>
+                <div id="q-box1">
+               <span class="vopros">1) Який з цих тегів НЕ потребує закриття?</span>
+            
+                <button class="falseasnwer" id="vp1f1"><span class="tag">&lt;head&gt;</span></button>
+                <button class="trueanswer"  id="vp1"><span class="tag">&lt;img&gt;</span></button>
+                <button class="falseasnwer" id="vp1f2"><span class="tag">&lt;p&gt;</span></button>
+                <button class="falseasnwer" id="vp1f3"><span class="tag">&lt;em&gt;</span></button>
+            </div>
+                <hr>
+                <div id="q-box2">
+            <span class="vopros">2) Заголовок якого рівня буде мати найменший шрифт?</span>
+            
+            <button class="falseasnwer" id="vp2f1"><span class="tag">&lt;p&gt;</span></button>
+            <button class="falseasnwer" id="vp2f2"><span class="tag">&lt;h1&gt;</span></button>
+            <button class="trueanswer"  id="vp2"><span class="tag">&lt;h6&gt;</span></button>
+            <button class="falseasnwer" id="vp2f3"><span class="tag">&lt;h7&gt;</span></button>
+        </div>
+            <hr>  
+        <div id="q-box3">
+            <span class="vopros">3) Який з цих атрибутів можна використовувати лише з тегом <span class="tag">&lt;а&gt;</span>?</span>
+             
+            <button class="falseasnwer" id="vp3f1" >class</button>
+            <button class="falseasnwer" id="vp3f2">id</button>
+            <button class="trueanswer"  id="vp3">target</button>
+            <button class="falseasnwer" id="vp3f3">title</button>
+        </div>
+            <hr>     
+        <div id="q-box4">
+            <span class="vopros">4) Який з запропонованих id не можна присвоїти елементу?</span>
+            
+            <button class="trueanswer"  id="vp4">"1box"</button>
+            <button class="falseasnwer" id="vp4f1">"box1"</button>
+            <button class="falseasnwer" id="vp4f2">"box-1"</button>
+            <button class="falseasnwer" id="vp4f3" >"first-box"</button>
+        </div>
+            <hr>     
+        <div id="q-box5">    
+            <span class="vopros">5) Як називається такий вид списку?<br> 
+                <ul>
+                <li>
+                  <ol>
+                      <li>Пункт 1</li>
+                      <li>Пункт 2</li>
+                      <li>Пункт 3</li>
+                  </ol>
+                </li>
+               
+                <li>
+                  <ol>
+                     <li>Пункт 1</li>
+                     <li>Пункт 2</li>
+                     <li>Пункт 3</li>
+                  </ol>
+                </li>
+            </ul>
+        </span>
+            
+            <button class="falseasnwer" id="vp5f1">Нумерований</button>
+            <button class="trueanswer"  id="vp5">Вкладенний</button>
+            <button class="falseasnwer" id="vp5f2">Маркований</button>
+            <button class="falseasnwer" id="vp5f3">Це не список</button>
+        </div>
+
+            <hr>
+
+        <div id="q-box6">         
+            <span class="vopros">6) Яке твердження про цей фрагмент коду неправильне?
+                <br>
+                <span class="border-exmpl">
+                    <span class="tag">&lt;body&gt;</span><br>
+                    <span class="tag">&lt;h1&gt;</span>Заголовок<span class="tag">&lt;/h1&gt;</span><br>
+                    <span class="tag">&lt;p&gt;</span>
+                    Текст що описує зображення
+                    <span class="tag">&lt;img</span> <span class="blue">src="image.jpg"</span><span class="tag">&gt;</span>
+                    <span class="tag">&lt;/p&gt;</span><br>
+                    <span class="tag">&lt;/body&gt;</span>
+                </span>
+            </span>
+           
+            <button class="falseasnwer" id="vp6f1">&lt;p&gt; дочірній для &lt;body&gt;</button>
+            <button class="trueanswer"  id="vp6">&lt;h1&gt; материнський для &lt;img&gt;</button>
+            <button class="falseasnwer" id="vp6f2">&lt;h1&gt;, &lt;p&gt; та &lt;img&gt; дочірні для &lt;body&gt;</button>
+            <button class="falseasnwer" id="vp6f3">&lt;h1&gt; родинний для &lt;p&gt;</button>
+        </div> 
+            <hr>     
+        <div id="q-box7">    
+            
+            <span class="vopros">7) Який маршрут треба вказати у <span class="tag">&lt;img</span> <span class="blue">src=""</span><span class="tag">&gt;</span> в index.html, щоб у браузері відобразилось image.jpg?
+            <img src="images/folders-skhema.png" width="600px"><br></span>
+            
+            <button class="falseasnwer" id="vp7f1">main/sites/images/headers/image.jpg</button>
+            <button class="falseasnwer" id="vp7f2">../../images/headers/image.jpg</button>
+            <button class="falseasnwer" id="vp7f3">../main/images/headers/image.jpg</button>
+            <button class="trueanswer"  id="vp7">../images/headers/image.jpg</button>
+        </div>
+
+            <hr>
+        <div id="q-box8">          
+            <span class="vopros">8) Установіть відповідність між номером комірки та атрибутом, використаним для її створення
                 
-                $('.htmlboy').html(` <img src="images/htmlboy/good.png">
-<p> Вітаю! Ти пройшов(ла) цей тест на 
-    ` +a+ ` балів!
-</p>
-    <button id="nextA" class="blue-button" >Ура</button> `);
+                <table class="compare-table" style="float: left; margin: 20px; clear: both">
+                    <tr>
+                        <th rowspan="3">1</th> <td>a</td>  <th colspan="3">4</th> 
+                    </tr>
+                    <tr>
+                         <th colspan="2">2</th>  <td>a</td> <th rowspan="2">3</th>
+                    </tr>
+                    <tr>
+                             <td>a</td> <td>a</td> <td>a</td> 
+                        </tr>
+                </table>
+                <div style="margin-left: 350px; margin-bottom: 40px;">
+                    <br>
+                        <ol style="list-style-type: upper-latin; list-style-position: inside">
+                            <li>rowspan="2"</li>
+                            <li>rowspan="3"</li>
+                            <li>colspan="2"</li>
+                            <li>colspan="3"</li>
+                        </ol>
+                    </div>
+            </span>
+
+            <button class="falseasnwer" id="vp8f1">1)D, 2)A, 3)C, 4)B</button>
+            <button class="falseasnwer" id="vp8f2">1)D, 2)A, 3)B, 4)D</button>
+            <button class="falseasnwer" id="vp8f3">1)D, 2)C, 3)A, 4)B</button>
+            <button class="trueanswer"  id="vp8">1)B, 2)C, 3)A, 4)D</button>
+            
+        </div>
+
+            <hr> 
+            
+        <div id="q-box9">     
+            <span class="vopros">9) Які теги використано для форматування цього <strong><big><em>слова</em></big></strong>?</span>
+            
+            <button class="falseasnwer" id="vp9f1"><span class="tag">&lt;em&gt;</span>, <span class="tag">&lt;strong&gt;</span></button>
+            <button class="trueanswer"  id="vp9"><span class="tag">&lt;em&gt;</span>, <span class="tag">&lt;strong&gt;</span>, <span class="tag">&lt;big&gt;</span></button>
+            <button class="falseasnwer" id="vp9f2"><span class="tag">&lt;i&gt;</span>, <span class="tag">&lt;big&gt;</span></button>
+            <button class="falseasnwer" id="vp9f3"><span class="tag">&lt;big&gt;</span>, <span class="tag">&lt;big&gt;</span>, <span class="tag">&lt;i&gt;</span></button>
+        </div>    
+            
+            <hr>  
+        <div id="q-box10"> 
+            <span class="vopros">10) У якому вікні відкриється гіперпосилання та чи буде створювати нові вікна при кожному натисканні?
+                <br>
+                <span class="border-exmpl"><span class="tag">&lt;a </span><span class="blue">href=</span><span class="light-blue">"page.html"</span> <span class="blue">target=</span><span class="light-blue">"blank"</span><span class="tag">&gt;</span>гіперпосилання<span class="tag">&lt;/a&gt;</span></span></span>
+            
+            <button class="falseasnwer" id="vp10f1">Відкриється у тому ж вікні</button>
+            <button class="falseasnwer" id="vp10f2">При кожному натисканні <br>створюватиме нове вікно</button>
+            <button class="trueanswer"  id="vp10">При першому натисканні відкриється у новому вікні, <br>а при наступних - у вже створенному</button>
+        </div>
+            
+            <hr> 
+
+        <div id="q-box11">         
+            <span class="vopros">11) Павло вірішив додати на свою сторінку зображення свого кота, але воно було завелике, тож він вирішив зменшити його за допомогою атрибутів. Але щось пішло не так... Чому зображення відображене на сторінці виглядає більш "сплюснутим" ніж оригінальне зображення?</span>
+            <br>
+            <figure style="display: inline-block">
+                    <figcaption>Оригінальне зображення</figcaption>
+                <img src="images/cat.jpg" title="оригінал"> 
+            </figure>
+        <figure style="display: inline-block; margin-left: 40px; vertical-align: top">
+                <figcaption>Відображення на сторінці</figcaption>
+                <img src="images/cat.jpg" title="відображення на сторінці" width="300px" height="200px">
+        </figure>
+        
+        
+            <br>
+            <button class="trueanswer"  id="vp11">Павло вказав одночасно і height, і width</button>
+            <button class="falseasnwer" id="vp11f1">Павло вказав height і width у відсотках</button>
+            <button class="falseasnwer" id="vp11f2" >Павло вказав лише height та не вказав width</button>
+            <button class="falseasnwer" id="vp11f3">Павло вказав лише width та не вказав height</button>
+        </div>    
+
+            <hr>  
+            
+        <div id="q-box12">     
+            <span class="vopros">12) <img src="images/html-txt.png" style="float: left; margin-right: 10px"> Марія намагалась створити HTML файл у блокноті, але в неї вийшов текстовий файл формату .txt з назвою index.html. Якої помилки допустилась Марія?</span>
+            <br><br><br>
+            <button class="falseasnwer" id="vp12f1">Вона змінила кодування файлу</button>
+            <button class="trueanswer"  id="vp12">Вона забула змінити тип файлу на "Усі файли"</button>
+            <button class="falseasnwer" id="vp12f2">Створений нею файл не містив жодного тегу</button>
+            <button class="falseasnwer" id="vp12f3">Її компьютер не підтримує формат .html</button>
+        </div>
+        
+            </p>
+            <div id="result-space">
+            <span class="vopros">Твій результат: `+a+` балів</span>
+            </div>
+            `);
+/* $('.trueanswer').css('background-color','green','border-color','green');
+$('.falseasnwer').css('background-color','red','border-color','red'); */
 
                     $('.htmlboy').show();
                     $('#nextA').on('click', function () {
@@ -472,9 +664,9 @@
             
     `);
 
-$('#q-box1 .trueanswer').css('background-color','green','border-color','green');
-$('#q-box1 .trueanswer'). css('opacity','0.4');
-$('#q-box1 .falseasnwer').css('background-color','red','border-color','red'); 
+
+$('#q-box1 .trueanswer'). css('background-color','rgba(0, 44, 126, 0.5)');
+
             };
             if(attrid == "vp2"){
                $('#q-box2').html(`
@@ -487,9 +679,9 @@ $('#q-box1 .falseasnwer').css('background-color','red','border-color','red');
             
     `);
 
-$('#q-box2 .trueanswer').css('background-color','green','border-color','green');
-$('#q-box2 .trueanswer'). css('opacity','0.4');
-$('#q-box2 .falseasnwer').css('background-color','red','border-color','red'); 
+
+$('#q-box2 .trueanswer'). css('background-color','rgba(0, 44, 126, 0.5)');
+
             };
             if(attrid == "vp3"){
                $('#q-box3').html(`
@@ -502,9 +694,9 @@ $('#q-box2 .falseasnwer').css('background-color','red','border-color','red');
             
     `);
 
-$('#q-box3 .trueanswer').css('background-color','green','border-color','green');
-$('#q-box3 .trueanswer'). css('opacity','0.4');
-$('#q-box3 .falseasnwer').css('background-color','red','border-color','red'); 
+
+$('#q-box3 .trueanswer'). css('background-color','rgba(0, 44, 126, 0.5)');
+
             };
             if(attrid == "vp4"){
                $('#q-box4').html(`
@@ -517,9 +709,9 @@ $('#q-box3 .falseasnwer').css('background-color','red','border-color','red');
             
     `);
 
-$('#q-box4 .trueanswer').css('background-color','green','border-color','green');
-$('#q-box4 .trueanswer'). css('opacity','0.4');
-$('#q-box4 .falseasnwer').css('background-color','red','border-color','red'); 
+
+$('#q-box4 .trueanswer'). css('background-color','rgba(0, 44, 126, 0.5)');
+
             };
             if(attrid == "vp5"){
                $('#q-box5').html(`
@@ -550,9 +742,9 @@ $('#q-box4 .falseasnwer').css('background-color','red','border-color','red');
             
     `);
 
-$('#q-box5 .trueanswer').css('background-color','green','border-color','green');
-$('#q-box5 .trueanswer'). css('opacity','0.4');
-$('#q-box5 .falseasnwer').css('background-color','red','border-color','red'); 
+
+$('#q-box5 .trueanswer'). css('background-color','rgba(0, 44, 126, 0.5)');
+
             };
             if(attrid == "vp6"){
                $('#q-box6').html(`
@@ -576,9 +768,9 @@ $('#q-box5 .falseasnwer').css('background-color','red','border-color','red');
             
     `);
 
-$('#q-box6 .trueanswer').css('background-color','green','border-color','green');
-$('#q-box6 .trueanswer'). css('opacity','0.4');
-$('#q-box6 .falseasnwer').css('background-color','red','border-color','red'); 
+
+$('#q-box6 .trueanswer'). css('background-color','rgba(0, 44, 126, 0.5)');
+
             };
             if(attrid == "vp7"){
                $('#q-box7').html(`
@@ -592,9 +784,9 @@ $('#q-box6 .falseasnwer').css('background-color','red','border-color','red');
             
     `);
 
-$('#q-box7 .trueanswer').css('background-color','green','border-color','green');
-$('#q-box7 .trueanswer'). css('opacity','0.4');
-$('#q-box7 .falseasnwer').css('background-color','red','border-color','red'); 
+
+$('#q-box7 .trueanswer'). css('background-color','rgba(0, 44, 126, 0.5)');
+
             };
             if(attrid == "vp8"){
                $('#q-box8').html(`
@@ -629,9 +821,9 @@ $('#q-box7 .falseasnwer').css('background-color','red','border-color','red');
             
     `);
 
-$('#q-box8 .trueanswer').css('background-color','green','border-color','green');
-$('#q-box8 .trueanswer'). css('opacity','0.4');
-$('#q-box8 .falseasnwer').css('background-color','red','border-color','red'); 
+
+$('#q-box8 .trueanswer'). css('background-color','rgba(0, 44, 126, 0.5)');
+
             };
             if(attrid == "vp9"){
                $('#q-box9').html(`
@@ -644,9 +836,9 @@ $('#q-box8 .falseasnwer').css('background-color','red','border-color','red');
             
     `);
 
-$('#q-box9 .trueanswer').css('background-color','green','border-color','green');
-$('#q-box9 .trueanswer'). css('opacity','0.4');
-$('#q-box9 .falseasnwer').css('background-color','red','border-color','red'); 
+
+$('#q-box9 .trueanswer'). css('background-color','rgba(0, 44, 126, 0.5)');
+
             };
             if(attrid == "vp10"){
                $('#q-box10').html(`
@@ -660,9 +852,9 @@ $('#q-box9 .falseasnwer').css('background-color','red','border-color','red');
             
     `);
 
-$('#q-box10 .trueanswer').css('background-color','green','border-color','green');
-$('#q-box10 .trueanswer'). css('opacity','0.4');
-$('#q-box10 .falseasnwer').css('background-color','red','border-color','red'); 
+
+$('#q-box10 .trueanswer'). css('background-color','rgba(0, 44, 126, 0.5)');
+
             };
 
             if(attrid == "vp11"){
@@ -686,9 +878,9 @@ $('#q-box10 .falseasnwer').css('background-color','red','border-color','red');
             <button class="falseasnwer" id="vp11f3">Павло вказав лише width та не вказав height</button>
            `);
 
-$('#q-box11 .trueanswer').css('background-color','green','border-color','green');
-$('#q-box11 .trueanswer'). css('opacity','0.4');
-$('#q-box11 .falseasnwer').css('background-color','red','border-color','red'); 
+
+$('#q-box11 .trueanswer'). css('background-color','rgba(0, 44, 126, 0.5)');
+
             };
            
             if(attrid == "vp12"){
@@ -701,10 +893,9 @@ $('#q-box11 .falseasnwer').css('background-color','red','border-color','red');
             <button class="falseasnwer" id="vp12f3">Її компьютер не підтримує формат .html</button>
             `);
 
-$('#q-box12 .trueanswer').css('background-color','green','border-color','green');
-$('#q-box12 .trueanswer'). css('opacity','0.4');
-$('#q-box12 .falseasnwer').css('background-color','red','border-color','red'); 
-            };
+
+$('#q-box12 .trueanswer'). css('background-color','rgba(0, 44, 126, 0.5)');            
+};
 
            
 			});
@@ -791,14 +982,13 @@ $('#q-box12 .falseasnwer').css('background-color','red','border-color','red');
             
     `);
 
-$('#q-box1 .trueanswer').css('background-color','green','border-color','green');
-$('#q-box1 .falseasnwer').css('background-color','red','border-color','red'); 
+
 if(attridf == "vp1f1") {
-    $('#vp1f1'). css('opacity','0.4');
+    $('#vp1f1'). css('background-color','rgba(0, 44, 126, 0.5)');
 } else if (attridf == "vp1f2") {
-    $('#vp1f2'). css('opacity','0.4');
+    $('#vp1f2'). css('background-color','rgba(0, 44, 126, 0.5)');
 } else {
-    $('#vp1f3'). css('opacity','0.4');
+    $('#vp1f3'). css('background-color','rgba(0, 44, 126, 0.5)');
 }
             };
             if(attridf == "vp2f1" || attridf == "vp2f2" || attridf == "vp2f3"){
@@ -812,14 +1002,13 @@ if(attridf == "vp1f1") {
             
     `);
 
-$('#q-box2 .trueanswer').css('background-color','green','border-color','green');
-$('#q-box2 .falseasnwer').css('background-color','red','border-color','red'); 
+
 if(attridf == "vp2f1") {
-    $('#vp2f1'). css('opacity','0.4');
+    $('#vp2f1'). css('background-color','rgba(0, 44, 126, 0.5)');
 } else if (attridf == "vp2f2") {
-    $('#vp2f2'). css('opacity','0.4');
+    $('#vp2f2'). css('background-color','rgba(0, 44, 126, 0.5)');
 } else {
-    $('#vp2f3'). css('opacity','0.4');
+    $('#vp2f3'). css('background-color','rgba(0, 44, 126, 0.5)');
 }
             };
             if(attridf == "vp3f1" || attridf == "vp3f2" || attridf == "vp3f3"){
@@ -833,14 +1022,13 @@ if(attridf == "vp2f1") {
             
     `);
 
-$('#q-box3 .trueanswer').css('background-color','green','border-color','green');
-$('#q-box3 .falseasnwer').css('background-color','red','border-color','red'); 
+
 if(attridf == "vp3f1") {
-    $('#vp3f1'). css('opacity','0.4');
+    $('#vp3f1'). css('background-color','rgba(0, 44, 126, 0.5)');
 } else if (attridf == "vp3f2") {
-    $('#vp3f2'). css('opacity','0.4');
+    $('#vp3f2'). css('background-color','rgba(0, 44, 126, 0.5)');
 } else {
-    $('#vp3f3'). css('opacity','0.4');
+    $('#vp3f3'). css('background-color','rgba(0, 44, 126, 0.5)');
 }
             };
             if(attridf == "vp4f1" || attridf == "vp4f2" || attridf == "vp4f3"){
@@ -854,14 +1042,13 @@ if(attridf == "vp3f1") {
             
     `);
 
-$('#q-box4 .trueanswer').css('background-color','green','border-color','green');
-$('#q-box4 .falseasnwer').css('background-color','red','border-color','red'); 
+
 if(attridf == "vp4f1") {
-    $('#vp4f1'). css('opacity','0.4');
+    $('#vp4f1'). css('background-color','rgba(0, 44, 126, 0.5)');
 } else if (attridf == "vp4f2") {
-    $('#vp4f2'). css('opacity','0.4');
+    $('#vp4f2'). css('background-color','rgba(0, 44, 126, 0.5)');
 } else {
-    $('#vp4f3'). css('opacity','0.4');
+    $('#vp4f3'). css('background-color','rgba(0, 44, 126, 0.5)');
 }
             };
             if(attridf == "vp5f1" || attridf == "vp5f2" || attridf == "vp5f3"){
@@ -893,14 +1080,13 @@ if(attridf == "vp4f1") {
             
     `);
 
-$('#q-box5 .trueanswer').css('background-color','green','border-color','green');
-$('#q-box5 .falseasnwer').css('background-color','red','border-color','red'); 
+ 
 if(attridf == "vp5f1") {
-    $('#vp5f1'). css('opacity','0.4');
+    $('#vp5f1'). css('background-color','rgba(0, 44, 126, 0.5)');
 } else if (attridf == "vp5f2") {
-    $('#vp5f2'). css('opacity','0.4');
+    $('#vp5f2'). css('background-color','rgba(0, 44, 126, 0.5)');
 } else {
-    $('#vp5f3'). css('opacity','0.4');
+    $('#vp5f3'). css('background-color','rgba(0, 44, 126, 0.5)');
 }
             };
             if(attridf == "vp6f1" || attridf == "vp6f2" || attridf == "vp6f3"){
@@ -925,14 +1111,13 @@ if(attridf == "vp5f1") {
             
     `);
 
-$('#q-box6 .trueanswer').css('background-color','green','border-color','green');
-$('#q-box6 .falseasnwer').css('background-color','red','border-color','red'); 
+
 if(attridf == "vp6f1") {
-    $('#vp6f1'). css('opacity','0.4');
+    $('#vp6f1'). css('background-color','rgba(0, 44, 126, 0.5)');
 } else if (attridf == "vp6f2") {
-    $('#vp6f2'). css('opacity','0.4');
+    $('#vp6f2'). css('background-color','rgba(0, 44, 126, 0.5)');
 } else {
-    $('#vp6f3'). css('opacity','0.4');
+    $('#vp6f3'). css('background-color','rgba(0, 44, 126, 0.5)');
 }
             };
             if(attridf == "vp7f1" || attridf == "vp7f2" ||attridf == "vp7f3" ){
@@ -947,14 +1132,13 @@ if(attridf == "vp6f1") {
             
     `);
 
-$('#q-box7 .trueanswer').css('background-color','green','border-color','green');
-$('#q-box7 .falseasnwer').css('background-color','red','border-color','red'); 
+
 if(attridf == "vp7f1") {
-    $('#vp7f1'). css('opacity','0.4');
+    $('#vp7f1'). css('background-color','rgba(0, 44, 126, 0.5)');
 } else if (attridf == "vp7f2") {
-    $('#vp7f2'). css('opacity','0.4');
+    $('#vp7f2'). css('background-color','rgba(0, 44, 126, 0.5)');
 } else {
-    $('#vp7f3'). css('opacity','0.4');
+    $('#vp7f3'). css('background-color','rgba(0, 44, 126, 0.5)');
 }
             };
             if(attridf == "vp8f" || attridf == "vp8f2" ||attridf == "vp8f3"){
@@ -990,14 +1174,13 @@ if(attridf == "vp7f1") {
             
     `);
 
-$('#q-box8 .trueanswer').css('background-color','green','border-color','green');
-$('#q-box8 .falseasnwer').css('background-color','red','border-color','red'); 
+
 if(attridf == "vp8f1") {
-    $('#vp8f1'). css('opacity','0.4');
+    $('#vp8f1'). css('background-color','rgba(0, 44, 126, 0.5)');
 } else if (attridf == "vp8f2") {
-    $('#vp8f2'). css('opacity','0.4');
+    $('#vp8f2'). css('background-color','rgba(0, 44, 126, 0.5)');
 } else {
-    $('#vp8f3'). css('opacity','0.4');
+    $('#vp8f3'). css('background-color','rgba(0, 44, 126, 0.5)');
 }
             };
             if(attridf == "vp9f1" || attridf == "vp9f2" || attridf == "vp9f3"){
@@ -1011,14 +1194,13 @@ if(attridf == "vp8f1") {
             
     `);
 
-$('#q-box9 .trueanswer').css('background-color','green','border-color','green');
-$('#q-box9 .falseasnwer').css('background-color','red','border-color','red'); 
+
 if(attridf == "vp9f1") {
-    $('#vp9f1'). css('opacity','0.4');
+    $('#vp9f1'). css('background-color','rgba(0, 44, 126, 0.5)');
 } else if (attridf == "vp9f2") {
-    $('#vp9f2'). css('opacity','0.4');
+    $('#vp9f2'). css('background-color','rgba(0, 44, 126, 0.5)');
 } else {
-    $('#vp9f3'). css('opacity','0.4');
+    $('#vp9f3'). css('background-color','rgba(0, 44, 126, 0.5)');
 }
             };
             if(attridf == "vp10f1" || attridf == "vp10f2"){
@@ -1033,12 +1215,11 @@ if(attridf == "vp9f1") {
             
     `);
 
-$('#q-box10 .trueanswer').css('background-color','green','border-color','green');
-$('#q-box10 .falseasnwer').css('background-color','red','border-color','red'); 
+
 if(attridf == "vp10f1") {
-    $('#vp10f1'). css('opacity','0.4');
+    $('#vp10f1'). css('background-color','rgba(0, 44, 126, 0.5)');
 } else {
-    $('#vp10f2'). css('opacity','0.4');
+    $('#vp10f2'). css('background-color','rgba(0, 44, 126, 0.5)');
 }
             };
             if(attridf == "vp11f1" || attridf == "vp11f2" || attridf == "vp11f3"){
@@ -1063,14 +1244,13 @@ if(attridf == "vp10f1") {
             
     `);
 
-$('#q-box11 .trueanswer').css('background-color','green','border-color','green');
-$('#q-box11 .falseasnwer').css('background-color','red','border-color','red'); 
+
 if(attridf == "vp11f1") {
-    $('#vp11f1'). css('opacity','0.4');
+    $('#vp11f1'). css('background-color','rgba(0, 44, 126, 0.5)');
 } else if (attridf == "vp11f2") {
-    $('#vp11f2'). css('opacity','0.4');
+    $('#vp11f2'). css('background-color','rgba(0, 44, 126, 0.5)');
 } else {
-    $('#vp11f3'). css('opacity','0.4');
+    $('#vp11f3'). css('background-color','rgba(0, 44, 126, 0.5)');
 }
             };
             if(attridf == "vp12f1" || attridf == "vp12f2" || attridf == "vp12f3"){
@@ -1087,14 +1267,13 @@ if(attridf == "vp11f1") {
 
 `+a+`</span>`);
 
-$('#q-box12 .trueanswer').css('background-color','green','border-color','green');
-$('#q-box12 .falseasnwer').css('background-color','red','border-color','red'); 
+
 if(attridf == "vp12f1") {
-    $('#vp12f1'). css('opacity','0.4');
+    $('#vp12f1'). css('background-color','rgba(0, 44, 126, 0.5)');
 } else if (attridf == "vp7f2") {
-    $('#vp12f2'). css('opacity','0.4');
+    $('#vp12f2'). css('background-color','rgba(0, 44, 126, 0.5)');
 } else {
-    $('#vp12f3'). css('opacity','0.4');
+    $('#vp12f3'). css('background-color','rgba(0, 44, 126, 0.5)');
 }
             };
 
