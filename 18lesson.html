@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="dont%20touch/css/bootstrap.min.css">
     <link rel="stylesheet" href="dont%20touch/css/app.css">
-<title>Роботоа з текстом</title>
+    <title>Роботоа з текстом</title>
 
     <!-- РУКИ ПРОЧЬ-->
     <link rel="stylesheet" href="dont%20touch/css/app.css">
@@ -101,15 +101,16 @@
         <div class="row">
 
             <div class="img-to-header col-12 col-sm-12 col-md-4 col-lg-3  ">
-                <img src="images/java-9-stream.jpg">
+                <img src="images/d4bd670136bb439a82fe259a83052eb5.png">
             </div>
             <div class="header-div col-12 col-sm-12 col-md-8 col-lg-9">
                 <div>
-                    <h1>Потік</h1>
+                    <h1>Позиціонування</h1>
                     <h3> У цьому уроці ви дiзнаєтеся :</h3>
                     <ul id="main-ul">
 
-                        <li> Що таке потік</li>
+                        <li> Що таке позиціонування</li>
+                        <li> Які види позиціонування є</li>
 
                     </ul>
                 </div>
@@ -132,31 +133,64 @@
         </div>
 
         <div class="lesson-block" id="hypers-1">
-            <h1>Потік</h1>        </div>
+            <h1>Про позиціонування</h1>
+
+
+            <h3>Для цього уроку ми будемо використовувати CSS
+            </h3>
+
+        </div>
 
 
         <div class="lesson-block" id="block1_2">
 
-            <img src="images/picture-116.png" class="ilustration_left">
+            <img src="images/Без названия.png" class="ilustration_left">
             <p>
-               Всі елементи заносяться у один єдиний потік. Потік визначає де саме елемент буде знаходитися
-               на сторінці .Перший елемент у тезі <span class="tag">body</span> буде перим,а останній -- 
-               останнім.
+                У минулому уроці ми вже розбирали поняття потоку ,проте ви ще не знаєте як ним керувати.
+                Так ось елемент можна позиціонувати за допомогою правил CSS. Позиціонувати елемент можливо як від інших
+                елементів,так і від вікна сторінки.
+            </p>
+        </div>
+        <div class="lesson-block" id="block1_3">
+            <h1>Власне позиціонуванняд</h1>
+
+            <p>
+                <br> <br> <h4>Правилa      </h4>      <hr>
+
+            <ul>
+                <li>position -- головне правило,встановлює тип позиціонування</li>
+                <li>top -- відстань від іерхнього елемента</li>
+                <li> left -- відстань від лівого елемента</li>
+                <li>right -- відстань від правого елемента</li>
+                <li>bottom -- відстань від  нижнього елементе</li>
+            </ul>
+            І якщо для останніх 3 все ясно, то про 1 ми ще поговоримо.
+            Для нього можуть бути такі аргументи
+
+            <br>   <h4>absolute</h4>
+            <hr>
+
+            Абсолютне позиціонування виносить елемент з потоку й позиционує його відносно самої сторінки
+            <br>   <h4>fixed</h4>
+            <hr>
+Фіксоване позиціонування  також працює відносно сторінки боаузера,але елемент,який так позиціонується, фіксується . Прикладом є  ТЕГ.
+            <br>   <h4>relative</h4>
+            <hr>
+Відносне позиціонування використовується ljcnfnymj xfcnj. Воно є у потоці .Наприклад кожен абзац цього тексту позиціонований відносно.
+
             </p>
             <div class="homework" id="hw1">
-                <h3> Завдання:</h3>
-                <p>Відкрийте у вкладці браузер будь-яку сторінку та роберіть її потік.</p>
-            </div>
+                <h3>Завдання</h3>
+                <p>Створіть сторінку із різними видами позиционування</p>
             </div>
         </div>
 
 
-
-       
-
         <div class="lesson-block">
-            <a href="16lesson.html" class="poperedniy-lesson"><h3><img src="images/icon/arrow-left.png" width="35px"> На попередній урок</h3></a>
-            <a href="18lesson.html" class="next-lesson"><h3>На наступний урок <img src="images/icon/arrow-right.png" width="35px"></h3></a>
+            <a href="lesson4.html" class="poperedniy-lesson"><h3><img src="images/icon/arrow-left.png" width="35px"> На
+                попередній урок</h3></a>
+            <a href="six-lesson.html" class="next-lesson"><h3>На наступний урок <img src="images/icon/arrow-right.png"
+                                                                                     width="35px"></h3></a>
 
         </div>
 
@@ -166,7 +200,7 @@
 <script src="dont%20touch/js/bootstrap.min.js"></script>
 <script>
     $(document).ready(function () {
-        var arr = [`Привіт,я ТЕГ ,я будлу допомагати тобі .Настикай ЕНТЕР і я буду давати підсказки.`, `Маша`];
+        var arr = [`Привіт,я ТЕГ ,я буду допомагати тобі .Настикай ЕНТЕР і я буду давати підсказки.`,``];
         var counter = 1;
 
         $('.htmlboy').html(` <img src="images/htmlboy/confused.png">
