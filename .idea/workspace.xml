@@ -24,11 +24,52 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/17lesson.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
+            <state relative-caret-position="2856">
               <caret line="168" column="100" selection-start-line="168" selection-start-column="100" selection-end-line="168" selection-end-column="100" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/10lesson.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="1023" column="313" lean-forward="true" selection-start-line="1021" selection-start-column="13" selection-end-line="1023" selection-end-column="313" />
+              <folding>
+                <element signature="e#56#60#0" expanded="true" />
+                <element signature="e#63#67#0" expanded="true" />
+                <element signature="e#105#109#0" expanded="true" />
+                <element signature="e#110#114#0" expanded="true" />
+                <element signature="e#143#147#0" expanded="true" />
+                <element signature="e#151#155#0" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#span#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ol#0;n#div#0;n#span#0;n#!!top" expanded="true" />
+                <element signature="e#56#60#0" expanded="true" />
+                <element signature="e#64#68#0" expanded="true" />
+                <element signature="e#126#130#0" expanded="true" />
+                <element signature="e#134#138#0" expanded="true" />
+                <element signature="e#72#76#0" expanded="true" />
+                <element signature="e#77#81#0" expanded="true" />
+                <element signature="e#56#60#0" expanded="true" />
+                <element signature="e#62#66#0" expanded="true" />
+                <element signature="e#56#60#0" expanded="true" />
+                <element signature="e#61#65#0" expanded="true" />
+                <element signature="e#103#107#0" expanded="true" />
+                <element signature="e#111#115#0" expanded="true" />
+                <element signature="e#90#94#0" expanded="true" />
+                <element signature="e#98#102#0" expanded="true" />
+                <element signature="e#80#84#0" expanded="true" />
+                <element signature="e#87#91#0" expanded="true" />
+                <element signature="e#98#102#0" expanded="true" />
+                <element signature="e#108#112#0" expanded="true" />
+                <element signature="e#65#69#0" expanded="true" />
+                <element signature="e#72#76#0" expanded="true" />
+                <element signature="e#132#136#0" expanded="true" />
+                <element signature="e#142#146#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -36,7 +77,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/18lesson.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
+            <state relative-caret-position="3111">
               <caret line="183" column="69" selection-start-line="183" selection-start-column="69" selection-end-line="183" selection-end-column="69" />
             </state>
           </provider>
@@ -45,7 +86,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/12lesson.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1100">
+            <state relative-caret-position="3077">
               <caret line="181" column="31" selection-end-line="260" />
             </state>
           </provider>
@@ -54,7 +95,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lesson4.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="2839">
               <caret line="167" column="3" selection-start-line="167" selection-start-column="3" selection-end-line="202" selection-end-column="14" />
             </state>
           </provider>
@@ -103,16 +144,16 @@
         <option value="$PROJECT_DIR$/second_lessontrue.html" />
         <option value="$PROJECT_DIR$/14lesson.html" />
         <option value="$PROJECT_DIR$/Index.css" />
-        <option value="$PROJECT_DIR$/10lesson.html" />
         <option value="$PROJECT_DIR$/12lesson.html" />
         <option value="$PROJECT_DIR$/for_all.css" />
         <option value="$PROJECT_DIR$/lesson4.html" />
         <option value="$PROJECT_DIR$/18lesson.html" />
         <option value="$PROJECT_DIR$/17lesson.html" />
+        <option value="$PROJECT_DIR$/10lesson.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="666" />
@@ -216,6 +257,7 @@
       <workItem from="1567242996489" duration="1096000" />
       <workItem from="1567263805347" duration="3160000" />
       <workItem from="1567268524550" duration="6831000" />
+      <workItem from="1567319908561" duration="1572000" />
     </task>
     <task id="LOCAL-00001" summary="all">
       <created>1549641294883</created>
@@ -235,7 +277,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150043000" />
+    <option name="totallyTimeSpent" value="151615000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -247,7 +289,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.59098226" visible="true" weight="0.15178572" />
       <window_info id="Favorites" order="1" sideWeight="0.4090177" side_tool="true" weight="0.18377976" />
@@ -475,38 +517,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/10lesson.html">
+    <entry file="file://$PROJECT_DIR$/17lesson.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="562">
-          <caret line="312" selection-start-line="312" selection-end-line="312" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lesson4.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="167" column="3" selection-start-line="167" selection-start-column="3" selection-end-line="202" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/12lesson.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1100">
-          <caret line="181" column="31" selection-end-line="260" />
+        <state relative-caret-position="2856">
+          <caret line="168" column="100" selection-start-line="168" selection-start-column="100" selection-end-line="168" selection-end-column="100" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/18lesson.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
+        <state relative-caret-position="3111">
           <caret line="183" column="69" selection-start-line="183" selection-start-column="69" selection-end-line="183" selection-end-column="69" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/17lesson.html">
+    <entry file="file://$PROJECT_DIR$/12lesson.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="168" column="100" selection-start-line="168" selection-start-column="100" selection-end-line="168" selection-end-column="100" />
+        <state relative-caret-position="3077">
+          <caret line="181" column="31" selection-end-line="260" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lesson4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2839">
+          <caret line="167" column="3" selection-start-line="167" selection-start-column="3" selection-end-line="202" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10lesson.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="1023" column="313" lean-forward="true" selection-start-line="1021" selection-start-column="13" selection-end-line="1023" selection-end-column="313" />
+          <folding>
+            <element signature="e#56#60#0" expanded="true" />
+            <element signature="e#63#67#0" expanded="true" />
+            <element signature="e#105#109#0" expanded="true" />
+            <element signature="e#110#114#0" expanded="true" />
+            <element signature="e#143#147#0" expanded="true" />
+            <element signature="e#151#155#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ol#0;n#div#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="e#56#60#0" expanded="true" />
+            <element signature="e#64#68#0" expanded="true" />
+            <element signature="e#126#130#0" expanded="true" />
+            <element signature="e#134#138#0" expanded="true" />
+            <element signature="e#72#76#0" expanded="true" />
+            <element signature="e#77#81#0" expanded="true" />
+            <element signature="e#56#60#0" expanded="true" />
+            <element signature="e#62#66#0" expanded="true" />
+            <element signature="e#56#60#0" expanded="true" />
+            <element signature="e#61#65#0" expanded="true" />
+            <element signature="e#103#107#0" expanded="true" />
+            <element signature="e#111#115#0" expanded="true" />
+            <element signature="e#90#94#0" expanded="true" />
+            <element signature="e#98#102#0" expanded="true" />
+            <element signature="e#80#84#0" expanded="true" />
+            <element signature="e#87#91#0" expanded="true" />
+            <element signature="e#98#102#0" expanded="true" />
+            <element signature="e#108#112#0" expanded="true" />
+            <element signature="e#65#69#0" expanded="true" />
+            <element signature="e#72#76#0" expanded="true" />
+            <element signature="e#132#136#0" expanded="true" />
+            <element signature="e#142#146#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
