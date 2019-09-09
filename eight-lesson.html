@@ -135,49 +135,101 @@
             <h1>Як додати зображення</h1>
 
 
-            <h3><span class="tag">&lt;img&gt;</span></h3>
+            <h2><span class="tag">&lt;img&gt;</span></h2>
 
         </div>
 
 
         <div class="lesson-block" id="block1_2">
 
-            <img src="images/html (1).png" class="ilustration_left">
+           <img src="images/html (1).png" class="ilustration_left">
             <p>
                 Для створення зображення використовують тег <span class="tag">&lt;img&gt;</span> але одного його
-                недостатньо,слід доати атрибут
-                <span class="blue">src=''</span>,де у лапках пишемо шдя до зображення.Шлях до зображення показує ,як до
-                нього дістатись.Якщо сторінка
-                лежить біля зображення (у одный теці), то пишемо назву із розширенням типу images.png ,де назва-перед
-                крапкою,а розширення після
-                .У прикладі буде використано зображення ,яке загружено на окремий сервер, тому шлях до нього буде
-                виглядати інакше.
+                недостатньо, слід додати атрибут
+                <span class="blue">src=""</span>, де у лапках пишемо шлях до зображення. Шлях до зображення показує ,як до
+                нього дістатись. 
             </p>
             <div class="codepen-pattern">
-                <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html,result"
-                   data-user="artemndreevich" data-slug-hash="GVXoWG"
-                   style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
-                   data-pen-title="GVXoWG">
-  <span>See the Pen <a href="https://codepen.io/artemndreevich/pen/GVXoWG/">
-  GVXoWG</a> by artem (<a href="https://codepen.io/artemndreevich">@artemndreevich</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-                </p>
-                <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-            </div>
-
+                    <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html,result"
+                       data-user="artemndreevich" data-slug-hash="GVXoWG"
+                       style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+                       data-pen-title="GVXoWG">
+      <span>See the Pen <a href="https://codepen.io/artemndreevich/pen/GVXoWG/">
+      GVXoWG</a> by artem (<a href="https://codepen.io/artemndreevich">@artemndreevich</a>)
+      on <a href="https://codepen.io">CodePen</a>.</span>
+                    </p>
+                    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                </div>
+                <hr>
             <p>
-                Дійсно,ми вставили зображення. Але воно завелеке,переходимо до наступної частини.
+                <img src="images/img-src1.png" class="ilustration_left"> 
+                <br>  
+                Якщо сторінка лежить біля зображення (у одный теці), то шлях вказувати не треба. Потрібно лише вказати назву зображення 
+                та його розширення. Наприклад, у <span class="blue">src="image.png"</span>
+                ми вказали шлях до зображення з назвою image та розширенням .png, що знохидиться у одній теці з HTML-файлом в якому цей шлях прописаний. 
+                <br>
+                
             </p>
-        </div>
+            <br>
+               
+            <p>
+                <h3>А якщо зображення знаходиться у іншій теці?</h3> 
+                Роздивимось 2 варіанти: коли тека з 
+                зображенням знаходиться всередині теки з HTML-файлом, та коли зображення знаходиться поза текою HTML-файла. 
+                
+            </p>
+            <p>
+                <img src="images/img-src2.png" class="ilustration_left" title="Тека з зображенням знаходиться всередині теки з HTML-файлом">
+                Якщо зображення знаходиться в теці, яка знаходиться в теці з HTML-файлом, як на зображенні ліворуч, то у маршруті треба вказати теку, в якій знаходиться зображення. 
+                Для цього у <span class="blue">src=""</span> пишемо назву теки, в яку треба зайти від index.html щоб дістатись зображення (в нашому випадку images), потім пишемо знак "/" і вже потім ім'я зображення. 
+                <br>
+                <span class="border-exmpl"><span class="tag">&lt;img</span> <span class="blue">src="images/image.png"</span><span class="tag">&gt;</span></span>
+                <br>
+            </p>
+            <hr>
 
+            <p>  
+                <img src="images/img-src3.png" class="ilustration_left" title="Зображення знаходиться поза текою HTML-файла">  
+                Якщо ж зображення знаходиться взагалі поза текою HTML-файла, як у прикладі зліва, тоді щоб дістатись до 
+                зображення треба спочатку вийти із теки в якій знаходиться HTML-файл (index.html). Для цього 
+                у <span class="blue">src=""</span> пишемо "../", що означає вихід із теки, а потім пишемо ім'я зображення. 
+                <br>
+                <span class="border-exmpl"><span class="tag">&lt;img</span> <span class="blue">src="../image.png"</span><span class="tag">&gt;</span></span>
+                <br>
+            </p>
+            <hr>
+            <p> 
+                
+                <img src="images/img-src4.png" class="ilustration_left" title="Зображення знаходиться поза текою HTML-файла, але також у теці">  
+                Якщо ж це зображення буде у якійсь теці, яка знаходиться на одному рівні вкладенності з текою pages, 
+                то після виходу з теки pages (../) треба буде вказати ще назву теки в якій знаходиться зображення (images/) і в кінці ім'я зображення.
+                <br>
+                <span class="border-exmpl"><span class="tag">&lt;img</span> <span class="blue">src="../images/image.png"</span><span class="tag">&gt;</span></span>
+            </p>    
+<br><br>
+<div class="homework" id="hw2">
+        <h3>Завдання 1:</h3>
+        <p>Створіть теку lesson8. У ній створіть 2 теки: exercises та images. 
+            У теку images помістіть 3 будь-яких зображення, а у теці exercises створіть HTML-сторінку на якій 
+            вони мають відображатись.
+            <br>Майте на увазі, якщо шлях до зображень
+            буде вказано неправильно, вони не відобразяться</p>
+    </div>
+    <br><br>
+            <h4>
+                Дійсно,ми вставили зображення. Але воно завелеке,переходимо до наступної частини.
+            </h4>
+        </div>
+        
         <div class="lesson-block" id="block1_3">
-            <h3>Робота з розміром</h3>
+            <h1>Додаткові атрибути</h1>
+            <h2>Робота з розміром</h2>
 
 
             <p>
-                А тепер виправимо проблему розміру зображення.Атрибути <span class="blue">height=''</span> та <span
+                А тепер виправимо проблему розміру зображення. Атрибути <span class="blue">height=''</span> та <span
                     class="blue">width=''</span>
-                контролюють розмір зображення по висоті та ширині відповідно.У лапки слід записати розмір у пікселях
+                контролюють розмір зображення по висоті та ширині відповідно. У лапки слід записати розмір у пікселях
                 (px)
             </p>
             <div class="codepen-pattern">
@@ -192,15 +244,59 @@
                 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
             </div>
             <p>
-                У нас війшло змінити розмір зображення,але що станеться, якощо вказати неправильний шлях?
+                <span class="red">Зверніть увагу!</span> Як ви, мабуть, помітили, зображення змінило свої пропорції. 
+                Це тому що ми вказали height="80px" та width="200px" які, звичайно, зменшили висоту та ширину до 
+                відповідних значеннь, але й порушили початкові пропорції зображення, тому воно виглядає таким "сплюснутим".
+            <br><br>
+            Щоб цього ефекту запобігти і зображення змінило розмір зберігаючи оригінальні пропорції, треба вказувати лише висоту, 
+            або лише ширину. Тоді другий показник зміниться пропорційно першому.  
+                
             </p>
-
+            <div class="codepen-pattern">
+                    <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html,result"
+                       data-user="RitaKr" data-slug-hash="aboYNLL"
+                       style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+                       data-pen-title="aboYNLL">
+      <span>See the Pen <a href="https://codepen.io/ritakr/pen/aboYNLL/">
+        aboYNLL</a> by Rita (<a href="https://codepen.io/RitaKr">@RitaKr</a>)
+      on <a href="https://codepen.io">CodePen</a>.</span>
+                    </p>
+                    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                </div>
+<p>
+    Бачите різницю?
+</p>
+<p>
+   До цього ми вказували ширину у пікселях, проте її можна вказати ще й у відсотках. Це відсоткове значення застосовується
+     відносно оригінальної ширини зображеня. Тобто, якщо ви вкажете <span class="blue">width="50%"</span>, нова ширина 
+     становитиме 50% від початкової, тобто зменшиться вдвічі. 
+     <br>
+     Проте у такий спосіб не можна вказати висоту. Вона зміниться пропорційно ширині, навіть якщо ви все-таки спробуєте вказати
+      ії у відсотках.
+</p>
+<div class="codepen-pattern">
+        <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html,result"
+           data-user="ritakr" data-slug-hash="qBWoNOQ"
+           style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+           data-pen-title="qBWoNOQL">
+<span>See the Pen <a href="https://codepen.io/ritakr/pen/qBWoNOQ/">
+    qBWoNOQ</a> by Rita (<a href="https://codepen.io/RitaKr">@RitaKr</a>)
+on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+    </div>
+        </div>
+        <div class="lesson-block">
+            <h4>
+                У нас вийшло змінити розмір зображення, але що станеться, якщо вказати неправильний шлях?
+            </h4>
         </div>
 
         <div class="lesson-block" id="block2_1">
-            <h1>Додаткові атрибути</h1>
+            
+            <h2>Інші атрибути</h2>
 
-            <p>Але інколи зображення не загружається і ви бачите це</p>
+            <p>Але інколи зображення не завантажується і ви бачите це</p>
             <div class="codepen-pattern">
                 <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html,result"
                    data-user="artemndreevich" data-slug-hash="vozKjg"
@@ -215,8 +311,8 @@
 
 
             </div>
-            <p>Тоді ми додаємо атрибут <span class="blue">height=''</span> ,у лапки вписуємо текст, який має
-                відобразитися ,коли зображенення не завантажиться.</p>
+            <p>Тоді ми додаємо атрибут <span class="blue">alt=''</span>, у лапки вписуємо текст, який має
+                відобразитися, коли зображенення не завантажиться.</p>
 
             <div class="codepen-pattern">
                 <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html,result"
@@ -231,8 +327,8 @@
 
 
             </div>
-            <p>Тепер ще один атрибут- <span class="blue">title=''</span> ,у лапки вписуємо текст, який має
-                відобразитися ,коли на зображення буде наведено вказівник миші.</p>
+            <p>Тепер ще один атрибут - <span class="blue">title=''</span>, у лапки вписуємо текст, який має
+                відобразитися, коли на зображення буде наведено вказівник миші.</p>
             <div class="codepen-pattern">
                 <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html,result"
                    data-user="artemndreevich" data-slug-hash="mNGrQz"
@@ -246,9 +342,20 @@
                 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
             </div>
 
+        </div>
+        <div class="lesson-block">
+                <div class="homework" id="hw2">
+                        <h3> Завдання 2:</h3>
+                        <p>Попрацюйте з зображеннями які ви додали на сторінку у першому завданні: додайте вспливаючі підказки з коротким змістом зображень, додайте alt та зменшіть усі три зображення так, щоб вони мали одну висоту та вміщались у один рядок.</p>
+                    </div>
+            <div class="homework" id="hw1">
+                    <h3> Завдання:</h3>
+                    <p>Вставте зображення з інтернету та таке саме,але вже завантажене й порівняйте швидкість їх завантаження.</p>
+                </div>
         </div><!--закрывает <div class="lesson-block" id="block2_1">-->
 
-
+                
+                
         <div class="summary" id="sum_les4">
             <h2>Підсумуємо:</h2>
             <div class="row">
@@ -256,18 +363,22 @@
                     <table>
                         <tr>
                             <td> Для створення забраження використовується тег <span class="tag">&lt;img&gt;</span>
-                                та атрибут <span class="blue">src=''</span>
+                                та атрибут <span class="blue">src=""</span>
                             <td><img src="images/html.png" height="150px">
                             </td>
                         </tr>
                         <tr>
+                            <td> Ширина і висота зображення змінюється за допомогою атрибутів <span class="blue">width=""</span> та <span class="blue">height=""</span> 
+                                відповідно.
+                            </tr>
+                        <tr>
                             <td> У тега <span class="tag">&lt;img&gt;</span> є додатковий атрибут <span class="blue">
-                                alt=''</span>,який відповідає за альтернативний текст.
+                                alt=''</span>, який відповідає за альтернативний текст.
                             </td>
                             <td><img src="images/htm.png" height="150px" alt='Не вийшло'></td>
                         </tr>
                         <tr>
-                            <td>Для додавання назви використовують атрибут <span class="blue">title=''</span>
+                            <td>Для додавання назви (спливаючої підказки) використовують атрибут <span class="blue">title=''</span>
                             </td>
                             <td><img src="images/html.png" height="150px" title='Bийшло'></td>
                         </tr>
@@ -276,10 +387,7 @@
                 </div>
             </div>
 
-<div class="homework" id="hw1">
-                <h3> Завдання:</h3>
-                <p>Вставте зображення з інтернету та таке саме,але вже завантажене й порівняйте швидкість їх завантаження.</p>
-            </div>
+
         </div>
 
         <div class="lesson-block">

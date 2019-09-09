@@ -151,8 +151,8 @@ td .tag, .falseasnwer .tag, .trueanswer .tag {
 
 }
 
-span.border-exmpl span.blue {
-    font-size: 1em;
+hr {
+    clear: both;
 }
 
 .light-blue {
