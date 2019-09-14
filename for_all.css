@@ -159,7 +159,15 @@ hr {
     color: rgb(0, 131, 131);
 
 }
-
+.rule {
+    color: #a32650;
+    font-family: monospace;
+    font-size: 1.2em;
+}
+.argument {
+    color: rgb(0, 131, 131);
+  
+}
 .redp {
     padding: 5px 10px 5px 30px;
     margin: 5px 0px;

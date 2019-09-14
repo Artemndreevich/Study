@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="ua">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -109,7 +110,13 @@
                     <h3> У цьому уроці ви дiзнаєтеся :</h3>
                     <ul id="main-ul">
 
-                        <li> Як змінювати текст</li>
+                        <li> Як змінювати шрифт, та як шрифти класифыкуються</li>
+                        <li> Як змінювати розмір тексту</li>
+                        <li> Як змінювати жирність тексту</li>
+                        <li> Як зробити текст курсивом</li>
+                        <li> Як робити різні підкреслення</li>
+                        <li> Як змінювати інтервал між рядками</li>
+                        <li> Як вирівняти текст по центру та по правій стороні</li>
 
                     </ul>
                 </div>
@@ -135,7 +142,7 @@
             <h1>Зміна стилів тексту</h1>
 
 
-            <h3>Для цтого уроку ми будемо використовувати CSS
+            <h3>Для цього уроку ми будемо використовувати CSS
             </h3>
 
         </div>
@@ -143,63 +150,252 @@
 
         <div class="lesson-block" id="block1_2">
 
-            <img src="images/Без названия.png" class="ilustration_left">
+            <img src="images/fonts.jpg" class="ilustration_left">
+            
+               <h2>Власне шрифт</h2>
+                <h4>Для вибору шрифта використовують правило <span class="rule">font-familу</span>.</h4> 
+                <p>Після двокрапки вказується родина шрифтів або власне шрифт (бажано кілька шрифтів, на випадок якщо один або кілька з вказаних шритів не підтримується операційною системою).
+<br>
+            <span class="border-exmpl">
+                <span class="tag">p</span> {
+                <br><span class="rule">font-familу</span>: <span class="argument">Verdana, Geneva, Arial, sans-serif;</span> 
+                <br>   
+                }
+            </span>
+                
+                <h4>Всі шрифти поділяються на родини. Існує 5 родин шрифтів:</h4>
+                <table class="compare-table">
+                    <tr>
+                        <th>Назва родини</th>
+                        <th>Пояснення</th>
+                        <th>Приклади шрифтів</th>
+                    </tr>
+                    <tr>
+                        <td><span style="font-family: serif"class="argument">serif</span></td>   
+                        <td>Шрифти з засічками. Стоїть по замовчуванню</td>
+                        <td class="argument">Cambria, Cochin, Georgia, Times, 'Times New Roman'</td>    
+                    </tr>
+                    <tr>
+                        <td><span style="font-family: sans-serif"class="argument">sans-serif</span></td> 
+                        <td>Шрифти без засічок</td>
+                        <td class="argument">Verdana, Geneva, Tahoma, Trebushet MS, Arial</td>
+                    </tr>
+                    <tr>
+                        <td><span style="font-family: cursive"class="argument">cursive</span></td>     
+                        <td>Рукописні, курсивні шрифти</td>
+                        <td class="argument">Comic Sans MS, Bradley Hand, Brush Script MT, Snell Roundhand</td>
+
+                    </tr>
+                    <tr>
+                        <td><span style="font-family: fantasy"class="argument">fantasy</span></td>    
+                        <td>Декоративні шрифти</td>    
+                        <td class="argument">Impact, Luminari, Marker Felt, Trattatello</td>
+                    </tr>
+                    <tr>
+                        <td><span style="font-family: monospace; font-size: 1.2em"class="argument">monospace</span></td>     
+                        <td>Шрифти з фіксованою шириною символів</td>
+                        <td class="argument">Andale Mono, Courier New, Courier</td>
+                        </tr>
+                     
+                </table>
+            </p>
+            
+
+
+        <h2>Розмір шрифта</h2>
+        <h3>За розмір шрифта відповідає правило <span class="rule">font-size</span></h3>
+        <p>
+        Розмір шрифта можна вказувати у пікселях (<span class="argument">px</span>), відсоткх 
+        (<span class="argument">%</span>) та у маштабній одиниці <span class="argument">em</span>. Значення 
+        <span class="argument">em</span>, як і <span class="argument">%</span>,
+        показує скільки відсотків від початкового розміру буде становити новий розмір. Але 
+        це навідміну від <span class="argument">%</span>, число em поділене на 100. Тобто, 
+        <span class="argument">1em</span> = <span class="argument">100%</span> = початковому розміру 
+        шрифту. Тоді <span class="argument">2em</span>, відповідно, збільшує шрифт удвічі 
+        (<span class="argument">2em</span> = <span class="argument">200%</span>), <span class="argument">1.2em</span> 
+        становитиме <span class="argument">120%</span> від початкового шрифтy, а <span class="argument">0.5em</span>
+         зменшить шрифт удвічі (<span class="argument">0.5em</span> = <span class="argument">50%</span> від 
+        початкового шрифту).  
+        </p>
+        <div class="codepen-pattern">
+                <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html"
+                   data-user="ritakr" data-slug-hash="ZEzjWag"
+                   style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+                   data-pen-title="ZEzjWag">
+  <span>See the Pen <a href="https://codepen.io/ritakr/pen/ZEzjWag/">
+    ZEzjWag</a> by rita (<a href="https://codepen.io/ritakr">@RitaKr</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+            </div>
             <p>
-               <span class="fontfam">Власне шрифт</span> <hr>
-                Для вибору шрифта використовують правило font-familу,а після двокрапки можна вписувати як сам шрифт так і родини шрифтів.
-             А ось,що ожна вписувати
-                <ul>
-            <li>  serif -- шрифт з засічками  </li>
-            <li>sans-serif -- шрифт без засічок</li>
-            <li>cursive -- курсивні шрифти</li>
-            <li>fantasy --декоративні шрифти</li>
-        </ul>
-        <span class="fontsize">Розмір шрифта</span><hr>
-        Для визначення розміру шрифта слід вказати для правила font-size розмір шрифту. Можна вказувати розмір у всіх величинах.
-            <br>   <br>   <span class="fontweight">Жирність шрифта</span><hr>
-            Правило font-weigh може приймати такі аргументи
-            <ul>
-                <li>bold-полужирний</li>
-                <li>bolder-жирний</li>
-                <li>lighter-яскравий</li>
-                <li>normal-звичайний</li>
-            </ul>
-            <span class="fontstyle">Стиль тексту</span><hr>
-            Правило font-style впливаж на стиль тексту 
-            ,а стилів є 3
-            <ul>
-                <li>normal-- звичайний шрифт</li>
-                 <li>italic-курсивний шрифт</li>
+                Як бачите, один і той же розмір шрифту можна задати різними способами. Але для цього 
+                потрібно знати початкові розміри шрифту різних тегів. Для цього ми приготували 
+                порівнялюну таблицю розмірів шрифтів у різних тегів по замовчуванню:
 
-                <li>oblique --наклонний шрифт</li>
-            </ul>
-			<span class='lineheight'>Міжрядковий <br> інтервал </span>	<hr>
-            Іноді для звертання уваги треба зменшити або збільшити можрядковий інтервал. Цим керіє правило line-height, воно може приймати такі аргументи:
-			<ul>
-			<li>normal-відверниту змінення до звияайного </li>
-				<li> Значення у будь-яких величинах.</li>
-			</ul>
-			<span class="textdecor">Декорація тексту</span><hr>
-			Баналбна декорація тексту доступна за правилом text-decoration,аргументати можуть виступати 
-			<ul>
-			<li> underline- лінія під текстом</li>
-			<li>overline- лінія над текстом</li>
+                <table class="compare-table">
+                    <tr>
+                    <th>Назва тегу</th>
+                    <th>Розмір у px</th>
+                    <th>Розмір у % відносно &lt;p&gt;</th>
+                    <th>Розмір у em відносно &lt;p&gt;</th>
+                </tr>
+                <tr>
+                    <th>&lt;p&gt;</th>
+                    <th>16px</th>
+                    <th>100%</th>
+                    <th>1em</th>
+                </tr>
+                <tr>
+                    <th>&lt;h1&gt;</th>
+                    <th>32px</th>
+                    <th>200%</th>
+                    <th>2em</th>
+                </tr>
+                <tr>
+                    <th>&lt;h2&gt;</th>
+                    <th>24px</th>
+                    <th>150%</th>
+                    <th>1.5em</th>
+                </tr>
+                <tr>
+                    <th>&lt;h3&gt;</th>
+                    <th>19px</th>
+                    <th>120%</th>
+                    <th>1.2em</th>
+                </tr>
+                <tr>
+                    <th>&lt;h4&gt;</th>
+                    <th>16px</th>
+                    <th>100%</th>
+                    <th>1em</th>
+                </tr>
+                <tr>
+                    <th>&lt;h5&gt;</th>
+                    <th>14px</th>
+                    <th>90%</th>
+                    <th>0.9em</th>
+                </tr>
+                <tr>
+                    <th>&lt;h6&gt;</th>
+                    <th>10px</th>
+                    <th>60%</th>
+                    <th>0.6em</th>
+                </tr>
+                </table>
+    </p>
+    <p>
+        Значення <span class="argument">еm</span> та <span class="argument">%</span> буде залежати від розміру шрифту батьківсьокого елементу, 
+        або ж якщо шрифт для нього не вказаний, то від значення по замовчуванню. 
+        Наприклад, якщо для <span class="tag">&lt;body&gt;</span> ви вказали розмір шрифту 20px, а для <span class="tag">&lt;р&gt;</span>
+        0.9em, то розмір шрифту <span class="tag">&lt;р&gt;</span> буде становити <span class="argument">18px</span> (20*0.9=18), адже CSS 
+        рахує розміру шрифту значення <span class="tag">&lt;р&gt;</span> відповідно до значення батьківського <span class="tag">&lt;body&gt;</span>. 
+        Якби ви не вказали <span class="rule">font-size</span> для <span class="tag">&lt;body&gt;</span>, то розмір шрифту рахувався б від 
+        значення по замовчувааню (<span class="argument">16px</span> для <span class="tag">&lt;р&gt;</span>)
+        <div class="codepen-pattern">
+                <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html"
+                   data-user="ritakr" data-slug-hash="LYPBGWv"
+                   style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+                   data-pen-title="LYPBGWv">
+  <span>See the Pen <a href="https://codepen.io/ritakr/pen/LYPBGWv/">
+    LYPBGWv</a> by rita (<a href="https://codepen.io/ritakr">@RitaKr</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+            </div>
+    </p>
 
-<li>line-through- лінія перетинає тест по-середині </li>
-			<li>blink -блимаючий текст </li>
-<li>none-видалити всі  зміни тексту </li>
-			</ul>
-			<span class="textalign">Вирівнювання тексту</span><hr>
-			Зазвичай,текс вирівнюжться по лівому краю,але це можна змінити за допомогою правила text-align:
+        
+        <h2>Жирність шрифта</h2>
+        <h3>За жирність шрифту відповідає правило <span class="rule">font-weight</span></h3>
+            <p>
+            Правило <span class="rule">font-weight</span> може приймати такі аргументи:
+            <ul>
+                <li><span style="font-weight: 700; font-family: Arial" class="argument">bold</span> - напівжирний. Прописаний по замовчуванню для заголовків усіх рівнів</li>
+                <li><span style="font-weight: 900; font-family: Arial" class="argument">bolder</span> - жирний</li>
+                <li><span style="font-weight: lighter; font-family: Arial" class="argument">lighter</span> - яскравий (тонкий)</li>
+                <li><span style="font-weight: 500; font-family: Arial" class="argument">normal</span> - звичайний. Прописаний по замовчуванню 
+                    для <span class="tag">&lt;p&gt;</span></li>
+            </ul>
+            </p>
+            <h2>Стиль тексту</h2>
+            <h3>Для зміни стилю тексту використовують правило <span class="rule">font-style</span></h3>
+            <p>
+            <span class="rule">font-style</span> впливає на стиль тексту. Існує 3 аргументи <span class="rule">font-style</span>:
+            <ul>
+                <li><span class="argument">normal</span> - стоїть по замовчувааню і не змінює нічого</li>
+                <li><span style="font-style: italic" class="argument">italic</span> - робить текст курсивом (CSS аналог <span class="tag">&lt;em&gt;</span>)</li>
+                <li><span style="font-style: oblique" class="argument">oblique</span> - робить текст похилим</li>
+            </ul>
+            </p>
+
+            
+            <h2>Міжрядковий інтервал</h2>
+            <h3>Для змінення міжрядкового інтервалу використовують правило <span class="rule">line-height</span></h3>
+            <p>
+            Іноді для звертання уваги треба зменшити або збільшити можрядковий інтервал. Цим керує правило 
+            <span class="rule">line-height</span>, воно може приймати такі аргументи:
+            
+            <ul>
+			<li><span class="argument">normal</span> - відверниту змінення до звичайного інтервалу</li>
+                <li>Значення у <span class="argument">px</span></li>
+                <li>Значення у <span class="argument">em</span></li>
+                <li>Значення у <span class="argument">%</span></li>
+            </ul>
+        </p>
+            <h2>Декорація тексту</h2>
+            <h3>Для декореції тексту лініями використовують правило <span class="rule">text-decoration</span></h3>
+        <p>
+            Правило <span class="rule">text-decoration</span> може приймати такі аргументи: 
 			<ul>
-			<li>left- по-лівому краю</li>
-				<li>right- по-правому краю</li>
-				<li>center- по-центру</li>
-			</ul>
+            <li><span style="text-decoration: overline" class="argument">overline</span> - лінія над текстом</li>
+            <li><span style="text-decoration: underline" class="argument">underline</span> - лінія під текстом (звичайне підкреслення)</li>
+            <li><span style="text-decoration: wavy underline" class="argument">wavy underline</span> - хвилясте підкреслення</li>
+            <li><span style="text-decoration: dashed underline" class="argument">dashed underline</span> - підкреслення пунктиром</li>
+            <li><span style="text-decoration: dotted underline" class="argument">dotted underline</span> - підкреслення у крапочку</li>
+            <li><span style="text-decoration: double underline" class="argument">double underline</span> - подвійне підкреслення</li>
+            <li><span style="text-decoration: line-through" class="argument">line-through</span> - лінія перетинає текст по-середині </li>
+            <li><span class="argument">none</span> - видалити всі декорації тексту </li>
+            </ul>
+        </p>
+
+            <h2>Вирівнювання тексту</h2>
+            <h3>Для вирывнювання тексту по-центру або по певному краю використовують правило <span class="rule">text-align</span></h3>
+            <p>
+            Зазвичай, текст вирівнюжться по лівому краю, але це можна змінити за допомогою правила <span class="rule">text-align</span>
+            та його аргументів:
+			<ul>
+			<li><span class="argument">left</span> - вирівнює по лівому краю. Стоїть по замовчуванню</li>
+			<li><span class="argument">right</span> - вирівнює по правому краю</li>
+            <li><span class="argument">center</span> - вирівнює по центру</li>
+            <li><span class="argument">justify</span> - заповнює весь рядок равномірно</li>
+            </ul>
+            
+            <div class="codepen-pattern">
+                    <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html"
+                       data-user="ritakr" data-slug-hash="mdbjEwQ"
+                       style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+                       data-pen-title="mdbjEwQ">
+      <span>See the Pen <a href="https://codepen.io/ritakr/pen/mdbjEwQ/">
+        mdbjEwQ</a> by rita (<a href="https://codepen.io/ritakr">@RitaKr</a>)
+      on <a href="https://codepen.io">CodePen</a>.</span>
+                    </p>
+                    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                </div>
             </p>
                        <div class="homework" id="hw1">
                 <h3> Завдання:</h3>
-                <p>Створіть сторінку-статтю, де використайте мінімум 3 правила для тексту.</p>
+                <p>Створіть сторінку-статтю на будь-яку тему, дотримуючись рекомендацій замовника:
+                    <ol>
+                        <li>Шрифт усієї сторінки має бути без засічек</li>
+                        <li>Розмір шрифту усієї сторінки має становити 18px</li>
+                        <li>Розмір шрифту заголовків має бути в півтори рази більшим ніж по замовчуванню</li>
+                        <li>Заголовки мають бути вирівняними по центру</li>
+                        <li>Підзаголовки мають бути підкресленими хвилястою лінією і також вирівняними по центру</li>
+                        <li>Текст абзаців має заповнювати весь рядок</li>
+                        <li>інтервал між рядками у заголовків повинен становити 50%</li>
+                    </ol>
+                </p>
             </div>
         </div>
 
@@ -208,8 +404,8 @@
        
 
         <div class="lesson-block">
-            <a href="lesson4.html" class="poperedniy-lesson"><h3><img src="images/icon/arrow-left.png" width="35px"> На попередній урок</h3></a>
-            <a href="six-lesson.html" class="next-lesson"><h3>На наступний урок <img src="images/icon/arrow-right.png" width="35px"></h3></a>
+            <a href="11lesson.html" class="poperedniy-lesson"><h3><img src="images/icon/arrow-left.png" width="35px"> На попередній урок</h3></a>
+            <a href="13lesson.html" class="next-lesson"><h3>На наступний урок <img src="images/icon/arrow-right.png" width="35px"></h3></a>
 
         </div>
 
@@ -219,15 +415,18 @@
 <script src="dont%20touch/js/bootstrap.min.js"></script>
 <script>
     $(document).ready(function () {
-        var arr = ['Маша', 'Петя', 'Марина', 'Василий'`Привіт,я ТЕГ ,я будлу допомагати тобі .Настикай ЕНТЕР і я буду давати підсказки.`,
-         `Зазвичай текст стилізується по лівому краю. Проте у таблицях зручно коли він починаеться по-центру.`];
+        var arr = [`Привіт, я ТЕГ ,я буду допомагати тобі .Настикай ЕНТЕР і я буду давати підсказки.`,
+          'Правило <span class="rule">font-weight</span> працює корректно далеко не з усіма шрифтами. Тому ви можете не побачити різниці між <span class="argument">lighter</span> і <span class="argument">rormal</span> або <span class="argument">bold</span> і <span class="argument">bolder</span>',
+          `Зазвичай текст стилізується по лівому краю. Проте у таблицях зручно коли він починаеться по-центру.`,
+        'Ви не побачите дію <span class="rule">text-align</span>: <span class="argument">justify</span> поки тексту не буде стільки, щоб він переходив на наступний рядок',
+    '<span class="rule">text-align</span> працює лише з текстом!' ];
         var counter = 1;
 
-        $('.htmlboy').html(` <img src="images/htmlboy/confused.png">
+        $('.htmlboy').html(` <img src="images/htmlboy/hello.png">
 <p>
     ` + arr[0] + `
 </p>
-    <button id="nextA" class="blue-button" >Давай</button> `);
+    <button id="nextA" class="blue-button" >Закрити</button> `);
 
 
         $('#nextA').on('click', function () {
@@ -238,11 +437,11 @@
 
         $(document).on('keypress', function (e) {
             if (e.which == 13 && arr[0] != undefined) {
-                $('.htmlboy').html(` <img src="images/htmlboy/confused.png">
+                $('.htmlboy').html(` <img src="images/htmlboy/good.png">
 <p>
  ` + arr[0] + `
 </p>
-    <button id="nextA" class="blue-button" >Давай</button> `).fadeIn(200);
+    <button id="nextA" class="blue-button" >Закрити</button> `).fadeIn(200);
 
                 $('#nextA').on('click', function () {
                     $('.htmlboy').hide();
