@@ -1,0 +1,1 @@
+<a href="page.html" target="blank">гіперпосилання</a>
