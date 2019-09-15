@@ -1,0 +1,28 @@
+.x{
+    background-color: blue;
+
+
+}
+.y{
+    background-color: red;
+}
+
+.menu-div{
+    height: auto;
+    text-align: center;
+}
+.menu-artem div a {
+    padding: 5%;}
+.log{
+    color: rgba(0, 44, 126, 0.7);
+    font-weight: bolder;
+    font-size: 30px
+}
+.img-to-header{
+}
+.img-to-header img{
+    width: 100%;
+}
+.header-div div {
+   padding:1vw;
+}
