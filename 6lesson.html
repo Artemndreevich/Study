@@ -135,8 +135,8 @@
             <h1>Про рівні вкладеності</h1>
 
 
-            <h3>Все логічно
-            </h3>
+            <h2>Рівні вкладеності на прикладі вкладених списків
+            </h2>
 
         </div>
 
@@ -145,36 +145,67 @@
 
             <img src="images/link-pyramid-2.png" class="ilustration_left">
             <p>
-                Коле елемент (тег) лежить у іншому елементі,то він називається вкладеним. Тобто різні рівні цих
-                єлементів й називаються рівнями вкладеностями. Наприклад візьмемо текст з минулого уроку
+                Коли елемент (тег) лежить у іншому елементі, то він називається вкладеним. Елемент може знаходитись на n-нному рівні вкладеності,
+                тобто бути вкладеним у тег який в свою чергу вкладений у інший тег і тд...
+                Наприклад візьмемо текст з минулого уроку
             </p>
             <div class="codepen-pattern">
                 <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html"
-                   data-user="artemndreevich" data-slug-hash="dybzvrx"
+                   data-user="ritakr" data-slug-hash="dybzvrx"
                    style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
                    data-pen-title="dybzvrx">
   <span>See the Pen <a href="https://codepen.io/ritakr/pen/dybzvrx/">
-  mNxoKz</a> by artem (<a href="https://codepen.io/artemndreevich">@artemndreevich</a>)
+    dybzvrx</a> by Rita (<a href="https://codepen.io/ritakr">@ritakr</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
                 </p>
                 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
             </div>
 
             <p>
-                На 1 рівні вкладеності <span class="tag">&lt;ul&gt;</span> ,далі на другому <span
-                    class="tag">&lt;li&gt;</span>, на третьому
-                <span class="tag">&lt;ol&gt;</span> і на четвертому - <span class="tag">&lt;li&gt;</span>.
-                Логіка легка-чим менше рівень вкладеності тім більше елементів він обгортає.
+                На першому рівні вкладеності знаходиться <span class="tag">&lt;ul&gt;</span> (він не вкладений у жоден тег), далі на другому рівні знаходиться
+                <span class="tag">&lt;li&gt;</span> (адже він вкладений у <span class="tag">&lt;ul&gt;</span>), на третьому -
+                <span class="tag">&lt;ol&gt;</span> (бо він вкладений у елемент, що на другому рівні вкладенності, тобто вкладений у 2 елементи) і на четвертому (останньому) рівні вкладеності - <span class="tag">&lt;li&gt;</span>, котрий вкладений у <span class="tag">&lt;ol&gt;</span>.
+                Логіка легка - чим більше рівень вкладеності тим в більшу кількість елементів він вкладений.
 
             </p>
         </div>
 
         <div class="lesson-block" id="block1_3">
-            <h3>Назви елементів</h3>
+        <h2>Рівні вкладеності на прикладі структури сторінки</h2>
+
+        <div class="codepen-pattern">
+                <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html"
+                   data-user="ritakr" data-slug-hash="QWLzdaB"
+                   style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+                   data-pen-title="QWLzdaB">
+  <span>See the Pen <a href="https://codepen.io/ritakr/pen/QWLzdaB/">
+    QWLzdaB</a> by Rita (<a href="https://codepen.io/ritakr">@ritakr</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+            </div>
+            <p>
+                Щоб краще зрозуміти рівні вкладеності цього коду, пропонуємо подивитись схематичне зображення його структури:
+
+                <br>
+                <img src="images/rivni-vkladenosty.png" class="ilustration_left"><br>
+            <ol style="margin-left: 25%">
+                <li>На першому рівні вкладеності знаходиться <span class="tag">&lt;body&gt;</span></li>
+                <li>На другому - <span class="tag">&lt;h1&gt;</span>, <span class="tag">&lt;p&gt;</span>, <span class="tag">&lt;h2&gt;</span> та ще один <span class="tag">&lt;p&gt;</span>.</li> 
+                <li>На третьому рівні вкладеності розташовані <span class="tag">&lt;em&gt;</span> та <span class="tag">&lt;ul&gt;</span></li>
+                <li>На четвертому - <span class="tag">&lt;li&gt;</span></li> 
+                <li>I на останньому - п'ятому - <span class="tag">&lt;img&gt;</span></li>
+            </ol>
+        </p>
+        </div>
+
+
+        <div class="lesson-block" id="block1_3">
+            <h2>Родинні, дочірні та батьківські елементи</h2>
 
 
             <p>
-                Елементі також бувать родинні,дочірні та материнські.
+                Взалежності від рівня вкладенності елементи можуть бути один-одному родинні, дочірні та материнські (батьківські).
             </p>
             <div class="codepen-pattern">
                 <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html"
@@ -188,16 +219,54 @@
                 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
             </div>
             <p>
-На цьому прикладі ми бачимо що <span class="tag">&lt;ul&gt;</span> - материнська для всіх єлементів,адже має найменший рівень вкладеності.
-                <span
-                        class="tag">&lt;li&gt;</span>,який у  <span class="tag">&lt;ul&gt;</span> - материнській для   <span class="tag">&lt;ol&gt;</span> та для
-                <span
-                        class="tag">&lt;li&gt;</span>,який у  <span class="tag">&lt;оl&gt;</span>,родинний для <span
-                    class="tag">&lt;li&gt;</span>,який у  <span class="tag">&lt;ul&gt;</span> й дочірній для <span class="tag">&lt;ul&gt;</span>.
+На цьому прикладі ми бачимо що <span class="tag">&lt;ul&gt;</span> - батьківський для всіх єлементів, адже знаходиться на найменшому рівені вкладеності.
+                <span class="tag">&lt;li&gt;</span>,який лежить безпосередньо у <span class="tag">&lt;ul&gt;</span> є дочірнім для <span class="tag">&lt;ul&gt;</span> і материнським для <span class="tag">&lt;ol&gt;</span> та всіх інших елементів які в нього вкладені. 
+                <span class="tag">&lt;li&gt;</span> що знаходиться у <span class="tag">&lt;ol&gt;</span> є дочірнім для елементів у які він вкладенний і родинним для інших 
+                <span class="tag">&lt;li&gt;</span> що знаходяться на одному рівні з ним. 
             </p>
 
         </div>
 
+        <div class="lesson-block" id="block1_3">
+            <h2>Блокові та рядкові елементи</h2>
+            <h4>Майже усі теги поділяються на блокові та рядкові</h4>
+            <p><span class="important" style="font-size: 1.5em; color: rgba(0, 44, 126, 0.7)">Блокові елементи</span> - це елементи які займають усю ширину екрану та перед і песля яких є розрив рядка (Enter, грубо кажучи). 
+            <br>
+            <span class="important">Приклади: <span class="tag">&lt;p&gt;</span>, <span class="tag">&lt;h1&gt;</span>, <span class="tag">&lt;ul&gt;</span>, <span class="tag">&lt;li&gt;</span></span></p>
+            <p><span class="important" style="font-size: 1.5em; color: rgba(0, 44, 126, 0.7)">Рядкові елементи</span> - це елементи які не залишають відступів і зазвичай пишуться всередині блокових елементів, таких як 
+                <span class="tag">&lt;p&gt;</span>, <span class="tag">&lt;h1&gt;</span>, <span class="tag">&lt;h2&gt;</span> і тд.
+            <br>
+            <span class="important">Приклади: <span class="tag">&lt;em&gt;</span>, <span class="tag">&lt;а&gt;</span>, <span class="tag">&lt;img&gt;</span>, <span class="tag">&lt;q&gt;</span></span>
+    </p>
+    <p>Усі блокові елементи можуть містити текст та інші теги всередині, 
+        тож обов'язково мають закриватись. А от с рядковими не все так однозначно. 
+        Деякі рядкові теги, як, наприклад, <span class="tag">&lt;em&gt;</span>, 
+        можуть містити текст всередіні і також потребують закриття, а деякі, як <span class="tag">&lt;img&gt;</span>, 
+    не містять тексту і не закриваються. Але спільне в них завжди те, що вони розташовуються у текстових блокових елементах та не переносять контент на новий рядок.</p>
+
+    <h3>Особливості вкладеності блокових та рядкових елементів</h3>
+    <p>
+        У блокові елементи можна вкладати, як рядкові так і, власне, блокові. А от у рядкові вкладати блокові не бажоно. Наприклад, якщо ви хочете зробити заголовок гіперпосиланням, то краще гіперпосилання вставити у заголовок, а не навпаки
+    </p>
+    <h3>Теги <span class="tag">&lt;br&gt;</span> та <span class="tag">&lt;hr&gt;</span></h3>
+    <p>
+        Є також 2 теги, які не відносяться ні до блокових, ні до рядкових. Це <span class="tag">&lt;br&gt;</span> та <span class="tag">&lt;hr&gt;</span>. 
+        <span class="tag">&lt;br&gt;</span> переносить все що йде після нього на новий рядок, а <span class="tag">&lt;hr&gt;</span> створює розмежувальну лінію. 
+        Ці теги унікальні тим, що вони залишають перед собою та після себе відступи, але вони не містять ніякого контента і НІКОЛИ не закриваються. 
+    </p>
+    <div class="codepen-pattern">
+            <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html"
+               data-user="artemndreevich" data-slug-hash="PoYXmWo"
+               style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+               data-pen-title="PoYXmWo">
+<span>See the Pen <a href="https://codepen.io/ritakr/pen/PoYXmWo/">
+    PoYXmWo</a> by Rita (<a href="https://codepen.io/ritakr">@ritakr</a>)
+on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+        </div>
+
+        </div>
        
 
 

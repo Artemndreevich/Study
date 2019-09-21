@@ -657,37 +657,5 @@ table.invisible-table .right-half {
 #block1_2 ul {
 list-style-type: square;
 }
-.fontfam{
-font-size:1.55rem;
-font-family:fantasy;
-
-}
-.fontsize{
-font-size:2rem;
-font-size:1.55rem;
-
-}
-.fontstyle{
-font-style:oblique;
-font-size:1.55rem;
-
-}
-.lineheight{
-line-height:200%;font-size:1.55rem;
-
-}
-.textdecor{
-text-decoration:overline;
-
-    font-size:1.55rem;
 
 
-}
-.textalign{
-text-align:right;font-size:1.55rem;
-
-}
-.fontweight{
-    font-size:1.55rem;
-    font-weight: bolder;
-}
