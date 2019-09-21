@@ -2,7 +2,7 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/input.scss" line="3" />
-    <bookmark url="file://$PROJECT_DIR$/eight-lesson.html" line="229" />
+    <bookmark url="file://$PROJECT_DIR$/8lesson.html" line="229" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9019ccf-6b32-42a0-bc50-3f1cc22b715c" name="Default Changelist" comment="">
@@ -93,7 +93,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lesson4.html">
+        <entry file="file://$PROJECT_DIR$/4lesson.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2839">
               <caret line="167" column="3" selection-start-line="167" selection-start-column="3" selection-end-line="202" selection-end-column="14" />
@@ -137,16 +137,16 @@
         <option value="$PROJECT_DIR$/myscss" />
         <option value="$PROJECT_DIR$/input.scss" />
         <option value="$PROJECT_DIR$/main-page.html" />
-        <option value="$PROJECT_DIR$/six-lesson.html" />
-        <option value="$PROJECT_DIR$/five-lesson.html" />
-        <option value="$PROJECT_DIR$/eight-lesson.html" />
-        <option value="$PROJECT_DIR$/nine-lesson.html" />
-        <option value="$PROJECT_DIR$/second_lessontrue.html" />
+        <option value="$PROJECT_DIR$/6lesson.html" />
+        <option value="$PROJECT_DIR$/5lesson.html" />
+        <option value="$PROJECT_DIR$/8lesson.html" />
+        <option value="$PROJECT_DIR$/9lesson.html" />
+        <option value="$PROJECT_DIR$/2lesson.html" />
         <option value="$PROJECT_DIR$/14lesson.html" />
         <option value="$PROJECT_DIR$/Index.css" />
         <option value="$PROJECT_DIR$/12lesson.html" />
         <option value="$PROJECT_DIR$/for_all.css" />
-        <option value="$PROJECT_DIR$/lesson4.html" />
+        <option value="$PROJECT_DIR$/4lesson.html" />
         <option value="$PROJECT_DIR$/18lesson.html" />
         <option value="$PROJECT_DIR$/17lesson.html" />
         <option value="$PROJECT_DIR$/10lesson.html" />
@@ -464,10 +464,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/input.scss" />
-    <entry file="file://$PROJECT_DIR$/six-lesson.html" />
+    <entry file="file://$PROJECT_DIR$/6lesson.html" />
     <entry file="file://$PROJECT_DIR$/images/want31088-1zcV2Q1441993263.png" />
-    <entry file="file://$PROJECT_DIR$/lesson7.html" />
-    <entry file="file://$PROJECT_DIR$/eight-lesson.html" />
+    <entry file="file://$PROJECT_DIR$/7lesson.html" />
+    <entry file="file://$PROJECT_DIR$/8lesson.html" />
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/meta.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -475,14 +475,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nine-lesson.html">
+    <entry file="file://$PROJECT_DIR$/9lesson.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="148" column="73" selection-start-line="148" selection-start-column="73" selection-end-line="148" selection-end-column="73" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/five-lesson.html">
+    <entry file="file://$PROJECT_DIR$/5lesson.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="24" column="7" selection-end-line="315" />
@@ -510,7 +510,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/second_lessontrue.html">
+    <entry file="file://$PROJECT_DIR$/2lesson.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5372">
           <caret line="316" column="2" selection-start-line="316" selection-start-column="2" selection-end-line="316" selection-end-column="2" />
@@ -538,7 +538,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lesson4.html">
+    <entry file="file://$PROJECT_DIR$/4lesson.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2839">
           <caret line="167" column="3" selection-start-line="167" selection-start-column="3" selection-end-line="202" selection-end-column="14" />
