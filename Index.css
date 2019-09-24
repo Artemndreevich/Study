@@ -258,9 +258,7 @@ header#head{
 
     z-index: 2;
 }
-.new_file {
 
-}
 .new_file img {
      width: 100%;
      height: auto;
@@ -402,12 +400,43 @@ font-family: 'Comfortaa', cursive;
 transition: 0.6s;
 }
 */
-.menu-artem span {
 
-}
 #img_lesson{
     margin-right: 30px;
 }
+
+.openning-ul {
+background: rgba(255, 255, 255, 0.8);
+padding: 15px 15px 15px 20px;
+position: absolute;
+transform: scaleY(0);
+transform-origin: top;
+}
+.openning-ul hr {
+    padding: 0;
+    margin: 5px 0px;
+}
+.man:hover .openning-ul {
+transform: scaleY(1);
+transform-origin: top;
+transition: transform .4s ease-out;
+border-radius: 0 0 5px 5px;
+}
+.openning-ul li {
+    list-style: none;
+
+}
+.openning-ul li a {
+    font-size: .8em;
+    text-align: left; 
+    transition: transform 0.3s  ease-out; 
+}
+.openning-ul li a:hover {
+    font-size: .8em;
+    transform: scale3d(1.08, 1.08, 1);
+    text-align: left; 
+}
+
 @media screen and (max-width: 720px) {
 
     
@@ -509,7 +538,7 @@ transition: 0.6s;
 .man a{
     font-size: 1.1rem;
     font-family: 'Comfortaa', cursive;
-    transition: 1s;
+    transition: .3s;
 
 }
 .man a:hover{
@@ -517,7 +546,7 @@ transition: 0.6s;
     font-family: 'Comfortaa', cursive;
     color:black;
 text-decoration: none;
-    transition: 1s;
+transform: scale3d(1.08, 1.08, 1);
 
 }
 @import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');

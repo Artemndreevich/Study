@@ -90,7 +90,7 @@ $do="INSERT INTO `comment`(`id`,`name`, `text`,`ocenka`) VALUES('$id','$name', '
         </div>
 
         <div class=" man  col-3 col-sm-3 col-md-2 menu-div">
-            <a href="main-page.html" class="col-3 col-sm-3 col-md-2  ">Головна</a>
+            <a href="index.html" class="col-3 col-sm-3 col-md-2  ">Головна</a>
         </div>
 
         <div class="man col-3 col-sm-3 col-md-2 menu-div">

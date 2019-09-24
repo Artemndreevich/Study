@@ -206,6 +206,7 @@ $(document).ready(function() {
     $('#inf11_5').hide();
     $('#inf12').hide();
     $('#inf13').hide();
+    $('#inf13_1').hide();
     $('#inf14').hide();
     $('#inf15').hide();
     $('#inf16').hide();

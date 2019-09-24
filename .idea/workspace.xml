@@ -136,7 +136,7 @@
         <option value="$PROJECT_DIR$/artemscss" />
         <option value="$PROJECT_DIR$/myscss" />
         <option value="$PROJECT_DIR$/input.scss" />
-        <option value="$PROJECT_DIR$/main-page.html" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/6lesson.html" />
         <option value="$PROJECT_DIR$/5lesson.html" />
         <option value="$PROJECT_DIR$/8lesson.html" />
@@ -456,7 +456,7 @@
     <entry file="file://$PROJECT_DIR$/images/html-css.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/main-page.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1542">
           <caret line="329" column="18" selection-start-line="329" selection-start-column="18" selection-end-line="329" selection-end-column="18" />
