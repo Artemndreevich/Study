@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="dont%20touch/css/bootstrap.min.css">
     <link rel="stylesheet" href="dont%20touch/css/app.css">
-<title>Роботоа з текстом</title>
+<title>Кольорова стилізація сторінки</title>
 
     <!-- РУКИ ПРОЧЬ-->
     <link rel="stylesheet" href="dont%20touch/css/app.css">
@@ -141,7 +141,7 @@
         <div class="row">
 
             <div class="img-to-header col-12 col-sm-12 col-md-4 col-lg-3  ">
-                <img src="images/d4bd670136bb439a82fe259a83052eb5.png">
+                <img src="images/colors.png">
             </div>
             <div class="header-div col-12 col-sm-12 col-md-8 col-lg-9">
                 <div>
@@ -190,15 +190,12 @@
 
             <h2>Якими способами можна задавати колір</h2>
             <h4>Існує 3 способи якими можна задати колір:</h4>
-                <table class="compare-table" style="float: left">
+                <table class="compare-table il" style="float: left; margin-right: 20px" id="ways-to-set-color-table">
                     <tr>
                     <th>Спосіб</th><th>Приклад</th><th>Колір</th>
                     </tr>
                     <tr>
-                    <td rowspan="6">Назвою кольору</td><td>yellow</td><td style="background: yellow"></td>
-                    </tr>
-                    <tr>
-                    <td>blue</td><td style="background: blue"></td>
+                    <td rowspan="5">За назвою кольору</td><td>blue</td><td style="background: blue"></td>
                     </tr>
                     <tr>
                     <td>green</td><td style="background: green"></td>
@@ -214,10 +211,7 @@
                     </tr>
 
                     <tr>
-                    <td rowspan="6">Через rgb()</td><td>rgb(255, 255, 0)</td><td style="background: rgb(255, 255, 0)"></td>
-                    </tr>
-                    <tr>
-                    <td>rgb(0, 0, 255)</td><td style="background: #0000ff"></td>
+                    <td rowspan="5">Через rgb()</td><td>rgb(0, 0, 255)</td><td style="background: #0000ff"></td>
                     </tr>
                     <tr>
                     <td>rgb(0, 128, 0)</td><td style="background: rgb(0, 128, 0)"></td>
@@ -233,10 +227,7 @@
                     </tr>
 
                     <tr>
-                    <td rowspan="6">Через #</td><td>#FFFF00</td><td style="background: #FFFF00"></td>
-                    </tr>
-                    <tr>
-                    <td>#0000ff</td><td style="background: #0000ff"></td>
+                    <td rowspan="5">Через #</td><td>#0000ff</td><td style="background: #0000ff"></td>
                     </tr>
                     <tr>
                     <td>#008000</td><td style="background: #008000"></td>
@@ -251,11 +242,168 @@
                     <td>#ffffff</td><td style="background: #ffffff"></td>
                     </tr>
                 </table>
-            
-            <p></p>
+            <h3>1) За назвою кольору</h3>
+            <p>Тут все дуже просто. У значення властивості (color або background-color, про які ми розкажемо нижче) пишемо назву кольору на англійській. 
+                <br>
+                <span class="border-exmpl">
+                        <span class="tag">h1</span> {
+                            <br><span class="rule">color</span>: <span class="argument">sienna;</span> 
+                            <br>   
+                            }
+                </span>
+                <br>
+                Перейшовши за <a href="http://www.colors.commutercreative.com/grid/" target="colors">цим посиланням</a> ви можете побачити всі кольори в CSS та їх назви.
+                <br>
+                <span class="coment">Під словом "усі" мається на увазі "усі що можна задати цим способом. Насправді ж за допомогою наступних двох способів можна створити мілліони, якщо не мілліарди, відтінків</span> 
+            </p>
+            <p>
+                Але якщо у вас немає Інтернету, можете користуватись цією таблицею:
+                <br>
+                <img src="images/color-names-table.png" width="65%">
+            </p>
 
+            <h3>2) Через rgb()</h3>
+            <p>Тут вже трохи складніше. Навідміну від першого способу, тут ви самі ствоюєте колір, 
+                вказуючи через кому значення трьох основних показників кольорів: червоного, зеленого та синього 
+                (саме в такому порядку, адже rgb розшифровується як red green blue, тобто червоний зелений 
+                синій). 
+                <ol>
+                <li>
+                Мінімальне значення кожного показника - 0 (тобто відутність кольору), а максимальне - 255. 
+                </li>
+                <li>
+                Чим менше значення всіх показників rgb - тим темніший колір, а чим більше - тим світліший. 
+                Якщо rgb(255, 255, 255), то вийде білий колір, якщо rgb(0, 0, 0), то вийде чорний.
+                </li>
+                <li>
+                Чим більша різницця між значеннями показників, тим яскравіше вираженим та "чистішим" 
+                вийде колір. А чим менша - тим менш насиченим вийде колір. Наприклад:<br>
+                <span class="color-box">rgb(0, 0, 255)</span>
+                <span class="color-box">rgb(62, 73, 139)</span>
+                </li>
+                </ol>
+                
+            </p>
+            <h3>3) Через #</h3>
+            <p>Цей способ дуже схожий на попередній: тут так само треба вказувати значення червоного зеленого та синього, проте трохи іншим чином. 
+                <br>
+                <ol>
+                    <li>Колір записуэться так: Спочатку решітка #, потім двозначне число що відображають рівень 
+                        червоного, зеленого та синього у цьому ж порядку. Схематично це виглядає так: #rrggbb 
+                    </li>
+                    <li>
+                        У rgb ми вказували значення у десятковій системі числення, у цьому способі ці ж значення 
+                        требва вказувати <span class="red"></span>у шістнадцятковій системі числення</span>. 
+                        Це значить що значення кожного показника дорівнює двозначному числу від 00 до ff:
+                        <table class="compare-table" id="sixteen-sys">
+                            <tr>
+                                <th>Число у 10-й системі</th>
+                            </tr>
+                            <tr>
+                                <th>Число у 16-й системі</th>
+                            </tr>
+                        </table>
+                    </li>
+                </ol>
+                Оскільки всі три показники #rrggbb мають бути двозначними числами в 16-й системі, то нам 
+                треба навчитись переводити число с десяткової в шістнадцяткову і навпаки.</p>
+                <h4>1) З шістнадцяткової у десяткову</h4>
+                <p>Щоб перевести число з шістнадцяткової у десяткову систему, треба першу цифру 
+                    числа у шістнадцятковій помножити на 16 (якщо це буква, то переведіть її у цифру за допомогою 
+                    таблиці зверху і вже потім множте на 16) і додати другу цифру числа (якщо це буква, то її також 
+                    треба перевести у десяткову с. ч.)
+                    <br>
+                    
+                    <span style="line-height: 2em;">
+                    Наприклад ми маємо число b8 у шістнадцятковій с. ч. Щоб перевести його у десяткову треба:
+                    <br> 
+                    1) Перевести b у десяткову с. ч. за таблицею. Це 11 у десятковій.
+                    <br> 
+                        2) Помножити 11 (тобто b) на 16. Отримуємо 176.
+                        <br> 
+                        3) Додати до отриманих 176 другу цифру числа b8, тобто 8 (яка радість, 8 і в десятковій 
+                            системі - 8). Отримуємо 184.
+                        <br>
+                        <span class="important">b8 = b*16+8 = 11*16+8 = 176+8 = 184
+                            <br>
+                            b8 у шістнадцятковій = 184 у десятковій
+                        </span>
+                        
+                    </span>
+                </p>
+                <h4>1) З десяткової у шістнадцяткову</h4>    
+                <p>Щоб перевести число с десяткової с. ч. в шістнадцяткову треба це число поділити на 16 у стовпчик. 
+                    Ціла частина від ділення буде першою цифрою числа у шістнадцятковій, а остача буде другою цифрою 
+                числа у шістнадцятковій.
+            
+                <br>
+                    
+                <span style="line-height: 2em;">
+                Наприклад ми маємо 93 у десятковій с. ч. Щоб перевести його у шістнадцяткову треба:
+                <br> 
+                1) Поділити 93 на 16 в стовпчик:
+                <br>
+                <img src="images/16system.png">
+                <br> 
+                    2) Отримуємо цілу частину від ділення - 5. Це і буде першою цифрою нашого числа у шістнадцятковій с. ч.
+                    <br> 
+                    3) Остача в нас 13. 13 - це с в шістнадцятковій, тому друга цифра нашого числа в 16-й с. ч. буде с.
+                    <br>
+                    4) Тепер, знайшовши першу та другу цифру, отримуємо 5с.
+                    <br>
+                    <span class="important">93/16 = 5 (ост. 13) = 5 (ост. с) = 5c
+                            <br>
+                            93 у десятковій = 5c у шістнадцятковій
+                        </span>
+                    
+                </span>
+                </p>
+                    
+                    
+               
+            </p>
         </div>
     </div>
 </div>
+
+<script>
+let colorBox = document.getElementsByClassName('color-box');
+
+for (let i=0; i<colorBox.length; i++) {
+    colorBox[i].style.backgroundColor = colorBox[i].innerHTML;
+
+}
+let sixteenSys1 = document.querySelector('#sixteen-sys tr:nth-child(1)');
+console.log(sixteenSys1);
+for (let i=1; i<16; i++) {
+    
+    sixteenSys1.innerHTML += '<td>'+i+'</td>';
+}
+let sixteenSys2 = document.querySelector('#sixteen-sys tr:nth-child(2)');
+console.log(sixteenSys2);
+for (let i=1; i<16; i++) {
+    if (i<10) {
+    sixteenSys2.innerHTML += '<td>'+i+'</td>';
+    }
+    if (i==10) {
+    sixteenSys2.innerHTML += '<td>a</td>';
+    }
+    if (i==11) {
+    sixteenSys2.innerHTML += '<td>b</td>';
+    }
+    if (i==12) {
+    sixteenSys2.innerHTML += '<td>c</td>';
+    }
+    if (i==13) {
+    sixteenSys2.innerHTML += '<td>d</td>';
+    }
+    if (i==14) {
+    sixteenSys2.innerHTML += '<td>e</td>';
+    }
+    if (i==15) {
+    sixteenSys2.innerHTML += '<td>f</td>';
+    }
+}
+</script>
 </body>
 </html>
