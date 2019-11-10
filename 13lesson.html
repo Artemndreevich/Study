@@ -245,7 +245,7 @@
             <h3>1) За назвою кольору</h3>
             <p>Тут все дуже просто. У значення властивості (color або background-color, про які ми розкажемо нижче) пишемо назву кольору на англійській. 
                 <br>
-                <span class="border-exmpl">
+                <span class="border-example">
                         <span class="tag">h1</span> {
                             <br><span class="rule">color</span>: <span class="argument">sienna;</span> 
                             <br>   
@@ -363,12 +363,392 @@
                
             </p>
         </div>
+        <div class="lesson-block" id="block1_2">
+            <h2>Як задати колір тексту</h2>
+            <h4>Для задання кольору тексту використовують правило <span class="rule">font-color</span> або просто <span class="rule">color</span></h4>
+            <p>
+                Властивість <span class="rule">color</span> можна задавати будь якому елементу що мість текст. Якщо ви задаєте колір тексту батьківському елементу, то цей же колір матиме текст усіх дочірніх елементів, якщо ви, звичайно, не задасте власний колір. 
+                <br>
+                    Задавати колір тексту ви можете будь яким способом із зазначених вище.
+                </p>
+            </div>
+            <div class="lesson-block" id="block1_2">
+                    <h2>Як задати фон елементу</h2>
+                    <h4>Для задання фону використовують правило <span class="rule">background</span></h4>
+                <p>Фоном може бути як колір так і зображення. За допомогою правила <span class="rule">background</span> 
+                    можна задати як колір фону, так і зображення фону. Проте існують також окремі властивості 
+                    <span class="rule">background-image</span> (для задання фону лише зображенням) та 
+                    <span class="rule">background-color</span> (для задання фону лише кольором).
+                </p>
+                <h3><span class="rule">background-color</span></h3>
+                <p>
+                    <span class="border-example">
+                        <span class="tag">body</span> {
+                            <br><span class="rule">background-color</span>: <span class="argument">колір</span>;
+                            <br>   
+                            }
+                    </span>
+                    <br>
+                    Значенням властивості <span class="rule">background-color</span>, як і <span class="rule">color</span> може бути будь-який колір, заданий будь яким способом. 
+                <br>
+                Фон можна задати будь якому елементу, що відображається на сторінці.
+   
+                <table class="user-color-setting-table">
+                    <caption>Тут ви можете поексперементувати з кольорами тексту та фону та попрактикуватись задавати їх різними способами. 
+                            Можливо, ви навіть знайдете своє улюблене кольорове поєднання.</caption>
+                        <tr>
+                                <th>Це фрагмент HTML коду</th>
+                            <th>Це фрагмент CSS коду. 
+                                <br>
+                                Щоб змінити значення властивості <span class="rule">color</span> та <span class="rule">background</span>, 
+                                натисніть на них, зітріть поточне значення, напишіть своє та натисніть Enter. Якщо колір не 
+                                змінився, це означає що ви записали його неправильно</th>
+                            <th>Це відображення у браузері. 
+                                <br>
+                                Колір тексту та фон змінюються коли ви змінюєте значення властивостей <span class="rule">color</span> та 
+                                <span class="rule">background</span> відповідно</th>
+                        </tr>
+                        <tr>
+                            <td width="25%"><span class="tag">&lt;body&gt;</span><br>
+                                <span class="tag">&lt;h1&gt;</span>Заголовок<span class="tag">&lt;/h1&gt;</span>
+                                <br><span class="tag">&lt;/body&gt;</span>
+                            </td>
+                        <td width="45%">
+                    
+                        <span class="tag">h3</span> {
+                            <br><span class="rule">color</span>: <input type="text" class="argument user-color-input" id="color-input1" value="black">
+                            
+                            <br>   
+                            }<br>
+                        <span class="tag">body</span> {
+                            
+                            <br><span class="rule">background</span>: <input type="text" class="argument user-color-input" id="background-input1" value="white"> 
+                            <br>   
+                            }
+                    
+                    </td>
+
+                    <td id="background-text1">
+                        <h1 id="color-text1">Заголовок</h1>
+                    </td>
+
+                    </tr>
+                    </table>
+            </p>
+                <h3><span class="rule">background-image</span></h3>
+                <p><span class="border-example">
+                        <span class="tag">body</span> {
+                            <br><span class="rule">background-image</span>: <span class="argument">url(назва зображення.розширення)</span>;
+                            <br>   
+                            }
+                    </span>
+                    <br>
+                Як ви бачите у прикладі, щоб задати фонове зображення, треба вказати правилу <span class="rule">background-image</span> (або <span class="rule">background</span>) 
+                зображення. Для цього у <span class="argument">url()</span> треба написати назву зображення разом з його розширенням. 
+                Якщо зображення знаходиться у різних теках з CSS-файлом, то треба вказати шлях до цього зображення (як вказуват шлях 
+                з однієї теки в іншу ми детально розглядали в уроці "Робота з зображенням")
+                    <div class="codepen-pattern">
+                            <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html"
+                               data-user="ritakr" data-slug-hash="bGGKyVX"
+                               style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+                               data-pen-title="bGGKyVX">
+              <span>See the Pen <a href="https://codepen.io/ritakr/pen/bGGKyVX/">
+                bGGKyVX</a> by rita (<a href="https://codepen.io/ritakr">@RitaKr</a>)
+              on <a href="https://codepen.io">CodePen</a>.</span>
+                            </p>
+                            <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                        Ось ми задали <span class="tag">body</span> фон. Але, як бачите, він зберігає свій початковий розмір та повторюється. А якщо ми не хочемо щоб він повторювався як плитка у ванній кімнаті? 
+                        <br>
+                        <div class="float-right">
+                            <strong>Значення властивості <span class="rule">background-repeat</span>:
+                                <ul>
+                                <li><span class="argument">repeat</span></li>
+                                <li><span class="argument">no-repeat</span></li>
+                                <li><span class="argument">repeat-x</span></li>
+                                <li><span class="argument">repeat-y</span></li>
+                            </strong>
+                        </ul>
+                    </div>
+                        <h4>Тоді на допомогу нам прийде правило <span class="rule">background-repeat</span>, яке відповідає за повторення фонового зображення</h4>
+                        
+                        <span class="rule">background-repeat</span> по замовчуванню має значення <span class="argument">repeat</span>. 
+                        <br><br>
+                        Щоб фонове зображення не повторювалось треба писати <span class="rule">background-repeat</span>: <span class="argument">no-repeat</span>. 
+                        <br><br>
+                        Також можна задати значення <span class="argument">repeat-x</span> якщо ви хочете щоб зображення повторювалось лише по горизонталі. 
+                        <br>
+                        Або <span class="argument">repeat-y</span> якщо треба щоб воно повторювалось по вертикалі.
+                        <br><br>
+                        Додамо цю властивість до нашого попереднього коду:
+                        <div class="codepen-pattern">
+                                <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html"
+                                   data-user="ritakr" data-slug-hash="qBBKwRa"
+                                   style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+                                   data-pen-title="qBBKwRa">
+                  <span>See the Pen <a href="https://codepen.io/ritakr/pen/qBBKwRa/">
+                    qBBKwRa</a> by rita (<a href="https://codepen.io/ritakr">@RitaKr</a>)
+                  on <a href="https://codepen.io">CodePen</a>.</span>
+                                </p>
+                                <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                            </div>
+                            Як бачите, фонове зображення більше не повторюється. Проте фон все ще виглядає погано. Було б чудово якщо фонове зображення збільшилось та заповнювало собою увесь 
+                            простір. Тож давайте використаємо правило <span class="rule">background-size</span>
+                            
+                            <h4>Правило <span class="rule">background-size</span> відповідає за розмір фонового зображення</h4>
+                            <strong>Існує кілька значень властивості <span class="rule">background-size</span>:</strong>
+                            <div class="float-right">
+                                    <strong>Значення властивості <span class="rule">background-size</span>:
+                                        <ul>
+                                        <li><span class="argument">auto</span></li>
+                                        <li><span class="argument">cover</span></li>
+                                        <li><span class="argument">contain</span></li>
+                                        <li><span class="argument">Значення ширини та висоти у px</span></li>
+                                        <li><span class="argument">Значення ширини та висоти у %</span></li>
+                                    </strong>
+                                </ul>
+                            </div>
+                            <br><br>
+                            Значення <span class="rule">background-size</span> по замовчуванню - <span class="argument">auto</span>. 
+                            Це означає, що розмір фонового зображення не змінено. 
+                            <br> <br>
+                            Якщо ви хочете щоб фонове зображення збільшилось (чи зменшилось) до тих пір, поки його мінімальне 
+                            значення (ширина або висота) не зрівняється з відповідним значенням елементу, слід задати значення 
+                            <span class="argument">cover</span>. 
+                            <br><br>
+                            Якщо вам треба щоб зображення збільшилось/зменшилось до тих пір поки не "поміститься" у батьківський елемент 
+                            (тобто поки його максимальне значення не зрівняється з відповідним значенням елементу), використовуйте 
+                            <span class="argument">contain</span>. 
+                            <br><br>
+                            Якщо ви хочете самостійно вказати ширину та висоту фонового зображення то значенням <span class="rule">background-size</span> має бути бажане 
+                            <span class="argument">значення ширини та висоти у пікселях або відсотках</span> (відносто ширини та вистои елементу). 
+                            Наприклад <span class="rule">background-size</span>: <span class="argument"> 250px 100px</span>, <span class="rule">background-size</span>: <span class="argument"> 30% 30%</span>
+                            <br>
+                            <strong><span class="red">Зверніть увагу!</span> Перше значення - це ширина, а друге - висота. Якщо ви вказуєте одночасно ширину і висоту, то майте на увазі що фонове 
+                            зображення може "стиснутись" через невідповідність початкових пропорцій новим. </strong>
+                            <br> Якщо ви вкажете лише одне значення (у px, чи %), то воно присвоїться ширині фонового зображення, а висота порахується згідно пропорціям зображення
+                                <br><br> Задамо нашому елементу <span class="rule">background-size</span>: <span class="argument">cover</span>
+                            <div class="codepen-pattern">
+                            <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html"
+                               data-user="ritakr" data-slug-hash="VwwdNVy"
+                               style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+                               data-pen-title="VwwdNVy">
+              <span>See the Pen <a href="https://codepen.io/ritakr/pen/VwwdNVy/">
+                VwwdNVy</a> by rita (<a href="https://codepen.io/ritakr">@RitaKr</a>)
+              on <a href="https://codepen.io">CodePen</a>.</span>
+                            </p>
+                            <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                        </div> 
+                        Чудово! З цим ми розібрались. А що коли ми маємо фоновим зображенням якусь іконку чи мале зображення і ми хочемо розмістит його, наприклад, у правому верхньому куті елементу, чи по-центру? 
+                        <h4>Тоді варто скористатись правилом <span class="rule">background-position</span>, яке позиціонує фонове зображення відносно елементу</h4>  
+                        <span class="rule">background-position</span> може приймати такі значення: 
+                        <ul>
+                            <li><span class="argument">top</span> - зверху по-середині</li>
+                            <li><span class="argument">top right</span> або <span class="argument">right top</span> - в правому верхньому кутку</li>
+                            <li><span class="argument">top left</span> або <span class="argument">left top</span>  - в лівому верхньому кутку</li>
+                            <li><span class="argument">left</span>  - зліва по-середині</li>
+                            <li><span class="argument">right</span>  - зправа по-середині</li>
+                            <li><span class="argument">bottom</span>  - </li>
+                            <li><span class="argument">bottom right</span> або <span class="argument">right bottom</span> - в правому нижньому кутку</li>
+                            <li><span class="argument">bottom left</span> або <span class="argument">left bottom</span> - в лівому нижньому кутку</li>
+                            <li><span class="argument">center</span> - по центру елементу</li>
+                            <li><span class="argument">Значення розміщення по горизонталі та вертикалі у % відносно правого лівого кутку</span></li>
+                            <li><span class="argument">Значення розміщення по горизонталі та вертикалі у px відносно правого лівого кутку</span></li>
+                        </ul>
+                        <table class="user-color-setting-table">
+                                <caption>Тут ви можете попрацювати з фоновим зображенням. Вам дано фонове зображення і ви можете задавати йому будь-які значення вивчених у цьому уроці властивостей.  
+                                        </caption>
+                                    <tr>
+                                            <th>Це фрагмент HTML коду</th>
+                                        <th>Це фрагмент CSS коду. 
+                                            <br>
+                                            Щоб змінити значення властивості, 
+                                            натисніть на нього, зітріть поточне значення, напишіть своє та натисніть Enter. 
+                                            Якщо нічого не змінилося, це означає що ви написали щось неправильно</th>
+                                        
+                                    <tr>
+                                        <td width="50%"><span class="tag">&lt;body&gt;</span><br>
+                                            <span class="tag">&lt;h1&gt;</span>Заголовок<span class="tag">&lt;/h1&gt;</span>
+                                            <br><span class="tag">&lt;h3&gt;</span>Підзаголовок<span class="tag">&lt;/h3&gt;</span>
+                                            <br><span class="tag">&lt;p&gt;</span>
+                                            <br>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus in hendrerit gravida rutrum quisque non tellus orci. Egestas egestas fringilla phasellus faucibus. Aliquet bibendum enim facilisis gravida neque convallis a cras semper. Feugiat in ante metus dictum. Aliquet bibendum enim facilisis gravida neque. Tortor consequat id porta nibh venenatis cras sed. Ultricies lacus sed turpis tincidunt id. Pretium fusce id velit ut tortor. Fames ac turpis egestas sed tempus. Facilisis gravida neque convallis a cras semper. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus. At quis risus sed vulputate odio. Lacinia at quis risus sed. Dui ut ornare lectus sit amet est placerat. Lorem donec massa sapien faucibus et molestie ac feugiat sed. Aliquet eget sit amet tellus. Viverra vitae congue eu consequat ac. Sagittis eu volutpat odio facilisis mauris sit amet massa.Risus ultricies tristique nulla aliquet. Lectus proin nibh nisl condimentum id venenatis. Augue neque gravida in fermentum et sollicitudin ac orci phasellus. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Purus sit amet luctus venenatis. Rutrum quisque non tellus orci ac auctor augue mauris augue. Sem et tortor consequat id porta. 
+                                            <br>
+                                            <span class="tag">&lt;/p&gt;</span>
+                                            <br><span class="tag">&lt;/body&gt;</span>
+                                        </td>
+                                    <td>
+                                
+                                    <span class="tag">body</span> {
+                                        <br><span class="rule">background</span>: <span class="argument">url(images/picture-116.png)</span>;                                       
+                                        <br><span class="rule">background-repeat</span>: <input type="text" class="argument user-color-input" id="background-input2" value="repeat">;
+                                        <br><span class="rule">background-size</span>: <input type="text" class="argument user-color-input" id="background-input3" value="auto">;
+                                        <br><span class="rule">background-position</span>: <input type="text" class="argument user-color-input" id="background-input4" value="top left">;
+                                        <br>   
+                                        }
+                                
+                                </td>
+                                    </tr>
+                                    <tr>
+                                            <th colspan="2">Це відображення у браузері. 
+                                                    <br>
+                                                    Ваші зміни CSS відображатимуться тут після натискання на Enter</th>
+                                            </tr>
+                                <td id="background-text2" style="background: url(images/background-example.jpeg); color: black;" colspan="2">
+                                    <h1 style="color: rgb(0, 0, 0)">Заголовок</h1> 
+                                    <h3 style="color: rgb(0, 0, 0)">Підзаголовок</h3> 
+                                    <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus in hendrerit gravida rutrum quisque non tellus orci. Egestas egestas fringilla phasellus faucibus. Aliquet bibendum enim facilisis gravida neque convallis a cras semper. Feugiat in ante metus dictum. Aliquet bibendum enim facilisis gravida neque. Tortor consequat id porta nibh venenatis cras sed. Ultricies lacus sed turpis tincidunt id. Pretium fusce id velit ut tortor. Fames ac turpis egestas sed tempus. Facilisis gravida neque convallis a cras semper. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus. At quis risus sed vulputate odio. Lacinia at quis risus sed. Dui ut ornare lectus sit amet est placerat. Lorem donec massa sapien faucibus et molestie ac feugiat sed. Aliquet eget sit amet tellus. Viverra vitae congue eu consequat ac. Sagittis eu volutpat odio facilisis mauris sit amet massa.Risus ultricies tristique nulla aliquet. Lectus proin nibh nisl condimentum id venenatis. Augue neque gravida in fermentum et sollicitudin ac orci phasellus. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Purus sit amet luctus venenatis. Rutrum quisque non tellus orci ac auctor augue mauris augue. Sem et tortor consequat id porta. 
+                                    </p>
+                                </td>
+            
+                                </tr>
+                                </table>
+                        </p>
+            </div>
+                    
+
+            <div class="lesson-block" id="block1_2">
+                <h2>Як задати прозорість</h2>
+                <h4>Правило <span class="rule">opacity</span> відповідає за прозорість (або скоріше непрозорість) елементу</h4>
+                <p>
+                  <span class="border-example">
+                        <span class="tag">h1</span> {
+                            <br><span class="rule">opacity</span>: <span class="argument">значення непрозорості</span>;
+                            <br>   
+                            }
+                    </span> 
+                    <br>
+                    Щоб задати елементу прозорість, треба вказати значення властивості  <span class="rule">opacity</span>. 
+                    Це значення виражається числом від 0 до 1 включно і вказує рівень непрозорості елементу. 
+                    Чим більше значення - тим менша прозорість елемент, а чим менше значення - тим елемент прозоріший. 
+                    <br>
+                    Значення <span class="argument">1</span> стоїть по замовчуванню і означає що елемент не прозорий. 
+                    <br>
+                    Значення <span class="argument">0</span> робить елемент повністю прозорим.
+                    <br>
+                        Порівняйте прозорісті зображень:<br>
+                        <span class="opacity-examples-span">
+                        <span class="rule">opacity</span>: <span class="argument">1</span>
+                        <img style="opacity: 1; display: block" src="images/css.png" >
+                        </span>
+
+                        <span class="opacity-examples-span">
+                                <span class="rule">opacity</span>: <span class="argument">0.9</span>
+                        <img style="opacity: 0.9" src="images/css.png">
+                        </span>
+
+                        <span class="opacity-examples-span">
+                                <span class="rule">opacity</span>: <span class="argument">0.7</span>
+                        <img style="opacity: 0.7" src="images/css.png">
+                        </span>
+
+                        <span class="opacity-examples-span">
+                                <span class="rule">opacity</span>: <span class="argument">0.5</span>
+                        <img style="opacity: 0.5" src="images/css.png">
+                        </span>
+
+                        <span class="opacity-examples-span">
+                                <span class="rule">opacity</span>: <span class="argument">0.3</span>
+                        <img style="opacity: 0.3" src="images/css.png">
+                        </span>
+
+                        <span class="opacity-examples-span">
+                                <span class="rule">opacity</span>: <span class="argument">0.1</span>
+                        <img style="opacity: 0.1" src="images/css.png">
+                        </span>
+
+                        <span class="opacity-examples-span">
+                                <span class="rule">opacity</span>: <span class="argument">0</span>
+                        <img style="opacity: 0" src="images/css.png">
+                        </span>
+                        
+                </p>
+                <h4>Прозорість кольору можна задати за допомогою <span class="argument">rgba()</span></h4>
+                <p>
+                        <span class="border-example">
+                                <span class="tag">h1</span> {
+                                    <br><span class="rule">color</span>: <span class="argument">rgba(рівень червоного, рівень зеленого, рівень синього, рівень непрозорості)</span>;
+                                    <br>   
+                                    }
+                            </span> 
+                            <br>
+                        <span class="argument">rgba()</span> - це ще один спосіб за допомогою якого можна задати колір. 
+                        Його принцип та синтаксис такий же як і в rgb(), єдина його відмінність - це наявність четвертого значення a 
+                        (тобто alpha), яке записується як значення <span class="rule">opacity</span> і точно так же вказує непрозорість. 
+                        <br>
+                        Порівняйте кольори фону:<br>
+                        <span class="color-box">rgba(0, 0, 255, 1)</span>
+                        <span class="color-box">rgba(0, 0, 255, 0.9)</span>
+                        <span class="color-box">rgba(0, 0, 255, 0.7)</span>
+                        <span class="color-box">rgba(0, 0, 255, 0.5)</span>
+                        <span class="color-box">rgba(0, 0, 255, 0.3)</span>
+                        <span class="color-box" style="color: black">rgba(0, 0, 255, 0.1)</span>
+                        <span class="color-box" style="color: black">rgba(0, 0, 255, 0)</span>
+                        <br>
+                        Можете повернутись до таблиці де ви експерементували зі значеннями властивостей <span class="rule">color</span> <span class="rule">background-color</span> і спробувати задати коліри у rgba().  
+                        
+                     
+                </p>
+        </div>
     </div>
+
+    
 </div>
 
 <script>
 let colorBox = document.getElementsByClassName('color-box');
+let colorInput1 = document.getElementById('color-input1');
+let backgroundInput1 = document.getElementById('background-input1');
+let backgroundInput2 = document.getElementById('background-input2');
+let backgroundInput3 = document.getElementById('background-input3');
+let backgroundInput4 = document.getElementById('background-input4');
+let colorText1 = document.getElementById('color-text1');
+let backgroundText1 = document.getElementById('background-text1');
+let backgroundText2 = document.getElementById('background-text2');
+colorText1.style.color ='black';
 
+function setTextsColor(text, input) {
+    input.addEventListener('keydown', function(e){
+          if(e.keyCode === 13) {
+            text.style.color = input.value;
+    }
+})
+}
+function setTextsBackground(text, input) {
+    input.addEventListener('keydown', function(e){
+          if(e.keyCode === 13) {
+            text.style.background = input.value;
+    }
+})
+}
+
+function setTextsBackground2(text, input1, input2, input3) {
+    input1.addEventListener('keydown', function(e){
+          if(e.keyCode === 13) {
+            text.style.backgroundRepeat = input1.value;
+            text.style.backgroundSize = input2.value;
+            text.style.backgroundPosition = input3.value;
+    }
+})
+    input2.addEventListener('keydown', function(e){
+          if(e.keyCode === 13) {
+            text.style.backgroundRepeat = input1.value;
+            text.style.backgroundSize = input2.value;
+            text.style.backgroundPosition = input3.value;
+    }
+})
+    input3.addEventListener('keydown', function(e){
+          if(e.keyCode === 13) {
+            text.style.backgroundRepeat = input1.value;
+            text.style.backgroundSize = input2.value;
+            text.style.backgroundPosition = input3.value;
+    }
+})
+}
+colorInput1.addEventListener('click', setTextsColor(colorText1, colorInput1), setTextsBackground(backgroundText1, backgroundInput1));
+backgroundInput2.addEventListener('click', setTextsBackground2(backgroundText2, backgroundInput2, backgroundInput3, backgroundInput4));
+ 
 for (let i=0; i<colorBox.length; i++) {
     colorBox[i].style.backgroundColor = colorBox[i].innerHTML;
 

@@ -163,7 +163,10 @@ hr {
     color: #a32650;
     font-family: monospace;
     font-size: 1.2em;
-    margin-left: 30px;
+
+}
+.border-example .rule {
+    margin-left: 30px;  
 }
 .argument, #ways-to-set-color-table td:nth-last-child(2) {
     color: rgb(0, 131, 131);
@@ -345,7 +348,7 @@ div::selection, p::selection, h1::selection, h2::selection, li::selection, span:
      padding: 15px;
       color: white;
 }
-.border-exmpl {
+.border-example {
     border: solid 1px rgba(0, 44, 126, 0.7);
     font-family: monospace;
     padding: 8px;
@@ -664,4 +667,58 @@ table.invisible-table .right-half {
 list-style-type: square;
 }
 
+.user-color-setting-table th {
+    color: white;
+    background: rgb(47, 45, 61);
+    border: 1px solid rgb(134, 131, 156);
+}
+.user-color-setting-table td {
+    border: 1px solid rgb(134, 131, 156);
+    
+}
+.user-color-setting-table .tag{
+    color: rgb(175, 114, 2);
+}
+.user-color-setting-table td .rule{
+    margin-left: 30px;
+}
+.user-color-input {
+    background: none;
+    border: none;
+    
+    color: rgb(0, 131, 131);
+    font-family: monospace;
+    font-size: 1.2em; 
+    display: inline;
+    
+}
+.user-color-input::placeholder {
+    color: rgb(0, 131, 131);
+    font-family: monospace;
+    font-size: 1.2em; 
+}
+.user-color-input:focus {
+    outline: none;
+}
+.float-left {
+    float: left;
+    margin-right: 20px;
+}
+.float-right {
+    float: right;
+    margin-left: 20px;
+    clear: both;
+    border: 1.5px dashed rgba(0, 14, 141, 0.4);
+    padding: 10px;
+
+}
+.opacity-examples-span {
+    display: inline-block; 
+    text-align: center;
+    margin: 0 20px;
+}
+.opacity-examples-span img {
+    display: block;
+    width: 80px
+}
 

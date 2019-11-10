@@ -151,7 +151,7 @@ td .tag, .falseasnwer .tag, .trueanswer .tag {
 
 }
 
-span.border-exmpl span.blue {
+span.border-example span.blue {
     font-size: 1em;
 }
 
@@ -331,7 +331,7 @@ div::selection, p::selection, h1::selection, h2::selection, li::selection, span:
     font-style: italic;
 }
 
-.border-exmpl {
+.border-example {
     border: solid 1px rgba(0, 44, 126, 0.7);
 
     padding: 8px;

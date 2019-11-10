@@ -230,7 +230,7 @@ $do="INSERT INTO `comment`(`id`,`name`, `text`,`ocenka`) VALUES('$id','$name', '
             <div id="q-box6">
             <span class="vopros">6) Яке твердження про цей фрагмент коду неправильне?
                 <br>
-                <span class="border-exmpl">
+                <span class="border-example">
                     <span class="tag">&lt;body&gt;</span><br>
                     <span class="tag">&lt;h1&gt;</span>Заголовок<span class="tag">&lt;/h1&gt;</span><br>
                     <span class="tag">&lt;p&gt;</span>
@@ -315,7 +315,7 @@ $do="INSERT INTO `comment`(`id`,`name`, `text`,`ocenka`) VALUES('$id','$name', '
             <div id="q-box10">
             <span class="vopros">10) У якому вікні відкриється гіперпосилання та чи буде створювати нові вікна при кожному натисканні?
                 <br>
-                <span class="border-exmpl"><span class="tag">&lt;a </span><span class="blue">href=</span><span
+                <span class="border-example"><span class="tag">&lt;a </span><span class="blue">href=</span><span
                         class="light-blue">"page.html"</span> <span class="blue">target=</span><span class="light-blue">"blank"</span><span
                         class="tag">&gt;</span>гіперпосилання<span class="tag">&lt;/a&gt;</span></span></span>
 
@@ -520,7 +520,7 @@ echo $allocenka/$timer;
         <div id="q-box6">         
             <span class="vopros">6) Яке твердження про цей фрагмент коду неправильне?
                 <br>
-                <span class="border-exmpl">
+                <span class="border-example">
                     <span class="tag">&lt;body&gt;</span><br>
                     <span class="tag">&lt;h1&gt;</span>Заголовок<span class="tag">&lt;/h1&gt;</span><br>
                     <span class="tag">&lt;p&gt;</span>
@@ -596,7 +596,7 @@ echo $allocenka/$timer;
         <div id="q-box10"> 
             <span class="vopros">10) У якому вікні відкриється гіперпосилання та чи буде створювати нові вікна при кожному натисканні?
                 <br>
-                <span class="border-exmpl"><span class="tag">&lt;a </span><span class="blue">href=</span><span class="light-blue">"page.html"</span> <span class="blue">target=</span><span class="light-blue">"blank"</span><span class="tag">&gt;</span>гіперпосилання<span class="tag">&lt;/a&gt;</span></span></span>
+                <span class="border-example"><span class="tag">&lt;a </span><span class="blue">href=</span><span class="light-blue">"page.html"</span> <span class="blue">target=</span><span class="light-blue">"blank"</span><span class="tag">&gt;</span>гіперпосилання<span class="tag">&lt;/a&gt;</span></span></span>
             
             <button class="falseasnwer" id="vp10f1">Відкриється у тому ж вікні</button>
             <button class="falseasnwer" id="vp10f2">При кожному натисканні <br>створюватиме нове вікно</button>
@@ -766,7 +766,7 @@ $('#q-box5 .trueanswer'). css('background-color','rgba(0, 44, 126, 0.5)');
                $('#q-box6').html(`
                <span class="vopros">6) Яке твердження про цей фрагмент коду неправильне?
                 <br>
-                <span class="border-exmpl">
+                <span class="border-example">
                     <span class="tag">&lt;body&gt;</span><br>
                     <span class="tag">&lt;h1&gt;</span>Заголовок<span class="tag">&lt;/h1&gt;</span><br>
                     <span class="tag">&lt;p&gt;</span>
@@ -860,7 +860,7 @@ $('#q-box9 .trueanswer'). css('background-color','rgba(0, 44, 126, 0.5)');
                $('#q-box10').html(`
                <span class="vopros">10) У якому вікні відкриється гіперпосилання та чи буде створювати нові вікна при кожному натисканні?
                 <br>
-                <span class="border-exmpl"><span class="tag">&lt;a </span><span class="blue">href=</span><span class="light-blue">"page.html"</span> <span class="blue">target=</span><span class="light-blue">"blank"</span><span class="tag">&gt;</span>гіперпосилання<span class="tag">&lt;/a&gt;</span></span></span>
+                <span class="border-example"><span class="tag">&lt;a </span><span class="blue">href=</span><span class="light-blue">"page.html"</span> <span class="blue">target=</span><span class="light-blue">"blank"</span><span class="tag">&gt;</span>гіперпосилання<span class="tag">&lt;/a&gt;</span></span></span>
             
             <button class="falseasnwer" id="vp10f1">Відкриється у тому ж вікні</button>
             <button class="falseasnwer" id="vp10f2">При кожному натисканні <br>створюватиме нове вікно</button>
@@ -1107,7 +1107,7 @@ if(attridf == "vp5f1") {
                $('#q-box6').html(`
                <span class="vopros">6) Яке твердження про цей фрагмент коду неправильне?
                 <br>
-                <span class="border-exmpl">
+                <span class="border-example">
                     <span class="tag">&lt;body&gt;</span><br>
                     <span class="tag">&lt;h1&gt;</span>Заголовок<span class="tag">&lt;/h1&gt;</span><br>
                     <span class="tag">&lt;p&gt;</span>
@@ -1221,7 +1221,7 @@ if(attridf == "vp9f1") {
                $('#q-box10').html(`
                <span class="vopros">10) У якому вікні відкриється гіперпосилання та чи буде створювати нові вікна при кожному натисканні?
                 <br>
-                <span class="border-exmpl"><span class="tag">&lt;a </span><span class="blue">href=</span><span class="light-blue">"page.html"</span> <span class="blue">target=</span><span class="light-blue">"blank"</span><span class="tag">&gt;</span>гіперпосилання<span class="tag">&lt;/a&gt;</span></span></span>
+                <span class="border-example"><span class="tag">&lt;a </span><span class="blue">href=</span><span class="light-blue">"page.html"</span> <span class="blue">target=</span><span class="light-blue">"blank"</span><span class="tag">&gt;</span>гіперпосилання<span class="tag">&lt;/a&gt;</span></span></span>
             
             <button class="falseasnwer" id="vp10f1">Відкриється у тому ж вікні</button>
             <button class="falseasnwer" id="vp10f2">При кожному натисканні <br>створюватиме нове вікно</button>
