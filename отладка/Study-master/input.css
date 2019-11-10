@@ -1,0 +1,32 @@
+.summary {
+  overflow-x: scroll;
+}
+.summary table {
+  border: none;
+}
+.summary table tr {
+  border: none;
+}
+.summary table tr td {
+  border: none;
+}
+
+.menu-artem {
+  background-color: white;
+  position: fixed;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.icons {
+  width: 100%;
+}
+
+#offer div img {
+  width: 100%;
+}
+
+.codepen-pattern {
+  overflow-x: scroll;
+}
+
+/*# sourceMappingURL=input.css.map */
