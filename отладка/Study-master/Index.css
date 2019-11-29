@@ -1,0 +1,552 @@
+body{
+    overflow-x: hidden;
+}
+#hello-div {
+    background: url(images/hello-img.png) no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+#our-reason{
+    color: black;
+    padding: 2% 2%;
+}
+#our-reason h2{
+    color:white;
+    position: relative;
+    left:15%;
+}
+#our-reason ul li{
+    color: white;
+    font-size: 1.3em;
+    list-style-image: url(images/icon/tag-icon.png);
+    list-style-position: inside;
+    margin: 2% 0;
+}
+#helper-div{
+    background: url(images/html5-logo.png) no-repeat;
+    background-size: 100% 100%;
+    z-index: -1;
+    width: 100%;
+    height:95%;
+    position: fixed;
+    left: 0;
+    top: 5%;
+
+}
+
+
+#home-main {
+    display: block;
+    width:100vw;
+    position: relative;
+    left: 0;
+    padding: 0;
+    margin: 0;
+}
+#hello-div {
+    background: url(images/hello-img.png) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    position: relative;
+
+}
+#black-back {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+}
+#hello-div h1 {
+    position: relative;
+    top: 40%;
+    left: 0;
+    font-size: 4em;
+    text-align: center;
+    z-index: 4;
+    line-height: 0.1em;
+    margin: 0;
+    padding: 0;
+
+}
+#hello-div h2 {
+    position: relative;
+    top: 48%;
+    left: 0;
+    text-align: center;
+    font-size: 1.5em;
+}
+#lesson-button {
+    padding: 1vw;
+
+    border: 5px solid white;
+    color: white;
+    font-size: 1.1em;
+    margin-left: 40%;
+    margin-top: 5%;
+    margin-bottom: 7%;
+    border-radius: 2vw;
+    transition: .4s ease-out;
+    box-shadow: 0 0 35px rgba(255, 255, 255, 0.5);
+}
+#lesson-button:focus {
+    outline: none;
+
+}
+#lesson-button:hover {
+    animation: blick-white .4s 1 ease-out reverse;
+}
+#why-html {
+    background: white;
+    margin-top: 0;
+    padding: 2% 1%;
+}
+#why-html h1, #lets-start h1 {
+    color: rgba(0, 44, 126, 0.9);
+    font-size: 2.7em;
+    margin-top: 0;
+
+}
+#why-html h1 {
+    margin-bottom: 6%;
+        text-align: center;
+}
+
+#reason img.icons {
+    width: 50px;
+    height: 50px;
+}
+#reason h2, #lets-start h2, #lets-start h3 {
+    color: rgba(0, 44, 126, 0.9);
+    text-align: left
+}
+#offer {
+    background: white url(images/home-back2.jpg) no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 2% 2%;
+    height: auto;
+}
+
+#offer h1 {
+    text-align: center;
+    font-size: 2.7em;
+    margin-top: 0;
+
+}
+#offer li {
+    font-size: 1.3em;
+    list-style-image: url(images/icon/tag-icon.png);
+    list-style-position: inside;
+    line-height: 3em;
+
+}
+
+
+#lets-start {
+    background: white;
+    padding: 2% 1%;
+    position: relative;
+}
+
+#lets-start h2 {
+    font-size: 2em;
+}
+.simple-li {
+    font-size: 1.3em;
+    line-height: 2em;
+    transition: color .3s ease;
+    font-weight: normal;
+    cursor: help;
+transition: all .3s ease;
+
+}
+.simple-li:active {
+    color: rgba(0, 44, 126, 0.9);
+    cursor: pointer;
+}
+.simple-li:hover {
+    text-shadow: 2px 2px 4px rgba(0, 44, 126, 0.5);
+    color: rgba(0, 44, 126, 0.9);
+}
+.title-li1, .title-li2 {
+    font-size: 1.3em;
+    line-height: 1.5em;
+    list-style-type: none;
+    color: rgba(0, 44, 126, 0.9);
+    font-weight: bold;
+    width: 15%;
+    transition: all 1s;
+
+}
+
+.title-li1 img, .title-li2 img {
+    cursor: pointer;
+    transition: all .7s;
+}
+#cours-list {
+    padding-left: 2%;
+    border-left: 5px solid rgba(0, 44, 126, 0.9);
+}
+.cours-inf {
+
+    padding: 1% 2%;
+    box-shadow: 0 0 60px rgba(0, 127, 201, 0.5);
+
+    position: sticky;
+    top: 10%;
+    right: 2%;
+    border-radius: 4px;
+
+
+
+}
+.cours-inf h3 {
+    font-size: 1.4em;
+}
+#lesson-button-blue {
+    padding: 1vw;
+    background: rgba(0, 44, 126, 0.8);
+    border: none;
+    color: white;
+    font-size: 1.1em;
+    margin-left: 1%;
+    margin-bottom: 2%;
+    border-radius: 1.5vw;
+    transition: .3s ease-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#lesson-button-blue:focus {
+    outline: none;
+
+}
+#lesson-button-blue:hover {
+    padding: 1vw;
+    background: rgba(0, 44, 126, 0.9);
+    border: none;
+    color: white;
+    font-size: 1.1em;
+    margin-left: 1%;
+    margin-bottom: 2%;
+    border-radius: 1.5vw;
+    transition: .3s ease-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: blick-blue .4s 1 ease-out reverse;
+}
+#foother {
+    padding: 1%;
+    background: rgba(0, 44, 126, 0.9);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9em;
+    text-align: center;
+}
+
+header#head{
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(0, 44, 126, 0.3) 80%, transparent);
+    position: relative;
+    top: 50px;
+    left: 0;
+    padding: 0 0 60px 0;
+
+
+    z-index: 2;
+}
+.new_file {
+
+}
+.new_file img {
+     width: 100%;
+     height: auto;
+     padding: 8% 0;
+     margin: 5% 0 10% 0;
+     transition: all .3s ease-out;
+ }
+
+#reason2 {
+    width: 45%;
+    margin: 0 5%;
+    display: inline-block;
+}
+#reason2 img {
+    width: 105%;
+}
+
+.way-to-save img:active {
+transform: scale3d(1.6, 1.6, 5);
+
+}
+#how{
+    position: fixed;
+    bottom:0;
+
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+animation: howani 1s 1 linear ;
+}
+    @keyframes howani {
+        from{
+            bottom:100vh;
+        }
+        25%{
+            bottom:75vh;
+        }
+        50%{
+            bottom:50vh;
+        }
+    to{
+        bottom:0;
+    }
+}
+
+#how h2{
+    padding:0;
+    margin:0;
+    margin-left: 0.5vw;
+}
+#how p{
+    float:left;
+    margin-left: 0.5vw;
+
+}
+#dityi{
+    height:50px;
+    margin-left:30px;
+
+}
+#prof{
+    height:50px;
+    margin-left:30px;
+    position: relative;
+}
+@keyframes dit {
+    from{
+        transform:rotate(0deg);
+    }
+    25%{
+        transform:rotate(25deg);
+
+    }
+    50%{
+        transform:rotate(-25deg);
+
+    }
+    75%{
+        transform:rotate(25deg);
+
+    }
+    to{
+        transform:rotate(0deg);
+
+    }
+}
+@keyframes pro {
+    from,to{
+        top:0;
+    }
+
+    75%{
+        top:-30vh;
+    }
+}
+.menu-artem{
+  position: absolute;
+  top:0;
+  left: 0;
+  width:100%;
+    height: auto;
+    z-index: 10;
+}
+.menu-artem a{
+    display: block;
+
+}
+.menu-artem span{
+    display: block;
+
+}
+/*
+.menu-artem ul {
+  margin:0;
+  padding:0;
+  float:right;
+}
+.menu-artem ul li {
+  margin-left: 1vw;
+  padding:0;
+  display: inline-block;
+
+}
+
+.menu-artem ul li a{
+display: block;
+padding:1vw;
+text-decoration: none;
+color:black;
+font-family: 'Comfortaa', cursive;
+transition: 0.6s;
+
+}
+.menu-artem ul li a:hover{
+display: block;
+padding:1vw;
+text-decoration: none;
+color:blue;
+font-family: 'Comfortaa', cursive;
+transition: 0.6s;
+}
+*/
+.menu-artem span {
+
+}
+#img_lesson{
+    margin-right: 30px;
+}
+@media screen and (max-width: 720px) {
+
+    
+    .menu-artem, .menu{
+       display: none;
+   }
+   .tlf-menu{
+       position: fixed;
+       width:100vw;
+       background-color: white;
+       top:0;
+   }
+   .tlf-img{
+       padding:0;
+       position: absolute;
+       top:1vh;
+       left:1vw;
+       height:35px;
+
+        
+   }
+   .tlf-log{
+    color: rgba(0, 44, 126, 0.7);
+    font-weight: bolder;
+    font-size: 35px;
+       position: absolute;
+       padding: 0;
+       margin: 0;
+       top:-0.5vh;
+       left:calc(3vw + 35px);
+
+
+   }
+   .helpToTlf{
+    position: relative;
+       height: 100vh;
+       left:1%;
+
+   }
+    .helpToTlf ul{
+      margin:0;
+        padding-left:2vw;
+        padding-right: 3vw;
+
+    }
+    .helpToTlf ul li {
+         display: block;
+        margin:2% 0 2% 1%;
+        padding:0;
+        list-style:none;
+    }
+    .helpToTlf ul li a {
+        margin:0;
+        display: inline-block;
+        font-weight: bold;
+        font-size: 1.2rem;
+
+    }
+
+    .way-to-save img:active {
+        transform: scale3d(1, 1, 1);
+        
+        }
+    .homework {
+        width: 100%;
+    }
+    .slider-box {
+        width: 40vw;
+    }
+    .tlfMenuContainer{
+    position: fixed;
+        top:0;
+        z-index: 100;
+        background-color: white;
+    }
+}
+
+
+/*
+@media screen and (min-width: 720px) {
+.tlf-menu,.helpToTlf{
+
+    z-index: 5;
+    position: fixed;
+    width:50%;
+    background-color: white;
+    padding-right: 1%;
+}*/
+
+@media screen and (min-width: 720px) {
+.tlf-menu,.helpToTlf,.tlfMenuContainer,.cellmenu,.tlf-img,.tlf-log{
+
+    display: none;
+
+}
+
+}
+
+.man a{
+    font-size: 1.1rem;
+    font-family: 'Comfortaa', cursive;
+    transition: 1s;
+
+}
+.man a:hover{
+    font-size: 1.1rem;
+    font-family: 'Comfortaa', cursive;
+    color:black;
+text-decoration: none;
+    transition: 1s;
+
+}
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+.man:hover{
+    color: #586391;
+}
+.artemsreason p{
+    height: 20vh;
+}
+.vopros{
+    font-size:1.3em;
+    display: block;
+
+}
+.falseasnwer, .trueanswer {
+    display:inline-block;
+    color: white;
+    background-color: rgba(0, 44, 126, 0.9);
+    border: none;
+    border-radius:10px;
+    padding: 0.6% 1%;
+    transition: .6s;
+    margin: 1%;
+    box-shadow: inset 0 5px 20px rgba(0, 118, 214, 0.5),  0 5px 20px rgba(0, 0, 0, 0.5);
+}
+.falseasnwer:hover, .trueanswer:hover{
+
+    transform: scale(1.1);
+
+}
+
+

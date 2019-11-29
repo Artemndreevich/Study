@@ -36,8 +36,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/10lesson.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="1023" column="313" lean-forward="true" selection-start-line="1021" selection-start-column="13" selection-end-line="1023" selection-end-column="313" />
+            <state relative-caret-position="-1263">
+              <caret line="1187" column="313" selection-start-line="1187" selection-start-column="313" selection-end-line="1187" selection-end-column="313" />
               <folding>
                 <element signature="e#56#60#0" expanded="true" />
                 <element signature="e#63#67#0" expanded="true" />
@@ -45,8 +45,6 @@
                 <element signature="e#110#114#0" expanded="true" />
                 <element signature="e#143#147#0" expanded="true" />
                 <element signature="e#151#155#0" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#span#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ol#0;n#div#0;n#span#0;n#!!top" expanded="true" />
                 <element signature="e#56#60#0" expanded="true" />
                 <element signature="e#64#68#0" expanded="true" />
                 <element signature="e#126#130#0" expanded="true" />
@@ -69,6 +67,10 @@
                 <element signature="e#72#76#0" expanded="true" />
                 <element signature="e#132#136#0" expanded="true" />
                 <element signature="e#142#146#0" expanded="true" />
+                <element signature="e#221#225#0" expanded="true" />
+                <element signature="e#399#403#1" expanded="true" />
+                <element signature="e#442#446#0" expanded="true" />
+                <element signature="e#448#452#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -86,8 +88,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/12lesson.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3077">
-              <caret line="181" column="31" selection-end-line="260" />
+            <state relative-caret-position="5933">
+              <caret line="349" column="16" selection-end-line="464" />
             </state>
           </provider>
         </entry>
@@ -153,7 +155,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="666" />
@@ -164,7 +166,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -176,13 +177,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/крестикинолики" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.stylelint" value="true" />
     <property name="node.js.path.for.package.stylelint" value="project" />
@@ -258,6 +260,7 @@
       <workItem from="1567263805347" duration="3160000" />
       <workItem from="1567268524550" duration="6831000" />
       <workItem from="1567319908561" duration="1572000" />
+      <workItem from="1571246330578" duration="244000" />
     </task>
     <task id="LOCAL-00001" summary="all">
       <created>1549641294883</created>
@@ -277,7 +280,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="151615000" />
+    <option name="totallyTimeSpent" value="151859000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -289,7 +292,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.59098226" visible="true" weight="0.15178572" />
       <window_info id="Favorites" order="1" sideWeight="0.4090177" side_tool="true" weight="0.18377976" />
@@ -533,8 +536,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/12lesson.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3077">
-          <caret line="181" column="31" selection-end-line="260" />
+        <state relative-caret-position="5933">
+          <caret line="349" column="16" selection-end-line="464" />
         </state>
       </provider>
     </entry>
@@ -547,8 +550,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/10lesson.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="1023" column="313" lean-forward="true" selection-start-line="1021" selection-start-column="13" selection-end-line="1023" selection-end-column="313" />
+        <state relative-caret-position="-1263">
+          <caret line="1187" column="313" selection-start-line="1187" selection-start-column="313" selection-end-line="1187" selection-end-column="313" />
           <folding>
             <element signature="e#56#60#0" expanded="true" />
             <element signature="e#63#67#0" expanded="true" />
@@ -556,8 +559,6 @@
             <element signature="e#110#114#0" expanded="true" />
             <element signature="e#143#147#0" expanded="true" />
             <element signature="e#151#155#0" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ol#0;n#div#0;n#span#0;n#!!top" expanded="true" />
             <element signature="e#56#60#0" expanded="true" />
             <element signature="e#64#68#0" expanded="true" />
             <element signature="e#126#130#0" expanded="true" />
@@ -580,6 +581,10 @@
             <element signature="e#72#76#0" expanded="true" />
             <element signature="e#132#136#0" expanded="true" />
             <element signature="e#142#146#0" expanded="true" />
+            <element signature="e#221#225#0" expanded="true" />
+            <element signature="e#399#403#1" expanded="true" />
+            <element signature="e#442#446#0" expanded="true" />
+            <element signature="e#448#452#0" expanded="true" />
           </folding>
         </state>
       </provider>
