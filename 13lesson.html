@@ -694,7 +694,17 @@
     </div>
 
     
+    <div class="lesson-block">
+        <a href="12lesson.html" class="poperedniy-lesson"><h3><img src="images/icon/arrow-left.png" width="35px"> На попередній урок</h3></a>
+        <a href="14lesson.html" class="next-lesson"><h3>На наступний урок <img src="images/icon/arrow-right.png" width="35px"></h3></a>
+
+    </div>
 </div>
+
+<script src="dont%20touch/js/popper.min.js"></script>
+<script src="dont%20touch/js/bootstrap.min.js"></script>
+
+<script src="dont%20touch/js/app.js"></script>
 
 <script>
 let colorBox = document.getElementsByClassName('color-box');
@@ -784,6 +794,50 @@ for (let i=1; i<16; i++) {
     sixteenSys2.innerHTML += '<td>f</td>';
     }
 }
+</script>
+ <script>
+    $(document).ready(function () {
+        var arr = [`Привіт, я Тегиня, я буду допомагати тобі .Настикай ЕНТЕР і я буду давати підказки.`,
+     `Існує ще третій спосіб задання кольору - HUE(), але ми не розглядаємо, бо самі його не знаємо)))`, 
+     'Щоб зробити фон фіксованим відносно вікна браузера використовують властивість <span class="rule">background-attachment</span>: <span class="argument">fixed</span>.', 
+     'Властивості <span class="rule">background</span> можна задавати одночасно кілька значеннь, наприклад фонове зображення та фоновий колір.'];
+        var counter = 1;
+
+        $('.htmlboy').html(` <img src="images/htmlgirl/hello.png">
+<p>
+` + arr[0] + `
+</p>
+<button id="nextA" class="blue-button" >Закрити</button> `);
+
+
+        $('#nextA').on('click', function () {
+            $('.htmlboy').hide();
+            arr.shift();
+        });
+
+
+        $(document).on('keypress', function (e) {
+            if (e.which == 13 && arr[0] != undefined) {
+                $('.htmlboy').html(` <img src="images/htmlboy/good.png">
+<p>
+` + arr[0] + `
+</p>
+<button id="nextA" class="blue-button" >Закрити</button> `).fadeIn(200);
+
+                $('#nextA').on('click', function () {
+                    $('.htmlboy').hide();
+                    arr.shift();
+
+
+                });
+            }
+
+        });
+
+
+    });
+
+
 </script>
 </body>
 </html>
