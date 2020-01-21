@@ -18,8 +18,10 @@
                     <link rel="stylesheet" href="main.css">
                     <link rel="stylesheet" href="for_all.css">
                     <link rel="stylesheet" href="animated.css">
+                    <link rel="stylesheet" href="rock_paper_scissors/style.css">
                     <link rel="shortcut icon" href="images/icon/favicon.png" type="image/png">
                     <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+                    <link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet">
                     <script src="jquery-3.3.1.js"></script>
                     <script src="min.js"></script>
                     <link rel="stylesheet" href="input.css">
@@ -167,6 +169,9 @@
 
 
     <div class="main">
+            <div class="htmlboy col-6 col-md-4 col-lg-3">
+                </div>
+
 <div id="block1" class="lesson-block">
 
 
@@ -241,7 +246,52 @@
             <li><span class="blue">Id</span> використовують для присвоєння елементу унікального ім'я, яке більше не буде повторюватись.</li>
         </ul></p>
         </div>
-
+        <div class="lesson-block">
+            <h2>Гра "Камень ножиці папір"</h2>
+            
+        </div>
+        <div class="game-block">
+    
+            <div id="rounds">
+                <span>
+                <p>Перед початком гри виберіть її протяжність:</p>
+                <button class="rounds-number-btn" id="five">5 раундів</button>
+                <button class="rounds-number-btn" id="ten">10 раундів</button>
+                <button class="rounds-number-btn" id="twenty">20 раундів</button>
+                <button class="rounds-number-btn" id="fifty">50 раундів</button>
+            </span>
+            </div>
+                <p id="rounds-number">Раунд 0</p>
+            <div class='score-board'>
+                
+                <div id="user-label" class="badge">гравець</div>
+                <div id="computer-label" class="badge">ТЕГ</div>
+                <span id="user-score">0</span>:<span id="computer-score">0</span>
+            </div>
+    
+            <div class="result">
+                <p></p>
+            </div>
+    
+            <div class="choices">
+                <div class="choice"  id="rock">
+                    <img src="rock_paper_scissors/images/rock.png" alt="rock">
+                </div>
+                <div class="choice"  id="paper">
+                    <img src="rock_paper_scissors/images/paper.png" alt="paper">
+                </div>
+                <div class="choice"  id="scissors">
+                    <img src="rock_paper_scissors/images/scissors.png" alt="scissors">
+                </div>
+            </div>
+    
+            <p id="action-message">Зробіть свій хід</p>
+        
+            <div id="game-result">
+                <p></p>
+            </div>
+            
+        </div>
         <div class="lesson-block">
             <a href="6lesson.html" class="poperedniy-lesson"><h3><img src="images/icon/arrow-left.png" width="35px"> На попередній урок</h3></a>
             <a href="8lesson.html" class="next-lesson"><h3>На наступний урок <img src="images/icon/arrow-right.png" width="35px"></h3></a>
@@ -250,15 +300,21 @@
     </div>
     </div>
 
-
+    <script src="rock_paper_scissors/script.js"></script>
     <script src="dont%20touch/js/popper.min.js" ></script>
     <script src="dont%20touch/js/bootstrap.min.js" ></script>
+
+
+<script src="dont%20touch/js/app.js"></script>
     <script>
     $(document).ready(function(){
-        var arr = ['Маша', 'Пєтя', 'Марина', 'Василій'];
+        var arr = [`Привіт, я ТЕГ, я буду допомагати тобі. Настикай ЕНТЕР і я буду давати підказки.`,
+         `Ця тема знадобиться тобі коли ти будеш вивчати CSS`, 
+         'Як ти вважаєш, мені присвоїли класс чи айді?', 
+         'Айді зазвичай задають для роботи з цим елементом у JavaScript'];
         var counter=1;
 
-$('.htmlboy').html(` <img src="images/htmlboy/confused.png">
+$('.htmlboy').html(` <img src="images/htmlboy/hello.png">
 <p>
     `+arr[0]+`
 </p>
@@ -280,17 +336,76 @@ $('.htmlboy').html(` <img src="images/htmlboy/confused.png">
 <p>
  `+arr[0]+`
 </p>
-    <button id="nextA" class="blue-button" >Закрити</button> `).fadeIn(200);
+    <button id="nextA" class="blue-button" >Закрийся</button>`).fadeIn(200);
 
     $('#nextA').on('click',function(){
     $('.htmlboy').hide();
     arr.shift();
-
-
    });
         }
 
 });
+let scrollPosition = 0;
+$(document).scroll(function (e) {
+    console.log(scrollY);
+    
+    if ((scrollY>1500) && (scrollY<1600) && ((document.body.getBoundingClientRect()).top < scrollPosition)) {
+        console.log('yes')
+    $('.htmlboy').html(` <img src="images/htmlboy/good.png">
+<p>
+ Чому б нам не відпочити трохи? Пропоную тобі зіграти зі мною в "камень ножиці папір!"
+</p>
+<button id="nextA" class="blue-button" >Ну давай...</button> 
+    <br>
+    <button id="nextANo" class="blue-button" >Я з тобою не граю! >:(</button>`).fadeIn(200);
+    function closeHtmlboy(){
+        $('#nextA').on('click',function(){
+     $('.htmlboy').hide();
+     arr.shift();
+   });    
+    }
+
+    closeHtmlboy();
+
+   $('#nextANo').on('click',function(){
+    $('.htmlboy').html(` <img src="images/htmlboy/confused.png">
+<p>
+ Ой все(( <br>
+    Сам тепер свій HTML вчи...
+</p>
+<button id="nextAYes" class="blue-button" >Ох, ну добре...</button>
+<br>
+<button id="nextA" class="blue-button" >На ображених воду возять</button> 
+    `);
+    closeHtmlboy();
+    $('#nextAYes').on('click',function(){
+    $('.htmlboy').html(` <img src="images/htmlboy/good.png">
+<p>
+ От і добре) Вибирай кількість раундів і почали!
+</p>
+<button id="nextA" class="blue-button" >Ок</button>
+<br>
+<button id="nextAlol" class="blue-button" >Я переможу!</button> 
+    `);
+    closeHtmlboy();
+    $('#nextAlol').on('click',function(){
+    $('.htmlboy').html(` <img src="images/htmlboy/good.png">
+<p>
+ АХПХАХПХ АПХАХПХ АХПХАХП ХАХПХАХ ПХАХПХХАПХАХ ПХАХПХ АХПАХПХАХ ПАХПХАХПХА
+</p>
+<button id="nextA" class="blue-button" >...</button>
+    `);
+    closeHtmlboy()
+   }); 
+   }); 
+   }); 
+   
+   
+   
+   
+}
+scrollPosition=(document.body.getBoundingClientRect()).top;
+})
 
 
 });

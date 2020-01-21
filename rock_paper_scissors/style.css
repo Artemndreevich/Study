@@ -1,0 +1,148 @@
+.game-block {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #231d31;
+    font-family: 'Asap', sans-serif;
+}
+
+
+
+.score-board {
+    border: 2px solid white;
+    width: 200px;
+    margin: 20px auto;
+    color: white;
+    font-size: 46px;
+    border-radius: 4px;
+    text-align: center;
+    
+    padding: 15px 20px;
+    position: relative;
+}
+
+.badge {
+    background: #c94b42;
+    color: white;
+    font-size: 14px;
+    padding: 2px 10px;
+}
+#user-label {
+    position: absolute;
+    top: 30px;
+    left: -25px;
+}
+#computer-label {
+    position: absolute;
+    top: 30px;
+    right: -30px;
+}
+.result {
+    font-size: 40px;
+    color: white;
+
+}
+.result p {
+    text-align: center;
+    font-weight: 500;
+}
+.choices {
+    text-align: center;
+    margin-top: 50px;
+}
+.choice{
+    display: inline-block;
+    margin: 0 20px;
+    padding: 10px;
+    border: 4px white solid;
+    border-radius: 50%;
+    transition: .3s all ease;
+}
+.choice img {
+    width: 100px;
+    filter: invert();
+    filter: invert();
+    
+}
+img::selection {
+    background: none;
+}
+.choice:hover {
+    cursor: pointer;
+    background: #00000060
+
+}
+
+#action-message {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+}
+#rounds, #game-result {
+    color: white;
+    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 80;
+    
+    backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px)
+}
+#rounds p, #game-result p {
+    font-size: 44px;
+}
+#rounds span, #game-result p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#rounds button {
+    font-size: 22px;
+    font-family: 'Asap', sans-serif;
+    border: 3px solid white;
+    border-radius: 6px;
+    padding: 20px 15px;
+    margin: 20px 5px;
+    background: none;
+    color: white;
+    transition: .3s all ease;
+}
+#rounds button:hover {
+    background: white;
+    color: #231d31;
+    
+}
+#game-result {
+    display: none;
+}
+#rounds-number {
+    margin-top: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+.win {
+    border: 4px rgb(0, 255, 34) solid;
+    box-shadow: 0 0 10px rgb(0, 107, 14);
+}
+.lose {
+    border: 4px rgb(255, 0, 0) solid;
+    box-shadow: 0 0 10px rgb(107, 0, 0);  
+}
+.draw {
+    border: 4px rgb(99, 99, 99) solid;
+    box-shadow: 0 0 10px rgb(39, 39, 39);
+}
+.small-img {
+    width: 85px;
+    filter: invert();
+    position: relative;
+    bottom: -25px;
+    right: -5px;
+}

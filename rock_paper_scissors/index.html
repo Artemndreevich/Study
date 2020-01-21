@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet">
+        <title>Камень ножници бумага</title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <header>
+            <h1>Игра "Камень ножници бумага"</h1>
+        </header>
+
+        <div id="rounds">
+            <span>
+            <p>Перед началом игры выберите ее продолжительность:</p>
+            <button class="rounds-number-btn" id="five">5 раундов</button>
+            <button class="rounds-number-btn" id="ten">10 раундов</button>
+            <button class="rounds-number-btn" id="twenty">20 раундов</button>
+            <button class="rounds-number-btn" id="fifty">50 раундов</button>
+        </span>
+        </div>
+            <p id="rounds-number">Раунд 0</p>
+        <div class='score-board'>
+            
+            <div id="user-label" class="badge">игрок</div>
+            <div id="computer-label" class="badge">комп</div>
+            <span id="user-score">0</span>:<span id="computer-score">0</span>
+        </div>
+
+        <div class="result">
+            <p></p>
+        </div>
+
+        <div class="choices">
+            <div class="choice"  id="rock">
+                <img src="images/rock.png" alt="rock">
+            </div>
+            <div class="choice"  id="paper">
+                <img src="images/paper.png" alt="paper">
+            </div>
+            <div class="choice"  id="scissors">
+                <img src="images/scissors.png" alt="scissors">
+            </div>
+        </div>
+
+        <p id="action-message">Выберите чем походить</p>
+    
+        <div id="game-result">
+            <p></p>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
