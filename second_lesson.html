@@ -323,7 +323,14 @@
 <script src="dont%20touch/js/bootstrap.min.js" ></script>
 
     <script>
-    $(document).ready(function(){
+    
+function closeHtmlboy(buttonId){
+        $(buttonId).on('click',function(){
+        $('.htmlboy').hide();
+        arr.shift();
+        });    
+    }
+$(document).ready(function(){
         var arr = ['Маша', 'Петя', 'Марина', 'Василий'];
         var counter=1;
 

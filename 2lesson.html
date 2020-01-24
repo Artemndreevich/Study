@@ -173,6 +173,10 @@
 
 
 <div class="main">
+
+        <div class="htmlboy col-6 col-md-4 col-lg-3">
+        </div>
+
     <div class="container-fluid ">
 
     <p>
@@ -202,7 +206,7 @@
 
          </div>
         <div  class="col-12 col-md-6 new_file artemsreason">
-               <p> 4. Щоб файл зберігся у під назвою index з розширенням .html, а не index.html з розширенням .txt, у "Тип файлу" виберіть "Усі файли".</p>
+               <p> 4. Щоб файл зберігся під назвою index з розширенням .html, а не index.html з розширенням .txt, у "Тип файлу" виберіть "Усі файли".</p>
             <img src="images/save1-exmpl3.png" title="Натисніть і затримуйте зображення, щоб збільшити">
 
 
@@ -230,7 +234,7 @@
 
  </div>
  <div class="col-12 col-md-3 new_file artemsreason">
-    <p> 2.Далі ми маємо навести вказівник миші на пункт меню під назвою "Створити". З'явиться меню . у ньому треба вибрати текствоий документ.</p>
+    <p> 2.Далі ми маємо навести вказівник миші на пункт меню під назвою "Створити". З'явиться меню . у ньому треба вибрати текстовий документ.</p>
     <img src="images/save-exmpl2.png"  title="Натисніть і затримуйте зображення, щоб збільшити">
 
 </div>
@@ -278,7 +282,7 @@
         
                     Будь яка html сторінка починається з тегу <span class="doctype">&lt;!DOCTYPE html&gt;</span> та <span class="tag">&lt;html&gt;</span>
                         , які дають браузеру зрозуміти, що
-                        це не просто текстовий файл, а саме файл html, а <span class="doctype">&lt;!DOCTYPE html&gt;</span> що це саме HTML5 (Остання версія HTML на данний момент).
+                        це не просто текстовий файл, а що це саме HTML-файл версії HTML5 (Остання версія HTML на данний момент).
                         <br>
                         <div class="redp">
                             <span class="red">Зверніть увагу!</span> <span class="tag">&lt;html&gt;</span> є блоковим елементом, тому його
@@ -301,7 +305,7 @@
                     
                             <h2>&lt;head&gt;</h2>
     
-                    Тег <span class="tag">&lt;head&gt;</span> вміщує у собі елементи які не відображаються на сторінці (за виключенням <span class="tag">&lt;title&gt;</span>), але
+                    Тег <span class="tag">&lt;head&gt;</span> вміщує у собі елементи які не відображаються на сторінці, але
                         допомагають браузеру опрацьовувати дані. Він є блоковим тегом, а отже закривається після написання останнього елементу контейнеру <span class="tag">&lt;head&gt;</span>
                         і перед тим як відкрити <span class="tag">&lt;body&gt;</span>
                         <h2>&lt;title&gt;</h2>
@@ -353,8 +357,46 @@
 </div>
 </div>
 
-<script src="dont%20touch/js/popper.min.js" ></script>
-<script src="dont%20touch/js/bootstrap.min.js" ></script>
+<script src="dont%20touch/js/popper.min.js"></script>
+<script src="dont%20touch/js/bootstrap.min.js"></script>
+
+<script src="dont%20touch/js/app.js"></script>
+    <script>
+    
+function closeHtmlboy(buttonId){
+        $(buttonId).on('click',function(){
+        $('.htmlboy').hide();
+        arr.shift();
+        });    
+    }
+$(document).ready(function(){
+        var arr = [`Привіт, я ТЕГ, я буду допомагати тобі. Настикай ЕНТЕР і я буду давати підказки.`,
+         `Крім блокноту ви можете використовувати спеціальні редактори коду, такі як от <a href="https://www.sublimetext.com/3"  target="sublime">Sublime Text</a> або <a href="https://code.visualstudio.com/download" target="vscode">Visual Studio Code</a>`, 
+         '<span class="red">Зверніть увагу!</span> якщо ви створюєте HTML-файл у редакторі коду, то його кодуванння по замовчуванню utf-8, тож у <span><span class="tag">&lt;meta</span> <span class="blue">charset=""</span><span class="tag">&gt;</span></span> вам треба писати  <span class="blue">utf-8</span>', 
+         'Уважно перевіряйте чи правильно ви написали теги та чи закрили усі теги які цього потребують (ми завжди це зазначаємо коли вивчаємо новий тег)'];
+            var counter = 1;
+
+    $('.htmlboy').html(` <img src="images/htmlboy/hello.png">
+        <p>` + arr[0] + `<br>
+        <button id="nextA" class="blue-button" >Закрити</button></p> `);
+
+            closeHtmlboy('#nextA');
+
+    $(document).on('keypress', function (e) {
+        if (e.which == 13 && arr[0] != undefined) {
+            $('.htmlboy').html(` <img src="images/htmlboy/good.png">
+        <p>` + arr[counter] + `<br>
+        <button id="nextA" class="blue-button" >Закрити</button></p> `).fadeIn(200);
+                closeHtmlboy('#nextA');
+            if (counter<arr.length-1) {
+                counter++
+            } else {
+                counter = 1;
+            }
+            }
+        });
+    });
+    </script>
 
 </body>
 </html>

@@ -705,8 +705,8 @@
 <script src="dont%20touch/js/bootstrap.min.js"></script>
 
 <script src="dont%20touch/js/app.js"></script>
+    <script>
 
-<script>
 let colorBox = document.getElementsByClassName('color-box');
 let colorInput1 = document.getElementById('color-input1');
 let backgroundInput1 = document.getElementById('background-input1');
@@ -796,42 +796,39 @@ for (let i=1; i<16; i++) {
 }
 </script>
  <script>
-    $(document).ready(function () {
-        var arr = [`Привіт, я Тегиня, я буду допомагати тобі. Настикай ЕНТЕР і я буду давати підказки.`,
+    
+function closeHtmlboy(buttonId){
+        $(buttonId).on('click',function(){
+        $('.htmlboy').hide();
+        arr.shift();
+        });    
+    }
+$(document).ready(function(){
+        var arr = [`Привіт, я Консолька, я буду допомагати тобі. Настикай ЕНТЕР і я буду давати підказки.`,
      `Існує ще третій спосіб задання кольору - HUE(), але ми не розглядаємо, бо самі його не знаємо)))`, 
      'Щоб зробити фон фіксованим відносно вікна браузера використовують властивість <span class="rule">background-attachment</span>: <span class="argument">fixed</span>.', 
      'Властивості <span class="rule">background</span> можна задавати одночасно кілька значеннь, наприклад фонове зображення та фоновий колір.'];
         var counter = 1;
 
         $('.htmlboy').html(` <img src="images/htmlgirl/hello.png">
-<p>
-` + arr[0] + `
-</p>
-<button id="nextA" class="blue-button" >Закрити</button> `);
+<p>` + arr[0] + `<br>
+<button id="nextA" class="blue-button" >Закрити</button> </p>`);
 
-
-        $('#nextA').on('click', function () {
-            $('.htmlboy').hide();
-            arr.shift();
-        });
+closeHtmlboy('#nextA');
 
 
         $(document).on('keypress', function (e) {
-            if (e.which == 13 && arr[0] != undefined) {
-                $('.htmlboy').html(` <img src="images/htmlboy/good.png">
-<p>
-` + arr[0] + `
-</p>
-<button id="nextA" class="blue-button" >Закрити</button> `).fadeIn(200);
-
-                $('#nextA').on('click', function () {
-                    $('.htmlboy').hide();
-                    arr.shift();
-
-
-                });
+        if (e.which == 13 && arr[0] != undefined) {
+            $('.htmlboy').html(` <img src="images/htmlgirl/hello.png">
+        <p>` + arr[counter] + `<br>
+        <button id="nextA" class="blue-button" >Закрити</button></p> `).fadeIn(200);
+                closeHtmlboy('#nextA');
+            if (counter<arr.length-1) {
+                counter++
+            } else {
+                counter = 1;
             }
-
+            }
         });
 
 

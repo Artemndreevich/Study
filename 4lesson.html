@@ -504,41 +504,50 @@
 <script src="dont%20touch/js/popper.min.js"></script>
 <script src="dont%20touch/js/bootstrap.min.js"></script>
 <script>
-    $(document).ready(function () {
-        var arr = ['Маша', 'Петя', 'Марина', 'Василий'];
+    
+function closeHtmlboy(buttonId){
+        $(buttonId).on('click',function(){
+        $('.htmlboy').hide();
+        arr.shift();
+        });    
+    }
+$(document).ready(function(){
+    var arr = [`Привіт, я ТЕГ, я буду допомагати тобі. Настикай ЕНТЕР і я буду давати підказки.`,
+         `Гіперпосилання можна робити як на локальну сторінку (розташовану на вашому комп'ютері), так і на сторінку в інтернеті`, 
+         `Як ви могли помітити, по замовчуванню посилання мають синій колір та подкреслення, але це можна змінити за допомогою CSS`, 
+         `Гіперпосилання мають 5 різних станів. Наприклад, коли ми наводимо на них вказівник миші, або натискаємо. Детальніше про це ми поговоримо в уроці 15`,
+         `Гіперпосилання в межах сторінки часто використовують на сайтах. Зазвичай у вигляді текстового гіперпосилання або кнопки "На початок сторінки"`];
         var counter = 1;
 
-        $('.htmlboy').html(` <img src="images/htmlboy/confused.png">
+        $('.htmlboy').html(` <img src="images/htmlboy/hello.png">
 <p>
-    ` + arr[0] + `
+    `+arr[0]+`
+    <br>
+    <button id="nextA" class="blue-button" >Закрити</button>
 </p>
-    <button id="nextA" class="blue-button" >Закрити</button> `);
+     `);
 
 
-        $('#nextA').on('click', function () {
-            $('.htmlboy').hide();
-            arr.shift();
-        });
+     closeHtmlboy('#nextA');
 
 
-        $(document).on('keypress', function (e) {
-            if (e.which == 13 && arr[0] != undefined) {
-                $('.htmlboy').html(` <img src="images/htmlboy/confused.png">
+   $(document).on('keypress',function(e) {
+    if(e.which == 13 && arr[0] !=undefined ) {
+            $('.htmlboy').html(` <img src="images/htmlboy/confused.png">
 <p>
- ` + arr[0] + `
-</p>
-    <button id="nextA" class="blue-button" >Закрити</button> `).fadeIn(200);
-
-                $('#nextA').on('click', function () {
-                    $('.htmlboy').hide();
-                    arr.shift();
-
-
-                });
+ `+arr[counter]+`
+<br>
+    <button id="nextA" class="blue-button" >Закрийся</button>
+</p>`).fadeIn(200);
+closeHtmlboy('#nextA');
+if (counter<arr.length-1) {
+                counter++
+            } else {
+                counter = 1;
             }
+        }
 
-        });
-
+});
 
     });
 

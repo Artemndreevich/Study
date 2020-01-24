@@ -304,9 +304,15 @@
     <script src="dont%20touch/js/popper.min.js" ></script>
     <script src="dont%20touch/js/bootstrap.min.js" ></script>
 
-
+    
 <script src="dont%20touch/js/app.js"></script>
     <script>
+    function closeHtmlboy(buttonId){
+        $(buttonId).on('click',function(){
+        $('.htmlboy').hide();
+        arr.shift();
+        });    
+    }
     $(document).ready(function(){
         var arr = [`Привіт, я ТЕГ, я буду допомагати тобі. Настикай ЕНТЕР і я буду давати підказки.`,
          `Ця тема знадобиться тобі коли ти будеш вивчати CSS`, 
@@ -317,31 +323,29 @@
 $('.htmlboy').html(` <img src="images/htmlboy/hello.png">
 <p>
     `+arr[0]+`
+    <br>
+    <button id="nextA" class="blue-button" >Закрити</button>
 </p>
-    <button id="nextA" class="blue-button" >Закрити</button> `);
+     `);
 
 
-    $('#nextA').on('click',function(){
-    $('.htmlboy').hide();
-    arr.shift();
-   });
-
-
-
+     closeHtmlboy('#nextA');
 
 
    $(document).on('keypress',function(e) {
     if(e.which == 13 && arr[0] !=undefined ) {
             $('.htmlboy').html(` <img src="images/htmlboy/confused.png">
 <p>
- `+arr[0]+`
-</p>
-    <button id="nextA" class="blue-button" >Закрийся</button>`).fadeIn(200);
-
-    $('#nextA').on('click',function(){
-    $('.htmlboy').hide();
-    arr.shift();
-   });
+ `+arr[counter]+`
+<br>
+    <button id="nextA" class="blue-button" >Закрийся</button>
+</p>`).fadeIn(200);
+closeHtmlboy('#nextA');
+if (counter<arr.length-1) {
+                counter++
+            } else {
+                counter = 1;
+            }
         }
 
 });
@@ -354,48 +358,48 @@ $(document).scroll(function (e) {
     $('.htmlboy').html(` <img src="images/htmlboy/good.png">
 <p>
  Чому б нам не відпочити трохи? Пропоную тобі зіграти зі мною в "камень ножиці папір!"
-</p>
+ <br>
 <button id="nextA" class="blue-button" >Ну давай...</button> 
     <br>
-    <button id="nextANo" class="blue-button" >Я з тобою не граю! >:(</button>`).fadeIn(200);
-    function closeHtmlboy(){
-        $('#nextA').on('click',function(){
-     $('.htmlboy').hide();
-     arr.shift();
-   });    
-    }
+    <button id="nextANo" class="blue-button" >Я з тобою не граю! >:(</button>
+ </p>
+`).fadeIn(200);
+    
 
-    closeHtmlboy();
+closeHtmlboy('#nextA');
 
    $('#nextANo').on('click',function(){
     $('.htmlboy').html(` <img src="images/htmlboy/confused.png">
 <p>
  Ой все(( <br>
     Сам тепер свій HTML вчи...
-</p>
+    <br>
 <button id="nextAYes" class="blue-button" >Ох, ну добре...</button>
 <br>
 <button id="nextA" class="blue-button" >На ображених воду возять</button> 
+</p>
     `);
-    closeHtmlboy();
+    closeHtmlboy('#nextA');
     $('#nextAYes').on('click',function(){
     $('.htmlboy').html(` <img src="images/htmlboy/good.png">
 <p>
  От і добре) Вибирай кількість раундів і почали!
-</p>
+ <br>
 <button id="nextA" class="blue-button" >Ок</button>
 <br>
 <button id="nextAlol" class="blue-button" >Я переможу!</button> 
+</p>
     `);
-    closeHtmlboy();
+    closeHtmlboy('#nextA');
     $('#nextAlol').on('click',function(){
     $('.htmlboy').html(` <img src="images/htmlboy/good.png">
 <p>
  АХПХАХПХ АПХАХПХ АХПХАХП ХАХПХАХ ПХАХПХХАПХАХ ПХАХПХ АХПАХПХАХ ПАХПХАХПХА
-</p>
+ <br>
 <button id="nextA" class="blue-button" >...</button>
+</p>
     `);
-    closeHtmlboy()
+    closeHtmlboy('#nextA');
    }); 
    }); 
    }); 

@@ -168,6 +168,9 @@
 
 
     <div class="main">
+            <div class="htmlboy col-6 col-md-4 col-lg-3">
+                </div>
+
 <div id="block1" class="lesson-block">
 <h1>Як зробити текст жирним?</h1>
 <h4>Для виділення фрагменту тексту жирним шрифтом використовують тег <span class="tag">&lt;strong&gt;</span></h4>
@@ -205,7 +208,7 @@
     <div id="block2" class="lesson-block">
 <h1>Як зробити текст курсивом?</h1>
 <h4>Для виділення фрагменту тексту курсивом використовують тег <span class="tag">&lt;em&gt;</span> або <span class="tag">&lt;і&gt;</span></h4>
-<p>Так само як і <span class="tag">&lt;strong&gt;</span>, ці теги обов'язково мають свої закриваючі теги. Це стосується усіх тегів у цьому уроці, тому більше ми про згадувати не будемо.</p>
+<p>Так само як і <span class="tag">&lt;strong&gt;</span>, ці теги обов'язково мають свої закриваючі теги. Це стосується усіх тегів у цьому уроці, тому більше ми про це згадувати не будемо.</p>
 
 <div class="codepen-pattern">
         <p class="codepen" data-height="200" data-theme-id="light" data-default-tab="html"
@@ -317,5 +320,45 @@
         </div>
     </div>
     </div>
+    <script src="dont%20touch/js/popper.min.js"></script>
+<script src="dont%20touch/js/bootstrap.min.js"></script>
+
+<script src="dont%20touch/js/app.js"></script>
+    <script>
+    
+function closeHtmlboy(buttonId){
+        $(buttonId).on('click',function(){
+        $('.htmlboy').hide();
+        arr.shift();
+        });    
+    }
+$(document).ready(function(){
+        var arr = [`Привіт, я ТЕГ, я буду допомагати тобі. Настикай ЕНТЕР і я буду давати підказки.`,
+         `Із цих тегів ми найчастіше використвуємо <span class="tag">&lt;em&gt;</span>`, 
+         'Теги <span class="tag">&lt;big&gt;</span> та <span class="tag">&lt;small&gt;</span> вже майже не використовуються у сучасній розробці і можуть не підтримуватись деякими браузерами.', 
+         'У уроці 11 ми навчимося задавати тексту або його фрагментам властивості цих тегів за допомогою CSS'];
+            var counter = 1;
+
+    $('.htmlboy').html(` <img src="images/htmlboy/hello.png">
+        <p>` + arr[0] + `<br>
+        <button id="nextA" class="blue-button" >Закрити</button></p> `);
+
+            closeHtmlboy('#nextA');
+
+    $(document).on('keypress', function (e) {
+        if (e.which == 13 && arr[0] != undefined) {
+            $('.htmlboy').html(` <img src="images/htmlboy/good.png">
+        <p>` + arr[counter] + `<br>
+        <button id="nextA" class="blue-button" >Закрити</button></p> `).fadeIn(200);
+                closeHtmlboy('#nextA');
+            if (counter<arr.length-1) {
+                counter++
+            } else {
+                counter = 1;
+            }
+            }
+        });
+    });
+    </script>
     </body>
     </html>

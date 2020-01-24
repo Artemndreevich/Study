@@ -264,17 +264,20 @@ div::selection, p::selection, h1::selection, h2::selection, li::selection, span:
     background-color: rgba(255, 255, 255, 0.8);
     padding-bottom: 10px;
     border-radius: 5px 5px 0 0 ;
-
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .htmlboy p {
     width: 90%;
     font-size: 0.9em;
+    display: flex;
+    flex-direction: column;
 }
 
 .htmlboy img {
     width: 50%;
-    float: right;
+    
 
 }
 
@@ -315,7 +318,6 @@ div::selection, p::selection, h1::selection, h2::selection, li::selection, span:
 }
 
 .blue-button {
-    padding: 1vw;
     background: none;
     border: 2px solid rgba(0, 44, 126, 1);
     color: rgba(0, 44, 126, 1);
@@ -326,6 +328,11 @@ div::selection, p::selection, h1::selection, h2::selection, li::selection, span:
     transition: .3s ease-out;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 1vw 2vw;
+}
+.htmlboy .blue-button {
+    margin-top: 10px;
+    padding: 1vw 1.2vw;
+    
 }
 
 .blue-button:hover {

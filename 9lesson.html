@@ -509,41 +509,47 @@
     <script src="dont%20touch/js/popper.min.js"></script>
     <script src="dont%20touch/js/bootstrap.min.js"></script>
     <script>
-        $(document).ready(function () {
+    
+function closeHtmlboy(buttonId){
+        $(buttonId).on('click',function(){
+        $('.htmlboy').hide();
+        arr.shift();
+        });    
+    }
+$(document).ready(function(){
             var arr = [`Привіт,я ТЕГ ,я буду допомагати тобі. Настикай ЕНТЕР і я буду давати підсказки.`,
          `Ви можете часто зустрічати таблицю там, де потрібно розділити інформацію.`];
             var counter = 1;
 
+            $('.htmlboy').html(` <img src="images/htmlboy/hello.png">
+<p>
+    `+arr[0]+`
+    <br>
+    <button id="nextA" class="blue-button" >Закрити</button>
+</p>
+     `);
+
+
+     closeHtmlboy('#nextA');
+
+
+   $(document).on('keypress',function(e) {
+    if(e.which == 13 && arr[0] !=undefined ) {
             $('.htmlboy').html(` <img src="images/htmlboy/confused.png">
 <p>
-    ` + arr[0] + `
-</p>
-    <button id="nextA" class="blue-button" >Закрити</button> `);
+ `+arr[counter]+`
+<br>
+    <button id="nextA" class="blue-button" >Закрийся</button>
+</p>`).fadeIn(200);
+closeHtmlboy('#nextA');
+if (counter<arr.length-1) {
+                counter++
+            } else {
+                counter = 1;
+            }
+        }
 
-
-            $('#nextA').on('click', function () {
-                $('.htmlboy').hide();
-                arr.shift();
-            });
-
-
-            $(document).on('keypress', function (e) {
-                if (e.which == 13 && arr[0] != undefined) {
-                    $('.htmlboy').html(` <img src="images/htmlboy/confused.png">
-<p>
- ` + arr[0] + `
-</p>
-    <button id="nextA" class="blue-button" >Закрити</button> `).fadeIn(200);
-
-                    $('#nextA').on('click', function () {
-                        $('.htmlboy').hide();
-                        arr.shift();
-
-
-                    });
-                }
-
-            });
+});
 
 
         });

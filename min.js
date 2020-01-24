@@ -303,9 +303,6 @@ var x=0;
 
 
 
-
-
-
     $('#opener_li1').click(function(){
         if (bool_op===true) {
             $('.hidden-list1').fadeIn(400);

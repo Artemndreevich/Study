@@ -412,7 +412,14 @@ echo $allocenka/$timer;
 
 <script src="dont%20touch/js/app.js"></script>
 <script>
-    $(document).ready(function () {
+    
+function closeHtmlboy(buttonId){
+        $(buttonId).on('click',function(){
+        $('.htmlboy').hide();
+        arr.shift();
+        });    
+    }
+$(document).ready(function(){
         var name = prompt('Як тебе звати?');
 
         var teacher_name = prompt('Як звати твого вчителя інформатики?');

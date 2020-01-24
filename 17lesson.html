@@ -204,42 +204,40 @@
 <script src="dont%20touch/js/popper.min.js"></script>
 <script src="dont%20touch/js/bootstrap.min.js"></script>
 <script>
-    $(document).ready(function () {
-        var arr = [`Привіт,я ТЕГ ,я буду допомагати тобі. Настикай ЕНТЕР і я буду давати підсказки.`,
-         `Наприклад потк цтого сайту- за потоком йде меню та я,ТЕГ. Першим йде малюнок та список. Потім йде 
+    
+function closeHtmlboy(buttonId){
+        $(buttonId).on('click',function(){
+        $('.htmlboy').hide();
+        arr.shift();
+        });    
+    }
+$(document).ready(function(){
+        var arr = [`Привіт, я Консолька, я буду допомагати тобі. Настикай ЕНТЕР і я буду давати підсказки.`,
+         `Наприклад потк цтого сайту- за потоком йде меню та я, Консолька. Першим йде малюнок та список. Потім йде 
          другий малюнок, потім текст й блок з завданням.`];
         var counter = 1;
 
-        $('.htmlboy').html(` <img src="images/htmlboy/confused.png">
-<p>
-    ` + arr[0] + `
-</p>
-    <button id="nextA" class="blue-button" >Закрити</button> `);
+        $('.htmlboy').html(` <img src="images/htmlgirl/hello.png">
+<p>` + arr[0] + `<br>
+<button id="nextA" class="blue-button" >Закрити</button> </p>`);
 
-
-        $('#nextA').on('click', function () {
-            $('.htmlboy').hide();
-            arr.shift();
-        });
+closeHtmlboy('#nextA');
 
 
         $(document).on('keypress', function (e) {
-            if (e.which == 13 && arr[0] != undefined) {
-                $('.htmlboy').html(` <img src="images/htmlboy/confused.png">
-<p>
- ` + arr[0] + `
-</p>
-    <button id="nextA" class="blue-button" >Закрити</button> `).fadeIn(200);
-
-                $('#nextA').on('click', function () {
-                    $('.htmlboy').hide();
-                    arr.shift();
-
-
-                });
+        if (e.which == 13 && arr[0] != undefined) {
+            $('.htmlboy').html(` <img src="images/htmlgirl/hello.png">
+        <p>` + arr[counter] + `<br>
+        <button id="nextA" class="blue-button" >Закрити</button></p> `).fadeIn(200);
+                closeHtmlboy('#nextA');
+            if (counter<arr.length-1) {
+                counter++
+            } else {
+                counter = 1;
             }
-
+            }
         });
+
 
 
     });

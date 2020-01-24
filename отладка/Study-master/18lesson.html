@@ -285,7 +285,14 @@
     <script src="dont%20touch/js/popper.min.js"></script>
     <script src="dont%20touch/js/bootstrap.min.js"></script>
     <script>
-        $(document).ready(function () {
+    
+function closeHtmlboy(buttonId){
+        $(buttonId).on('click',function(){
+        $('.htmlboy').hide();
+        arr.shift();
+        });    
+    }
+$(document).ready(function(){
             var arr = [`Привіт,я ТЕГ ,я буду допомагати тобі. Натискай ЕНТЕР і я буду давати підсказки.`, `
         Меню та ТЕГ спозиціоновані фіксовано. Тому,до речі, вони не змінюють свого пложенняію
         `];
@@ -298,10 +305,7 @@
     <button id="nextA" class="blue-button" >Закрити</button> `);
 
 
-            $('#nextA').on('click', function () {
-                $('.htmlboy').hide();
-                arr.shift();
-            });
+            closeHtmlboy('#nextA');
 
 
             $(document).on('keypress', function (e) {
@@ -312,12 +316,7 @@
 </p>
     <button id="nextA" class="blue-button" >Закрити</button> `).fadeIn(200);
 
-                    $('#nextA').on('click', function () {
-                        $('.htmlboy').hide();
-                        arr.shift();
-
-
-                    });
+                    closeHtmlboy('#nextA');
                 }
 
             });

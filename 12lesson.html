@@ -453,44 +453,42 @@
 <script src="dont%20touch/js/popper.min.js"></script>
 <script src="dont%20touch/js/bootstrap.min.js"></script>
 <script>
-    $(document).ready(function () {
-        var arr = [`Привіт, я ТЕГ ,я буду допомагати тобі. Настикай ЕНТЕР і я буду давати підсказки.`,
-          'Правило <span class="rule">font-weight</span> працює корректно далеко не з усіма шрифтами. Тому ви можете не побачити різниці між <span class="argument">lighter</span> і <span class="argument">rormal</span> або <span class="argument">bold</span> і <span class="argument">bolder</span>',
+    
+function closeHtmlboy(buttonId){
+        $(buttonId).on('click',function(){
+        $('.htmlboy').hide();
+        arr.shift();
+        });    
+    }
+$(document).ready(function(){
+        var arr = [`Привіт, я Консолька, я буду допомагати тобі. Настикай ЕНТЕР і я буду давати підсказки.`,
+          'Правило <span class="rule">font-weight</span> працює корректно далеко не з усіма шрифтами. Тому ви можете не побачити різниці між <span><span class="argument">lighter</span> і <span class="argument">rormal</span> або <span class="argument">bold</span> і <span class="argument">bolder</span></span>',
           `Зазвичай текст стилізується по лівому краю. Проте у таблицях зручно коли він починаеться по-центру.`,
-        'Ви не побачите дію <span class="rule">text-align</span>: <span class="argument">justify</span> поки тексту не буде стільки, щоб він переходив на наступний рядок',
+        'Ви не побачите дію <span><span class="rule">text-align</span>:<span class="argument"> justify</span></span> поки тексту не буде стільки, щоб він переходив на наступний рядок',
     '<span class="rule">text-align</span> працює лише з текстом!' ];
         var counter = 1;
 
-        $('.htmlboy').html(` <img src="images/htmlboy/hello.png">
-<p>
-    ` + arr[0] + `
-</p>
-    <button id="nextA" class="blue-button" >Закрити</button> `);
+        $('.htmlboy').html(` <img src="images/htmlgirl/hello.png">
+<p>` + arr[0] + `<br>
+<button id="nextA" class="blue-button" >Закрити</button> </p>`);
 
-
-        $('#nextA').on('click', function () {
-            $('.htmlboy').hide();
-            arr.shift();
-        });
+closeHtmlboy('#nextA');
 
 
         $(document).on('keypress', function (e) {
-            if (e.which == 13 && arr[0] != undefined) {
-                $('.htmlboy').html(` <img src="images/htmlboy/good.png">
-<p>
- ` + arr[0] + `
-</p>
-    <button id="nextA" class="blue-button" >Закрити</button> `).fadeIn(200);
-
-                $('#nextA').on('click', function () {
-                    $('.htmlboy').hide();
-                    arr.shift();
-
-
-                });
+        if (e.which == 13 && arr[0] != undefined) {
+            $('.htmlboy').html(` <img src="images/htmlgirl/hello.png">
+        <p>` + arr[counter] + `<br>
+        <button id="nextA" class="blue-button" >Закрити</button></p> `).fadeIn(200);
+                closeHtmlboy('#nextA');
+            if (counter<arr.length-1) {
+                counter++
+            } else {
+                counter = 1;
             }
-
+            }
         });
+
 
 
     });

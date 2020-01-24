@@ -228,7 +228,7 @@
     </p>
 
     <div class="redp">
-        <p><span class="red">Важливо!</span> Основний та закриваючий тег - попарні, тобто утворюють пару з відкриваючого та закриваючого тегів (Наприклад <span class="tag">&lt;h1&gt;</span><span class="tag">&lt;/h1&gt;</span>, <span class="tag">&lt;body&gt;</span><span class="tag">&lt;/body&gt;</span>). 
+        <p><span class="red">Важливо!</span> Основний та закриваючий тег - парні, тобто утворюють пару з відкриваючого та закриваючого тегів (Наприклад <span class="tag">&lt;h1&gt;</span><span class="tag">&lt;/h1&gt;</span>, <span class="tag">&lt;body&gt;</span><span class="tag">&lt;/body&gt;</span>). 
             Дуже важливо закривати усі теги, які цього потребують, (про вийнятки ми попередимо коли ви будете детальніше їх вивчати) і, не менш важливо, в правильному порядку. Це дуже важливо, адже в середині одного тегу може бути декілька інших, і необхідно закрити кожен з них, не порушивши будови сторінки.</p>
     <p>
             Приклад: <br>
@@ -287,7 +287,14 @@
 <script src="dont%20touch/js/popper.min.js" ></script>
     <script src="dont%20touch/js/bootstrap.min.js" ></script>
     <script>
-    $(document).ready(function(){
+    
+function closeHtmlboy(buttonId){
+        $(buttonId).on('click',function(){
+        $('.htmlboy').hide();
+        arr.shift();
+        });    
+    }
+$(document).ready(function(){
         var arr = ['Маша', 'Петя', 'Марина', 'Василий'];
         var counter=1;
 

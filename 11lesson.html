@@ -378,43 +378,44 @@
 
 <script src="dont%20touch/js/app.js"></script>
     <script>
-        $(document).ready(function () {
-            var arr = [`Привіт, я ТЕГ, я буду допомагати тобі. Настикай ЕНТЕР і я буду давати підказки.`,
+    
+function closeHtmlboy(buttonId){
+        $(buttonId).on('click',function(){
+        $('.htmlboy').hide();
+        arr.shift();
+        });    
+    }
+$(document).ready(function(){
+            var arr = [`Привіт, я Консолька, і в цьому розділі я буду допомагати тобі, бо ТЕГ дурник, не знає CSS :D. Настикай ЕНТЕР і я буду давати підказки.`,
          `За допомогою CSS можна навіть створювати анімації`, 
          'Деякі CSS-властивості можуть не працювати, або працювати неправильно у різних браузерах', 
          'Ми вивчаємо останню версію CSS - CSS3'];
             var counter = 1;
 
-            $('.htmlboy').html(` <img src="images/htmlboy/hello.png">
+            $('.htmlboy').html(` <img src="images/htmlgirl/hello.png">
 <p>
     ` + arr[0] + `
-</p>
-    <button id="nextA" class="blue-button" >Закрити</button> `);
+<br>
+    <button id="nextA" class="blue-button" >Закрити</button></p> `);
 
 
-            $('#nextA').on('click', function () {
-                $('.htmlboy').hide();
-                arr.shift();
-            });
+            closeHtmlboy('#nextA');
 
 
             $(document).on('keypress', function (e) {
-                if (e.which == 13 && arr[0] != undefined) {
-                    $('.htmlboy').html(` <img src="images/htmlboy/good.png">
-<p>
- ` + arr[0] + `
-</p>
-    <button id="nextA" class="blue-button" >Закрити</button> `).fadeIn(200);
+        if (e.which == 13 && arr[0] != undefined) {
+            $('.htmlboy').html(` <img src="images/htmlgirl/hello.png">
+        <p>` + arr[counter] + `<br>
+        <button id="nextA" class="blue-button" >Закрити</button></p> `).fadeIn(200);
+                closeHtmlboy('#nextA');
+            if (counter<arr.length-1) {
+                counter++
+            } else {
+                counter = 1;
+            }
+            }
+        });
 
-                    $('#nextA').on('click', function () {
-                        $('.htmlboy').hide();
-                        arr.shift();
-
-
-                    });
-                }
-
-            });
 
 
         });
