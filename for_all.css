@@ -266,6 +266,7 @@ div::selection, p::selection, h1::selection, h2::selection, li::selection, span:
     border-radius: 5px 5px 0 0 ;
     display: flex;
     flex-direction: row-reverse;
+    flex-basis: auto;
 }
 
 .htmlboy p {
@@ -277,7 +278,7 @@ div::selection, p::selection, h1::selection, h2::selection, li::selection, span:
 
 .htmlboy img {
     width: 50%;
-    
+    max-height: 400px;
 
 }
 

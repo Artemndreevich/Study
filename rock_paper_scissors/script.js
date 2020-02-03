@@ -50,7 +50,6 @@ function win(user, comp){
       
 }
 
-
 function lose(user, comp){
     
     const uChoice_div = document.getElementById(user);
@@ -134,8 +133,9 @@ function game(userChoice) {
         $('.htmlboy').html(` <img src="images/htmlboy/`+emotion+`.png">
         <p>
         `+text+`
-        </p>
-        <button id="nextA" class="blue-button" >Та добре, тільки закрийся вже!</button> `).fadeIn(200);
+        <br>
+        <button id="nextA" class="blue-button" >Та добре, добре!</button> 
+        </p>`).fadeIn(200);
         $('#nextA').on('click',function(){
             $('.htmlboy').hide();
             arr.shift();
