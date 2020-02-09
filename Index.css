@@ -9,6 +9,7 @@ body{
 #our-reason{
     color: black;
     padding: 2% 2%;
+    background: rgba(0, 23, 66, 0.5)
 }
 #our-reason h2{
     color:white;
@@ -21,6 +22,7 @@ body{
     list-style-image: url(images/icon/tag-icon.png);
     list-style-position: inside;
     margin: 2% 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 #helper-div{
     background: url(images/html5-logo.png) no-repeat;

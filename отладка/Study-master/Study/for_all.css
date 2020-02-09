@@ -189,8 +189,12 @@ span.border-exmpl span.blue {
 #logo {
     color: rgba(0, 44, 126, 0.7);
     font-weight: bolder;
-    font-size: 2em;
-    padding: 0 1%;
+    font-size: 1em;
+    padding: 0 0%;
+
+}
+#logo:hover {
+    text-decoration: none;
 }
 
 #img_lesson {

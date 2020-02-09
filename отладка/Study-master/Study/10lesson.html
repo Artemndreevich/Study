@@ -440,7 +440,7 @@ $(document).ready(function(){
 <p>
    Привіт, ` + name + `, я ТЕГ! Я допоможу тобі з тестом! Після кожної відповіді я буду казати тобі правильна вона чи ні, та, при необхідності, аргументувати. Успіхів!
 </p> 
-    <button id="nextA" class="blue-button" >Закрити</button> `);
+    <button id="nextA" class="blue-button" >Далі</button> `);
 
 
             $('#nextA').on('click', function () {
@@ -667,7 +667,7 @@ $('.falseasnwer').css('background-color','red','border-color','red'); */
 <p>
     ` + answer[attrid] + `
 </p>
-    <button id="nextA" class="blue-button" >Закрити</button> `);
+    <button id="nextA" class="blue-button" >Далі</button> `);
 
             $('.htmlboy').show();
 
@@ -983,7 +983,7 @@ $('#q-box12 .trueanswer'). css('background-color','rgba(0, 44, 126, 0.5)');
 <p>
     ` + answerfalse[attridf] + `
 </p>
-    <button id="nextA" class="blue-button" >Закрити</button> `);
+    <button id="nextA" class="blue-button" >Далі</button> `);
 
             $('.htmlboy').show();
 

@@ -72,7 +72,7 @@
 <div class="menu-artem">
     <div class="row mx-1 align-items-center ">
         <div class="man2 col-3 col-sm-3 col-md-6 align-zero ">
-            <span class="log cell small-3 medium-6 "><span>LEARN&CODE </span></span>
+            <span class="log cell small-3 medium-6 "><span><a href="index.html" title="LEARN&CODE на головну" id="logo">LEARN&CODE </a></span></span>
         </div>
 
         <div class=" man  col-3 col-sm-3 col-md-2 menu-div">
@@ -111,7 +111,7 @@
                     <hr>
                     <li><a href="12lesson.html">Стилізація тексту</a></li>
                     <hr>
-                    <li><a href="13lesson.html">Кольорова стилізація сорінки</a></li>
+                    <li><a href="13lesson.html">Кольорова стилізація сторінки</a></li>
                     <hr>
                     <li><a href="14lesson.html">Рамка. Відступи та поля. Задання висоти та ширини</a></li>
                     <hr>
@@ -256,7 +256,7 @@
     </div>
     <br><br>
             <h4>
-                Дійсно,ми вставили зображення. Але воно завелеке,переходимо до наступної частини.
+                Дійсно, ми вставили зображення. Але воно завелике, тож переходимо до наступної частини.
             </h4>
         </div>
         
@@ -285,7 +285,7 @@
             <p>
                 <span class="red">Зверніть увагу!</span> Як ви, мабуть, помітили, зображення змінило свої пропорції. 
                 Це тому що ми вказали height="80px" та width="200px" які, звичайно, зменшили висоту та ширину до 
-                відповідних значеннь, але й порушили початкові пропорції зображення, тому воно виглядає таким "сплюснутим".
+                відповідних значеннь, але й порушили початкові пропорції зображення, тому воно виглядає таким "стиснутим".
             <br><br>
             Щоб цього ефекту запобігти і зображення змінило розмір зберігаючи оригінальні пропорції, треба вказувати лише висоту, 
             або лише ширину. Тоді другий показник зміниться пропорційно першому.  
@@ -387,11 +387,14 @@ on <a href="https://codepen.io">CodePen</a>.</span>
                         <h3> Завдання 2:</h3>
                         <p>Попрацюйте з зображеннями які ви додали на сторінку у першому завданні: додайте спливаючі підказки з коротким змістом зображень, додайте alt та зменшіть усі три зображення так, щоб вони мали одну висоту та вміщались у один рядок.</p>
                     </div>
-            <div class="homework" id="hw1">
+            <!--
+                <div class="homework" id="hw1">
                     <h3> Завдання:</h3>
                     <p>Вставте зображення з інтернету та таке саме,але вже завантажене й порівняйте швидкість їх завантаження.</p>
                 </div>
-        </div><!--закрывает <div class="lesson-block" id="block2_1">-->
+                -->
+        </div> 
+        
 
                 
                 
@@ -456,7 +459,7 @@ $(document).ready(function(){
 <p>
     `+arr[0]+`
     <br>
-    <button id="nextA" class="blue-button" >Закрити</button>
+    <button id="nextA" class="blue-button" >Далі</button>
 </p>
      `);
 
@@ -470,7 +473,7 @@ $(document).ready(function(){
 <p>
  `+arr[counter]+`
 <br>
-    <button id="nextA" class="blue-button" >Закрийся</button>
+    <button id="nextA" class="blue-button" >Далі</button>
 </p>`).fadeIn(200);
 closeHtmlboy('#nextA');
 if (counter<arr.length-1) {
