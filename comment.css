@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+.blockcomment{
+    display: flex;
+flex-wrap: wrap;
+border-radius:2px;
+border-bottom:1px solid  rgba(22,73,149, 0.8);
+margin-top:5px;
+font-family: 'Merriweather', serif;
+width:98%;
+margin-left: 1%;
+}
+.blockcommentinput{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius:2px;
+    margin-top:5px;
+    font-family: 'Merriweather', serif;
+    width:98%;
+    margin-left: 1%;
+}
+.namecomment{
+    flex-basis: 78%;
+    margin:1%;
+
+}
+.datecomment{
+    flex-basis: 18%;
+    margin:1%;
+
+}
+
+.textcomment{
+    flex-basis: 98%;
+    margin:1%;
+
+}
+.textcomment textarea{
+width:100%;
+}
+.namevommenttext{
+
+font-size: 24px;
+}
+
+
+
+/*  */
+.ocenka{
+color:#19428c;
+   font-weight:bold;
+   font-size:90px;
+   margin:1%;
+}
+.ocenka span {
+margin:0;
+padding:0;
+}
+#ocenka1{
+  font-size:52%;
+}
+#ocenka2{
+  font-size:59%;
+}
+#ocenka3{
+  font-size:66%;
+}
+#ocenka4{
+  font-size:73%;
+}
+#ocenka5{
+  font-size:80%;
+}
