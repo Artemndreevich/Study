@@ -3,27 +3,24 @@
 <head>
     <title>Вступ до  HTML | Урок 1</title>
             <meta charset="UTF-8">
-                <meta http-equiv="x-ua-compatible" content="ie=edge">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <!-- РУКИ ПРОЧЬ-->
-            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-            <link rel="stylesheet" href="dont%20touch/css/bootstrap.min.css">
-            <link rel="stylesheet" href="dont%20touch/css/app.css">
-            
-            
-            <!-- РУКИ ПРОЧЬ-->
-                <link rel="stylesheet" href="dont%20touch/css/app.css">
-                <script src="dont%20touch/js/vendor/jquery.js"></script>
-                <link rel="stylesheet" href="Index.css">
-                <link rel="stylesheet" href="main.css">
-                <link rel="stylesheet" href="for_all.css">
-                <link rel="stylesheet" href="animated.css">
-                <link rel="shortcut icon" href="images/icon/favicon.png" type="image/png">
-                <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
-                <script src="jquery-3.3.1.js"></script>
-                <script src="min.js"></script>
-                <link rel="stylesheet" href="input.css">
-            
+    <!-- РУКИ ПРОЧЬ-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="dont%20touch/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dont%20touch/css/app.css">
+    <!-- РУКИ ПРОЧЬ-->
+    <link rel="stylesheet" href="Index.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="for_all.css">
+    <link rel="stylesheet" href="animated.css">
+    <link rel="shortcut icon" href="images/icon/favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+
+
+
+
+    <script src="jquery-3.3.1.js"></script>
+    <script src="min.js"></script>
+    <script src="dont%20touch/js/app.js"></script>
             </head>
 <body>
     <!--
@@ -171,7 +168,8 @@
 
     <div class="main">
 
-
+   <div class="htmlboy col-6 col-md-4 col-lg-3">
+        </div>
        
         
             
@@ -278,6 +276,7 @@
 <div class="redp">
         <span class="red">Зверніть увагу</span>, що значенням атрибуту може бути не лише сторінка, а й просто деяка інформація , яку ви маєте на меті відобразити, або певні визначені коамнди для окремих тегів та атрибутів.
 </div>
+
 </div>
 <div class="summary">
     <h2>Підсумуємо:</h2>
@@ -365,8 +364,10 @@
 
   
 
-<script src="dont%20touch/js/popper.min.js" ></script>
-    <script src="dont%20touch/js/bootstrap.min.js" ></script>
+<script src="dont%20touch/js/popper.min.js"></script>
+<script src="dont%20touch/js/bootstrap.min.js"></script>
+
+<script src="dont%20touch/js/app.js"></script>
     <script>
     
 function closeHtmlboy(buttonId){
@@ -376,42 +377,30 @@ function closeHtmlboy(buttonId){
         });    
     }
 $(document).ready(function(){
-        var arr = ['Маша', 'Петя', 'Марина', 'Василий'];
-        var counter=1;
+        var arr = [`Привіт, я ТЕГ, я буду допомагати тобі. Настикай ЕНТЕР і я буду давати підказки.`,`До речі, сайт ви можете знайти за посиланням <a href='http://learnandcode.zzz.com.ua/'> http://learnandcode.zzz.com.ua/ </a> та <a href ='https://learnandcode.000webhostapp.com/'>   https://learnandcode.000webhostapp.com/  </a>`];
+            var counter = 1;
 
-$('.htmlboy').html(` <img src="images/htmlboy/confused.png">
-<p>
-    `+arr[0]+`
-</p>
-    <button id="nextA" class="blue-button" >Далі</button> `);
+    $('.htmlboy').html(` <img src="images/htmlboy/hello.png">
+        <p>` + arr[0] + `<br>
+        <button id="nextA" class="blue-button" >Далі</button></p> `);
 
+            closeHtmlboy('#nextA');
 
-    $('#nextA').on('click',function(){
-    $('.htmlboy').hide();
-    arr.shift();
-   });
-
-
-   $(document).on('keypress',function(e) {
-    if(e.which == 13 && arr[0] !=undefined ) {
-            $('.htmlboy').html(` <img src="images/htmlboy/confused.png">
-<p>
- `+arr[0]+`   
-</p>
-    <button id="nextA" class="blue-button" >Далі</button> `).fadeIn(200);
-
-    $('#nextA').on('click',function(){
-    $('.htmlboy').hide();
-    arr.shift();
-  
-   });
-        }  
-});
-
-});
+    $(document).on('keypress', function (e) {
+        if (e.which == 13 && arr[0] != undefined) {
+            $('.htmlboy').html(` <img src="images/htmlboy/good.png">
+        <p>` + arr[counter] + `<br>
+        <button id="nextA" class="blue-button" >Далі</button></p> `).fadeIn(200);
+                closeHtmlboy('#nextA');
+            if (counter<arr.length-1) {
+                counter++
+            } else {
+                counter = 1;
+            }
+            }
+        });
+    });
     </script>
-        <script src="dont%20touch/js/app.js"></script>
-
         
 </body>
 </html>
